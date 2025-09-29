@@ -1,0 +1,346 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"
+        ]
+    },
+    "type": "message",
+    "timestamp": "2025-09-29T12:06:32.915+00:00",
+    "entry": [
+        {
+            "fullUrl": "http://transformador-cens.cl/MessageHeader/d7bace49-cafe-4a17-9254-5f42324e7907",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "d7bace49-cafe-4a17-9254-5f42324e7907",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:06:32.940+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+                    ]
+                },
+                "eventCoding": {
+                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+                    "code": "referenciar",
+                    "display": "Referenciar"
+                },
+                "author": {
+                    "reference": "PractitionerRole/35578fbd-a1be-4469-837f-e38ee298f131"
+                },
+                "source": {
+                    "software": "conector-osorno",
+                    "endpoint": "hbosorno.cl"
+                },
+                "focus": [
+                    {
+                        "reference": "ServiceRequest/SR-20250905-001"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/ServiceRequest/SR-20250905-001",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "SR-20250905-001",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS",
+                        "valueBoolean": true
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                                    "code": "2",
+                                    "display": "A la espera de revisión"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                                    "code": "14",
+                                    "display": "ENDOCRINOLOGÍA ADULTO"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                                    "code": "14",
+                                    "display": "ENDOCRINOLOGÍA ADULTO"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "IC-20250905-0001"
+                    }
+                ],
+                "status": "draft",
+                "intent": "order",
+                "subject": {
+                    "reference": "Patient/17.456.321-5"
+                },
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/560008fe-ded9-4a86-808a-d0e0fce1346e"
+                    }
+                ],
+                "locationCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
+                                "code": "1",
+                                "display": "Nivel Secundario"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Practitioner/2d05eab7-c826-4c9e-9d8b-acefa5e272fe",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "2d05eab7-c826-4c9e-9d8b-acefa5e272fe",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:06:34.657+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "code": "152",
+                                    "display": "Chile"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                                    "code": "01",
+                                    "display": "RUN"
+                                }
+                            ],
+                            "text": "RUN"
+                        },
+                        "value": "13.245.678-4"
+                    },
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                                    "code": "13",
+                                    "display": "RNPI"
+                                }
+                            ],
+                            "text": "RNPI"
+                        },
+                        "value": "556677"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Araya",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                                    "valueString": "Cortes"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Mauricio"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+56991234567"
+                    },
+                    {
+                        "system": "email",
+                        "value": "mauricio.araya@cesfam-villaelsol.cl"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1975-01-01",
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "value": "cert"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                                    "code": "1",
+                                    "display": "Médico Cirujano"
+                                }
+                            ],
+                            "text": "Médico Cirujano"
+                        },
+                        "issuer": {
+                            "display": "Universidad de Chile"
+                        }
+                    },
+                    {
+                        "identifier": [
+                            {
+                                "value": "esp"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                                    "code": "14",
+                                    "display": "Medicina Familiar"
+                                }
+                            ],
+                            "text": "Medicina Familiar"
+                        },
+                        "issuer": {
+                            "display": "Colegio Médico de Chile"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Organization/5e8f58d9-2ca1-4d71-a9b5-6688e8b1adfb",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "5e8f58d9-2ca1-4d71-a9b5-6688e8b1adfb",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+                        "value": "07053"
+                    }
+                ],
+                "name": "CESFAM Dr. Marcelo Lopetegui"
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Organization/2a5f4256-fd6b-43a8-b80f-9772f1f9f030",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "2a5f4256-fd6b-43a8-b80f-9772f1f9f030",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+                        "value": "102602"
+                    }
+                ],
+                "name": "Hospital Base de Osorno Dr. Pedro Montt"
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/PractitionerRole/35578fbd-a1be-4469-837f-e38ee298f131",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "35578fbd-a1be-4469-837f-e38ee298f131",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+                    ]
+                },
+                "practitioner": {
+                    "reference": "Practitioner/2d05eab7-c826-4c9e-9d8b-acefa5e272fe"
+                },
+                "organization": {
+                    "reference": "Organization/5e8f58d9-2ca1-4d71-a9b5-6688e8b1adfb"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                                "code": "referenciador",
+                                "display": "Referenciador"
+                            }
+                        ],
+                        "text": "referenciador"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/PractitionerRole/560008fe-ded9-4a86-808a-d0e0fce1346e",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "560008fe-ded9-4a86-808a-d0e0fce1346e",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+                    ]
+                },
+                "organization": {
+                    "reference": "Organization/2a5f4256-fd6b-43a8-b80f-9772f1f9f030"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                                "code": "atendedor",
+                                "display": "Atendedor"
+                            }
+                        ],
+                        "text": "atendedor"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "datosSistema": {
+        "software": "conector-osorno",
+        "endpoint": "hbosorno.cl"
+    },
+    "referenciaPaciente": "Patient/valentina-godoy-001",
+    "planDeAtencion": {
+        "indicacionesMedicas": "Control traumatológico por síndrome del túnel carpiano derecho",
+        "requiereExamen": true
+    },
+    "solicitudExamen": [
+        {
+            "fechaSolicitudIC": "2025-09-20 14:30:00",
+            "razonSolicitud": "Síntomas persistentes en muñeca derecha",
+            "examenSolicitadoCodigo": "100000-9",
+            "examenSolicitadoGlosa": "Electromiografía",
+            "examenSolicitadoDescripcion": "Evaluación de la conducción nerviosa"
+        }
+    ],
+    "solicitudIC": {
+        "idSolicitudServicio": "ic-osorno-001",
+        "idInterconsulta": "interconsulta-789",
+        "fechaSolicitudIC": "2025-09-20 14:30:00",
+        "modalidadAtencion": "1",
+        "derivadoPara": "1",
+        "prioridadIc": "urgent",
+        "atencionPreferente": false,
+        "resolutividadAPS": false,
+        "fundamentoPriorizacion": "Sospecha clínica con limitación funcional"
+    },
+    "diagnostico": {
+        "codeCIE10": "G56.01",
+        //"system": "http://hl7.org/fhir/sid/icd-10",
+        "texto": "Síndrome del túnel carpiano derecho",
+        "estadoDiagnostico": "active",
+        "estadoVerificacion": "confirmed",
+        "categoria": "encounter-diagnosis",
+        "severidad": "6736007"
+    },
+    "encuentroAtender": {
+        "identificadorConsultaEspecialidad": "consulta-traumatologia-001",
+        "pertinencia": true,
+        "codigoModalidadAtencion": "1",
+        "periodo": {
+            "fechaInicio": "25-09-2025 09:00:00",
+            "fechaFin": "25-09-2025 09:30:00"
+        }
+    },
+    "resultadoExamenes": [
+        {
+            "codigo": "100010-8",
+            "resultado": "Disminución en conducción nerviosa",
+            "fechaExamen": "2025-09-23 10:00:00"
+        }
+    ],
+    "anamnesis": {
+        "resultadoExamen": "Electromiografía confirma disminución de conducción nerviosa",
+        "fechaExamen": "2025-09-23 10:00:00"
+    },
+    "establecimiento": {
+        "origen": {
+            "nombreLegal": "Hospital Base San José de Osorno",
+            "codigoDEIS": "102015"
+        }
+    },
+    "prestador": {
+        "tipoPrestador": "profesional",
+        "identificadores": {
+            "RUN": "9876543-2",
+            "RNPI": "889900"
+        },
+        "nombreCompleto": {
+            "nombres": [
+                "Pamela"
+            ],
+            "primerApellido": "Torres",
+            "segundoApellido": "Soto"
+        },
+        "sexoRegistral": "female",
+        "nacionalidad": "056",
+        "contacto": [
+            {
+                "tipoDeContacto": "email",
+                "valorContacto": "pamela.torres@hospitalosorno.cl"
+            },
+            {
+                "tipoDeContacto": "phone",
+                "valorContacto": "+56912345678"
+            }
+        ],
+        "fechaNacimiento": "1980-06-01",
+        "titulosProfesionales": [
+            {
+                "nombre": "MÉDICO CIRUJANO",
+                "codigo": "1",
+                "fechaEmision": "2006-12-10",
+                "institucion": "Universidad de Chile"
+            }
+        ],
+        "especialidadesMedicas": [
+            {
+                "nombre": "TRAUMATOLOGÍA",
+                "codigo": "20",
+                "fechaEmision": "2012-04-18",
+                "institucion": "Colegio Médico de Chile"
+            }
+        ]
+    }
+}

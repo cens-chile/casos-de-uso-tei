@@ -1,0 +1,547 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAtenderLE"
+        ]
+    },
+    "type": "message",
+    "timestamp": "2025-09-29T12:19:52.844+00:00",
+    "entry": [
+        {
+            "fullUrl": "http://transformador-cens.cl/MessageHeader/017790f2-a8bb-4151-a25f-b4c1179d3d12",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "017790f2-a8bb-4151-a25f-b4c1179d3d12",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:19:52.863+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+                    ]
+                },
+                "eventCoding": {
+                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+                    "code": "atender",
+                    "display": "Atender"
+                },
+                "author": {
+                    "reference": "PractitionerRole/4733bfaf-53ef-42d2-8bd9-01c2c0ae5607"
+                },
+                "source": {
+                    "software": "conector-osorno",
+                    "endpoint": "hbosorno.cl"
+                },
+                "focus": [
+                    {
+                        "reference": "ServiceRequest/ic-osorno-001"
+                    },
+                    {
+                        "reference": "Encounter/8d9a39bd-002d-4446-9711-0f49f4ed7cc4"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/ServiceRequest/ic-osorno-001",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "ic-osorno-001",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                                    "code": "6",
+                                    "display": "A la espera de cierre"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "interconsulta-789"
+                    }
+                ],
+                "status": "draft",
+                "intent": "order",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                                "code": "1",
+                                "display": "Presencial"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "authoredOn": "2025-09-20T14:30:00+00:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/4733bfaf-53ef-42d2-8bd9-01c2c0ae5607"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Practitioner/088a918d-d131-4dcf-bd9b-b5751264daaa",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "088a918d-d131-4dcf-bd9b-b5751264daaa",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:19:52.907+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "code": "056",
+                                    "display": "Belgium"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                                    "code": "01",
+                                    "display": "RUN"
+                                }
+                            ],
+                            "text": "RUN"
+                        },
+                        "value": "9876543-2"
+                    },
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                                    "code": "13",
+                                    "display": "RNPI"
+                                }
+                            ],
+                            "text": "RNPI"
+                        },
+                        "value": "889900"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Torres",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                                    "valueString": "Soto"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Pamela"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "pamela.torres@hospitalosorno.cl"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "+56912345678"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1980-06-01",
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "value": "cert"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                                    "code": "1",
+                                    "display": "MÉDICO CIRUJANO"
+                                }
+                            ],
+                            "text": "MÉDICO CIRUJANO"
+                        },
+                        "period": {
+                            "start": "2006-12-10T00:00:00+00:00"
+                        },
+                        "issuer": {
+                            "display": "Universidad de Chile"
+                        }
+                    },
+                    {
+                        "identifier": [
+                            {
+                                "value": "esp"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                                    "code": "20",
+                                    "display": "TRAUMATOLOGÍA"
+                                }
+                            ],
+                            "text": "TRAUMATOLOGÍA"
+                        },
+                        "period": {
+                            "start": "2012-04-18T00:00:00+00:00"
+                        },
+                        "issuer": {
+                            "display": "Colegio Médico de Chile"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/PractitionerRole/4733bfaf-53ef-42d2-8bd9-01c2c0ae5607",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "4733bfaf-53ef-42d2-8bd9-01c2c0ae5607",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+                    ]
+                },
+                "practitioner": {
+                    "reference": "Practitioner/088a918d-d131-4dcf-bd9b-b5751264daaa"
+                },
+                "organization": {
+                    "reference": "Organization/ecd4eb87-1698-45cc-b1ba-1a51b09c317b"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                                "code": "atendedor",
+                                "display": "Atendedor"
+                            }
+                        ],
+                        "text": "atendedor"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Organization/ecd4eb87-1698-45cc-b1ba-1a51b09c317b",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "ecd4eb87-1698-45cc-b1ba-1a51b09c317b",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+                        "value": "102015"
+                    }
+                ],
+                "name": "Hospital Base San José de Osorno"
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Condition/980a23bf-f4b3-44c0-8ae6-9eaab84c9455",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "980a23bf-f4b3-44c0-8ae6-9eaab84c9455",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:19:53.154+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ]
+                    }
+                ],
+                "severity": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "6736007"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10",
+                            "code": "G56.01"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Observation/596993a4-504f-4ff0-b666-3cd6251510f4",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "596993a4-504f-4ff0-b666-3cd6251510f4",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:19:53.326+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAnamnesisLE"
+                    ]
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "84100007",
+                            "display": "historia clínica"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "encounter": {
+                    "reference": "Encounter/8d9a39bd-002d-4446-9711-0f49f4ed7cc4"
+                },
+                "effectiveDateTime": "2025-09-23T10:00:00+00:00",
+                "valueString": "Electromiografía confirma disminución de conducción nerviosa"
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/ServiceRequest/c92713b7-d63b-4f92-9448-e7fb1021d988",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "c92713b7-d63b-4f92-9448-e7fb1021d988",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "value": "c92713b7-d63b-4f92-9448-e7fb1021d988"
+                    }
+                ],
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/ic-osorno-001"
+                    }
+                ],
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "100000-9",
+                            "display": "Electromiografía"
+                        }
+                    ],
+                    "text": "Evaluación de la conducción nerviosa"
+                },
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "authoredOn": "2025-09-20T14:30:00+00:00",
+                "requester": {
+                    "reference": "Practitioner/088a918d-d131-4dcf-bd9b-b5751264daaa"
+                },
+                "reasonCode": [
+                    {
+                        "text": "Síntomas persistentes en muñeca derecha"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Observation/f355b046-5e30-4d54-89a4-0fbcb3781448",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f355b046-5e30-4d54-89a4-0fbcb3781448",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen"
+                    ]
+                },
+                "status": "registered",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "100010-8"
+                        }
+                    ],
+                    "text": "exámenes"
+                },
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "encounter": {
+                    "reference": "Encounter/8d9a39bd-002d-4446-9711-0f49f4ed7cc4"
+                },
+                "effectiveDateTime": "2025-09-23T10:00:00+00:00",
+                "valueString": "Disminución en conducción nerviosa"
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/Encounter/8d9a39bd-002d-4446-9711-0f49f4ed7cc4",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "8d9a39bd-002d-4446-9711-0f49f4ed7cc4",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaAtencionBox",
+                        "valueBoolean": true
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "consulta-traumatologia-001"
+                    }
+                ],
+                "status": "finished",
+                "class": {
+                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                    "code": "1",
+                    "display": "Presencial"
+                },
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/ic-osorno-001"
+                    }
+                ],
+                "period": {
+                    "start": "2025-09-25T09:00:00+00:00",
+                    "end": "2025-09-25T09:30:00+00:00"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/980a23bf-f4b3-44c0-8ae6-9eaab84c9455"
+                        }
+                    }
+                ],
+                "serviceProvider": {
+                    "reference": "Organization/ecd4eb87-1698-45cc-b1ba-1a51b09c317b"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://transformador-cens.cl/CarePlan/fb7304ac-928d-4b36-aec8-6a96d1c19242",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "fb7304ac-928d-4b36-aec8-6a96d1c19242",
+                "meta": {
+                    "lastUpdated": "2025-09-29T12:19:53.355+00:00",
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes",
+                        "valueBoolean": true
+                    }
+                ],
+                "status": "active",
+                "intent": "plan",
+                "description": "Control traumatológico por síndrome del túnel carpiano derecho",
+                "subject": {
+                    "reference": "Patient/valentina-godoy-001"
+                },
+                "encounter": {
+                    "reference": "Encounter/8d9a39bd-002d-4446-9711-0f49f4ed7cc4"
+                },
+                "activity": [
+                    {
+                        "reference": {
+                            "reference": "ServiceRequest/c92713b7-d63b-4f92-9448-e7fb1021d988"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
