@@ -30,7 +30,7 @@
     },
     "diagnostico": {
         "codeCIE10": "G56.01",
-        //"system": "http://hl7.org/fhir/sid/icd-10",
+        
         "texto": "Síndrome del túnel carpiano derecho",
         "estadoDiagnostico": "active",
         "estadoVerificacion": "confirmed",

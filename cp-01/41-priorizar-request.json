@@ -1,0 +1,79 @@
+{
+    "datosSistema": {
+        "software": "conector-osorno",
+        "endpoint": "hbosorno.cl"
+    },
+    "referenciaPaciente": "Patient/valentina-godoy-17456321-5",
+    "prestadorProfesional": {
+        "tipoPrestador": "profesional",
+        "identificadores": {
+            "RUN": "13245678-4",
+            "RNPI": "556677"
+        },
+        "nombreCompleto": {
+            "nombres": [
+                "Mauricio"
+            ],
+            "primerApellido": "Araya",
+            "segundoApellido": "Cortés"
+        },
+        "sexoRegistral": "male",
+        "nacionalidad": "056",
+        "contacto": [
+            {
+                "tipoDeContacto": "phone",
+                "valorContacto": "+56999887766"
+            },
+            {
+                "tipoDeContacto": "email",
+                "valorContacto": "mauricio.araya@cesfamvillasol.cl"
+            }
+        ],
+        "direccion": {
+            "descripcion": "Calle Los Aromos 123",
+            "comuna": {
+                "nombre": "Osorno",
+                "codigo": "10301"
+            },
+            "region": {
+                "nombre": "Región de Los Lagos",
+                "codigo": "10"
+            },
+            "provincia": {
+                "nombre": "Osorno",
+                "codigo": "103"
+            },
+            "pais": {
+                "nombre": "Chile",
+                "codigo": "056"
+            }
+        },
+        "fechaNacimiento": "1975-01-01",
+        "titulosProfesionales": [
+            {
+                "nombre": "Médico Cirujano",
+                "codigo": "1",
+                "fechaEmision": "2005-12-20",
+                "institucion": "Universidad Austral de Chile"
+            }
+        ],
+        "especialidadesMedicas": [
+            {
+                "nombre": "Medicina Familiar",
+                "codigo": "3",
+                "fechaEmision": "2010-11-15",
+                "institucion": "Colegio Médico de Chile"
+            }
+        ]
+    },
+    "solicitudIC": {
+        "idInterconsulta": "IC-2025-0001",
+        
+        "modalidadAtencion": "2",
+        "prioridadIc": "urgent"
+    },
+    "establecimiento": {
+        "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
+        "codigoDEIS": "102100"
+    }
+}

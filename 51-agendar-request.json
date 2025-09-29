@@ -5,7 +5,7 @@
     },
     "solicitudIC": {
         "idInterconsulta": "IC-2025-0001",
-        // "fechaSolicitudIC": "05-09-2025",
+        
         "modalidadAtencion": "1"
     },
     "prestadorProfesional": {

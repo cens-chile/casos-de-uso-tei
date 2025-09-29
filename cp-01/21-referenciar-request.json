@@ -1,0 +1,76 @@
+{
+    "datosSistema": {
+        "software": "conector-osorno",
+        "endpoint": "hbosorno.cl"
+    },
+    "referenciaPaciente": "Patient/17.456.321-5",
+    "prestadorReferenciador": {
+        "tipoPrestador": "profesional",
+        "identificadores": {
+            "RUN": "13.245.678-4",
+            "RNPI": "556677"
+        },
+        "nombreCompleto": {
+            "nombres": [
+                "Mauricio"
+            ],
+            "primerApellido": "Araya",
+            "segundoApellido": "Cortes"
+        },
+        "sexoRegistral": "male",
+        "nacionalidad": "152",
+        "contacto": [
+            {
+                "tipoDeContacto": "phone",
+                "valorContacto": "+56991234567"
+            },
+            {
+                "tipoDeContacto": "email",
+                "valorContacto": "mauricio.araya@cesfam-villaelsol.cl"
+            }
+        ],
+        "fechaNacimiento": "1975-01-01",
+        "titulosProfesionales": [
+            {
+                "nombre": "Médico Cirujano",
+                "codigo": "1",
+                "institucion": "Universidad de Chile"
+            }
+        ],
+        "especialidadesMedicas": [
+            {
+                "nombre": "Medicina Familiar",
+                "codigo": "14",
+                "institucion": "Colegio Médico de Chile"
+            }
+        ]
+    },
+    "establecimiento": {
+        "origen": {
+            "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+            "codigoDEIS": "07053",
+            "direccion": "Calle Los Aromos 123, Osorno"
+        },
+        "destino": {
+            "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
+            "codigoDEIS": "102602"
+        }
+    },
+    "solicitudIC": {
+        "idSolicitudServicio": "SR-20250905-001",
+        "idInterconsulta": "IC-20250905-0001",
+        "fechaSolicitudIC": "05-09-2025 10:15:00",
+        "destinoAtencion": "1",
+        "modalidadAtencion": 1,
+        "prioridadIC": "routine",
+        "resolutividadAPS": true,
+        "especialidadMedicaDestino": {
+            "codigo": "14",
+            "tipo": "medica"
+        },
+        "subEspecialidadMedicaDestino": {
+            "codigo": "14",
+            "tipo": "medica"
+        }
+    }
+}
