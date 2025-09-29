@@ -1,0 +1,346 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2025-09-29T14:26:56.337+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/680cbb91-bfae-46e7-897d-6e36bd22e811",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "680cbb91-bfae-46e7-897d-6e36bd22e811",
+        "meta": {
+          "lastUpdated": "2025-09-29T14:26:56.340+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "priorizar",
+          "display": "Priorizar"
+        },
+        "author": {
+          "reference": "PractitionerRole/0f0f647d-b959-4d29-b899-14f146570f1f"
+        },
+        "source": {
+          "software": "conector-osorno",
+          "endpoint": "hbosorno.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/fb241e34-2740-4b20-8813-7c1260df641e"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/0f0f647d-b959-4d29-b899-14f146570f1f",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "0f0f647d-b959-4d29-b899-14f146570f1f",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/3d455632-55dd-4776-8da8-e8dad78d188a"
+        },
+        "organization": {
+          "reference": "Organization/86282de5-7bbe-4340-980d-baf4f1306060"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "priorizador",
+                "display": "Priorizador"
+              }
+            ],
+            "text": "priorizador"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/fb241e34-2740-4b20-8813-7c1260df641e",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "fb241e34-2740-4b20-8813-7c1260df641e",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "4",
+                  "display": "A la espera de agendamiento"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "IC-2025-0001"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                "code": "2",
+                "display": "Remota"
+              }
+            ]
+          }
+        ],
+        "priority": "urgent",
+        "subject": {
+          "reference": "Patient/valentina-godoy-17456321-5"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Practitioner/3d455632-55dd-4776-8da8-e8dad78d188a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3d455632-55dd-4776-8da8-e8dad78d188a",
+        "meta": {
+          "lastUpdated": "2025-09-29T14:26:56.341+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "code": "056",
+                  "display": "Belgium"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "13245678-4"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "556677"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Araya",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Cortés"
+                }
+              ]
+            },
+            "given": [
+              "Mauricio"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+56999887766"
+          },
+          {
+            "system": "email",
+            "value": "mauricio.araya@cesfamvillasol.cl"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "Calle Los Aromos 123"
+            ],
+            "_city": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                        "code": "10301",
+                        "display": "Osorno"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_district": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                        "code": "103",
+                        "display": "Osorno"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_state": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                        "code": "10",
+                        "display": "De los Lagos"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_country": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                        "code": "056",
+                        "display": "Belgium"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1975-01-01",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "1",
+                  "display": "Médico Cirujano"
+                }
+              ],
+              "text": "Médico Cirujano"
+            },
+            "period": {
+              "start": "2005-12-20T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Universidad Austral de Chile"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "3",
+                  "display": "Medicina Familiar"
+                }
+              ],
+              "text": "Medicina Familiar"
+            },
+            "period": {
+              "start": "2010-11-15T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Colegio Médico de Chile"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Organization/86282de5-7bbe-4340-980d-baf4f1306060",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "86282de5-7bbe-4340-980d-baf4f1306060",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "102100"
+          }
+        ],
+        "name": "Hospital Base de Osorno Dr. Pedro Montt"
+      }
+    }
+  ]
+}
