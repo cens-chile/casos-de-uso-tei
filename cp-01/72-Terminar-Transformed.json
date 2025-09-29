@@ -1,1 +1,363 @@
-{"resourceType":"Bundle","meta":{"profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"]},"type":"message","timestamp":"2025-09-29T14:18:08.566+00:00","entry":[{"fullUrl":"http://transformador-cens.cl/MessageHeader/b819fb91-122d-4714-9f81-c9821fe1a55a","resource":{"resourceType":"MessageHeader","id":"b819fb91-122d-4714-9f81-c9821fe1a55a","meta":{"lastUpdated":"2025-09-29T14:18:08.570+00:00","profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"]},"eventCoding":{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE","code":"terminar","display":"Terminar"},"author":{"reference":"PractitionerRole/ffd8372c-23b5-4b57-84d6-fe924d4f02a2"},"source":{"software":"conector-osorno","endpoint":"hbosorno.cl"},"focus":[{"reference":"ServiceRequest/ic-osorno-001"}]}},{"fullUrl":"http://transformador-cens.cl/ServiceRequest/ic-osorno-001","resource":{"resourceType":"ServiceRequest","id":"ic-osorno-001","meta":{"profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"]},"extension":[{"url":"https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE","valueCodeableConcept":{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta","code":"7","display":"Cerrada"}]}},{"url":"https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta","valueCodeableConcept":{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta","code":"1","display":"GES (0)"}]}}],"identifier":[{"value":"interconsulta-789"}],"status":"draft","intent":"order","category":[{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo","code":"1","display":"Presencial"}]}],"subject":{"reference":"Patient/valentina-godoy-001"},"authoredOn":"2025-09-20T00:00:00+00:00","performer":[{"reference":"PractitionerRole/ffd8372c-23b5-4b57-84d6-fe924d4f02a2"}]}},{"fullUrl":"http://transformador-cens.cl/Practitioner/366922c4-0080-4354-8a56-e92d49c4d956","resource":{"resourceType":"Practitioner","id":"366922c4-0080-4354-8a56-e92d49c4d956","meta":{"lastUpdated":"2025-09-29T14:18:08.572+00:00","profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"]},"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises","valueCodeableConcept":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais","code":"056","display":"Belgium"}]}}],"identifier":[{"use":"official","type":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador","code":"01","display":"RUN"}],"text":"RUN"},"value":"9876543-2"},{"use":"official","type":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador","code":"13","display":"RNPI"}],"text":"RNPI"},"value":"889900"}],"active":true,"name":[{"use":"official","family":"Torres","_family":{"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido","valueString":"Soto"}]},"given":["Pamela"]}],"telecom":[{"system":"phone","value":"+56912345678"},{"system":"email","value":"pamela.torres@hospitalosorno.cl"}],"address":[{"use":"work","line":["Av. Los Notros 1234"],"_city":{"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl","valueCodeableConcept":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL","code":"10201","display":"Castro"}]}}]},"_district":{"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl","valueCodeableConcept":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL","code":"102","display":"Chiloé"}]}}]},"_state":{"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl","valueCodeableConcept":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL","code":"10","display":"De los Lagos"}]}}]},"_country":{"extension":[{"url":"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises","valueCodeableConcept":{"coding":[{"system":"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais","code":"152","display":"Chile"}]}}]}}],"gender":"female","birthDate":"1980-06-01","qualification":[{"identifier":[{"value":"cert"}],"code":{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional","code":"1","display":"MÉDICO CIRUJANO"}],"text":"MÉDICO CIRUJANO"},"period":{"start":"2006-12-10T00:00:00+00:00"},"issuer":{"display":"Universidad de Chile"}},{"identifier":[{"value":"esp"}],"code":{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed","code":"20","display":"TRAUMATOLOGÍA"}],"text":"TRAUMATOLOGÍA"},"period":{"start":"2012-04-18T00:00:00+00:00"},"issuer":{"display":"Colegio Médico de Chile"}}]}},{"fullUrl":"http://transformador-cens.cl/Organization/a1211ed4-2da7-4b56-b433-89da37b3e7d4","resource":{"resourceType":"Organization","id":"a1211ed4-2da7-4b56-b433-89da37b3e7d4","meta":{"profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"]},"identifier":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino","value":"102015"}],"name":"Hospital Base San José de Osorno"}},{"fullUrl":"http://transformador-cens.cl/PractitionerRole/ffd8372c-23b5-4b57-84d6-fe924d4f02a2","resource":{"resourceType":"PractitionerRole","id":"ffd8372c-23b5-4b57-84d6-fe924d4f02a2","meta":{"profile":["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"]},"practitioner":{"reference":"Practitioner/366922c4-0080-4354-8a56-e92d49c4d956"},"organization":{"reference":"Organization/a1211ed4-2da7-4b56-b433-89da37b3e7d4"},"code":[{"coding":[{"system":"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE","code":"terminador","display":"Terminador"}],"text":"terminador"}]}}]}
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2025-09-29T14:23:42.717+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/5ef92ac2-ee84-4a8a-b291-fcade96f57dd",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "5ef92ac2-ee84-4a8a-b291-fcade96f57dd",
+        "meta": {
+          "lastUpdated": "2025-09-29T14:23:42.719+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "terminar",
+          "display": "Terminar"
+        },
+        "author": {
+          "reference": "PractitionerRole/bee2bb05-5561-4d89-82f6-b1c97d761922"
+        },
+        "source": {
+          "software": "conector-osorno",
+          "endpoint": "hbosorno.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/ic-osorno-001"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/ic-osorno-001",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ic-osorno-001",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "7",
+                  "display": "Cerrada"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
+                  "code": "1",
+                  "display": "GES (0)"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "interconsulta-789"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                "code": "1",
+                "display": "Presencial"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/valentina-godoy-001"
+        },
+        "authoredOn": "2025-09-20T00:00:00+00:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/bee2bb05-5561-4d89-82f6-b1c97d761922"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Practitioner/d47283d1-adc0-4cd7-8ba5-9fea92e18e8f",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "d47283d1-adc0-4cd7-8ba5-9fea92e18e8f",
+        "meta": {
+          "lastUpdated": "2025-09-29T14:23:42.723+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "code": "056",
+                  "display": "Belgium"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "9876543-2"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "889900"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Torres",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Soto"
+                }
+              ]
+            },
+            "given": [
+              "Pamela"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+56912345678"
+          },
+          {
+            "system": "email",
+            "value": "pamela.torres@hospitalosorno.cl"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "Av. Los Notros 1234"
+            ],
+            "_city": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                        "code": "10201",
+                        "display": "Castro"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_district": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                        "code": "102",
+                        "display": "Chiloé"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_state": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                        "code": "10",
+                        "display": "De los Lagos"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_country": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                        "code": "152",
+                        "display": "Chile"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1980-06-01",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "1",
+                  "display": "MÉDICO CIRUJANO"
+                }
+              ],
+              "text": "MÉDICO CIRUJANO"
+            },
+            "period": {
+              "start": "2006-12-10T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Universidad de Chile"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "20",
+                  "display": "TRAUMATOLOGÍA"
+                }
+              ],
+              "text": "TRAUMATOLOGÍA"
+            },
+            "period": {
+              "start": "2012-04-18T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Colegio Médico de Chile"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Organization/57c36352-eb67-4350-a4b1-4d89e942e7f7",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "57c36352-eb67-4350-a4b1-4d89e942e7f7",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "102015"
+          }
+        ],
+        "name": "Hospital Base San José de Osorno"
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/bee2bb05-5561-4d89-82f6-b1c97d761922",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "bee2bb05-5561-4d89-82f6-b1c97d761922",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/d47283d1-adc0-4cd7-8ba5-9fea92e18e8f"
+        },
+        "organization": {
+          "reference": "Organization/57c36352-eb67-4350-a4b1-4d89e942e7f7"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "terminador",
+                "display": "Terminador"
+              }
+            ],
+            "text": "terminador"
+          }
+        ]
+      }
+    }
+  ]
+}

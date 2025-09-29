@@ -1,85 +1,85 @@
 {
-    "datosSistema": {
-        "software": "conector-osorno",
-        "endpoint": "hbosorno.cl"
+  "datosSistema": {
+    "software": "conector-osorno",
+    "endpoint": "hbosorno.cl"
+  },
+  "referenciaPaciente": "Patient/17.456.321-5",
+  "prestadorRevisor": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "12.678.345-1",
+      "RNPI": "889900"
     },
-    "referenciaPaciente": "Patient/17.456.321-5",
-    "prestadorRevisor": {
-        "tipoPrestador": "profesional",
-        "identificadores": {
-            "RUN": "12.678.345-1",
-            "RNPI": "889900"
-        },
-        "nombreCompleto": {
-            "nombres": [
-                "Pamela"
-            ],
-            "primerApellido": "Torres",
-            "segundoApellido": "Silva"
-        },
-        "sexoRegistral": "female",
-        "nacionalidad": "152",
-        "contacto": [
-            {
-                "tipoDeContacto": "phone",
-                "valorContacto": "+56987654321"
-            },
-            {
-                "tipoDeContacto": "email",
-                "valorContacto": "pamela.torres@hospital-osorno.cl"
-            }
-        ],
-        "fechaNacimiento": "1978-05-10",
-        "titulosProfesionales": [
-            {
-                "nombre": "Médico Cirujano",
-                "codigo": "1",
-                "institucion": "Universidad Austral de Chile"
-            }
-        ],
-        "especialidadesMedicas": [
-            {
-                "nombre": "Traumatología",
-                "codigo": "14",
-                "institucion": "Colegio Médico de Chile"
-            }
-        ]
+    "nombreCompleto": {
+      "nombres": [
+        "Pamela"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Silva"
     },
-    "establecimiento": {
-        "origen": {
-            "nombreLegal": "CESFAM Villa El Sol",
-            "codigoDEIS": "102601"
-        },
-        "destino": {
-            "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
-            "codigoDEIS": "102602"
-        }
-    },
-    "solicitudIC": {
-        "idSolicitudServicio": "SR-20250905-001",
-        "idInterconsulta": "IC-20250905-0001",
-        "modalidadAtencion": 1,
-        "destinoAtencion": "4",
-        "resolutividadAPS": true,
-        "especialidadMedicaDestino": {
-            "codigo": "14",
-            "tipo": "medica"
-        },
-        "subEspecialidadMedicaDestino": {
-            "codigo": "14",
-            "tipo": "medica"
-        },
-        "pertinenciaIC": {
-            "codigo": "1",
-            "motivoNoPertinencia": ""
-        }
-    },
-    "solicitudExamen": [
-        {
-            "fechaSolicitudIC": "2025-08-14 09:30:00",
-            "razonSolicitud": "Electromiografía para confirmar diagnóstico de túnel carpiano",
-            "examenSolicitadoCodigo": "100003-3",
-            "examenSolicitado": "Electromiografía de miembro superior derecho"
-        }
+    "sexoRegistral": "female",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56987654321"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "pamela.torres@hospital-osorno.cl"
+      }
+    ],
+    "fechaNacimiento": "1978-05-10",
+    "titulosProfesionales": [
+      {
+        "nombre": "Médico Cirujano",
+        "codigo": "1",
+        "institucion": "Universidad Austral de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "Traumatología",
+        "codigo": "14",
+        "institucion": "Colegio Médico de Chile"
+      }
     ]
+  },
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Villa El Sol",
+      "codigoDEIS": "102601"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
+      "codigoDEIS": "102602"
+    }
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SR-20250905-001",
+    "idInterconsulta": "IC-20250905-0001",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "4",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    },
+    "subEspecialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    },
+    "pertinenciaIC": {
+      "codigo": "1",
+      "motivoNoPertinencia": ""
+    }
+  },
+  "solicitudExamen": [
+    {
+      "fechaSolicitudIC": "2025-08-14 09:30:00",
+      "razonSolicitud": "Electromiografía para confirmar diagnóstico de túnel carpiano",
+      "examenSolicitadoCodigo": "100003-3",
+      "examenSolicitado": "Electromiografía de miembro superior derecho"
+    }
+  ]
 }
