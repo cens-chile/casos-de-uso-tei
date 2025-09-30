@@ -1,0 +1,58 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "prestadorReferenciador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "13.245.678-4",
+      "RNPI": "556677"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Mauricio"
+      ],
+      "primerApellido": "Araya",
+      "segundoApellido": "Cortes"
+    },
+    "sexoRegistral": "male",
+    "fechaNacimiento": "1975-06-15",
+    "titulosProfesionales": [
+      {
+        "codigo": "1",
+        "nombre": "MÉDICO CIRUJANO"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "codigo": "39",
+        "nombre": "Medicina Familiar"
+      }
+    ]
+  },
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "1765",
+      "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+    }
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SIC-2025-002",
+    "idInterconsulta": "IC-2025-0002",
+    "idLocalIC": "local-IC-002",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "4",
+    "resolutividadAPS": false,
+    "especialidadMedicaDestino": {
+      "codigo": "20",
+      "tipo": "medica"
+    }
+  }
+}

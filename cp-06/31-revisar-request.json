@@ -1,0 +1,71 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idInterconsulta": "IC-CP06-0006",
+    "idSolicitudServicio": "SR-CP06-0006",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "4",
+    "resolutividadAPS": false,
+    "pertinenciaIC": {
+      "codigo": "1",
+      "motivoNoPertinencia": ""
+    },
+    "especialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    }
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
+      "codigoDEIS": "1765",
+      "direccion": "Av. Yungay 340, Osorno"
+    }
+  },
+  "prestadorRevisor": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "18.765.432-1",
+      "RNPI": "778899"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Ana",
+        "Sofía"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramírez"
+    },
+    "sexoRegistral": "female",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56987543219",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "fechaNacimiento": "1988-02-12",
+    "titulosProfesionales": [
+      {
+        "nombre": "Enfermera",
+        "codigo": "2",
+        "institucion": "Universidad Austral de Chile"
+      }
+    ]
+  }
+}

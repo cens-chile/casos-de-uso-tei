@@ -1,0 +1,77 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SR-20250905-001",
+    "idInterconsulta": "IC-20250905-0003",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "4",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    },
+    "subEspecialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    },
+    "pertinenciaIC": {
+      "codigo": "1",
+      "motivoNoPertinencia": ""
+    }
+  },
+  "prestadorRevisor": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "18.765.432-1",
+      "RNPI": "778899"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Ana",
+        "Sofía"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramírez"
+    },
+    "sexoRegistral": "female",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56987543219"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl"
+      }
+    ],
+    "fechaNacimiento": "1988-02-12",
+    "titulosProfesionales": [
+      {
+        "nombre": "Enfermera",
+        "codigo": "2",
+        "institucion": "Universidad Austral de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "123100",
+      "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+    }
+  },
+  "evaluacion": {
+    "resultadoRevision": "aprobada",
+    "justificacion": "Se realiza revisión definitiva considerando que todos los antecedentes clínicos están completos y actualizados."
+  }
+}

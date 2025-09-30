@@ -1,0 +1,79 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SR-20250905-004",
+    "idInterconsulta": "IC-20250905-0004",
+    "idLocalIC": "sic-004",
+    "fechaSolicitudIC": "2025-09-05T10:30:00",
+    "estadoSIC": "pendiente de revisión",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "1",
+    "prioridadIC": "routine",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    },
+    "subEspecialidadMedicaDestino": {
+      "codigo": "14",
+      "tipo": "medica"
+    }
+  },
+  "prestadorReferenciador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "12345678-9",
+      "RNPI": "556677"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Mauricio"
+      ],
+      "primerApellido": "Araya",
+      "segundoApellido": "Cortes"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56991234567"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "mauricio.araya@cesfam-lopetegui.cl"
+      }
+    ],
+    "fechaNacimiento": "1970-05-15",
+    "titulosProfesionales": [
+      {
+        "nombre": "Médico Cirujano",
+        "codigo": "1",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "Medicina Familiar",
+        "codigo": "14",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "123100",
+      "direccion": "Av. Yungay 340, Osorno"
+    }
+  }
+}

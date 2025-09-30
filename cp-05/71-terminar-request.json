@@ -1,0 +1,59 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "prestador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "889900",
+      "RNPI": "889900"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Javier"
+      ],
+      "primerApellido": "Molina",
+      "segundoApellido": "Reyes"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "152",
+    "fechaNacimiento": "1979-06-05",
+    "titulosProfesionales": [
+      {
+        "nombre": "MÉDICO CIRUJANO",
+        "codigo": "1",
+        "fechaEmision": "2005-12-10",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "TRAUMATOLOGÍA",
+        "codigo": "34",
+        "fechaEmision": "2010-04-18",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ],
+    "contacto": [
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "javier.molina@hospitaldigital.cl"
+      }
+    ]
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SIC-2025-0005",
+    "idInterconsulta": "IC-2025-0005",
+    "fechaSolicitudIC": "2025-09-05T10:15:00",
+    "modalidadAtencion": "3",
+    "codigoMotivoCierreIC": "18",
+    "observacionesCierre": "Paciente atendido en Hospital Digital y caso egresado por APS bajo causal 19."
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "establecimiento": {
+    "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+    "codigoDEIS": "123301",
+    "direccion": "Calle Los Aromos 123, Osorno"
+  }
+}

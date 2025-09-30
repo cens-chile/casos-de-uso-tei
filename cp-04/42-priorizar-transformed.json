@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:54.581+00:00",
+  "timestamp": "2025-09-30T09:58:35.036+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/0d543f59-45c7-409b-a85a-8bcd4b28cb8f",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/015d94d4-9207-420f-a559-6cccf5e0f630",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "0d543f59-45c7-409b-a85a-8bcd4b28cb8f",
+        "id": "015d94d4-9207-420f-a559-6cccf5e0f630",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.585+00:00",
+          "lastUpdated": "2025-09-30T09:58:35.040+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,34 +25,34 @@
           "display": "Priorizar"
         },
         "author": {
-          "reference": "PractitionerRole/659af8b8-6770-4ed0-8ae2-a49418ac3f98"
+          "reference": "PractitionerRole/2ff21d43-a3ed-451c-a7c8-e94c320c576e"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/602954e5-c980-4f3d-81a1-1a75adf6926e"
+            "reference": "ServiceRequest/3b6136ca-7477-40f8-9e89-01d549c125ab"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/659af8b8-6770-4ed0-8ae2-a49418ac3f98",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/2ff21d43-a3ed-451c-a7c8-e94c320c576e",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "659af8b8-6770-4ed0-8ae2-a49418ac3f98",
+        "id": "2ff21d43-a3ed-451c-a7c8-e94c320c576e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/82c6ccbd-715b-4bd5-8173-cc580e42d91b"
+          "reference": "Practitioner/f17c9488-fe53-4b00-b23d-d0bf00e30b97"
         },
         "organization": {
-          "reference": "Organization/d5519a22-cc6e-4ac9-a2cc-83a7be2396f9"
+          "reference": "Organization/c2120e49-a7fa-492e-a707-9690ca8ea392"
         },
         "code": [
           {
@@ -69,10 +69,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/602954e5-c980-4f3d-81a1-1a75adf6926e",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/3b6136ca-7477-40f8-9e89-01d549c125ab",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "602954e5-c980-4f3d-81a1-1a75adf6926e",
+        "id": "3b6136ca-7477-40f8-9e89-01d549c125ab",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -94,7 +94,7 @@
         ],
         "identifier": [
           {
-            "value": "IC-2025-0001"
+            "value": "SR-20250905-004"
           }
         ],
         "status": "draft",
@@ -112,17 +112,17 @@
         ],
         "priority": "urgent",
         "subject": {
-          "reference": "Patient/valentina-godoy-17456321-5"
+          "reference": "Patient/valentina-godoy-001"
         }
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/82c6ccbd-715b-4bd5-8173-cc580e42d91b",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/f17c9488-fe53-4b00-b23d-d0bf00e30b97",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "82c6ccbd-715b-4bd5-8173-cc580e42d91b",
+        "id": "f17c9488-fe53-4b00-b23d-d0bf00e30b97",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.590+00:00",
+          "lastUpdated": "2025-09-30T09:58:35.046+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -154,7 +154,7 @@
               ],
               "text": "RUN"
             },
-            "value": "13245678-4"
+            "value": "15.678.901-2"
           },
           {
             "use": "official",
@@ -168,111 +168,39 @@
               ],
               "text": "RNPI"
             },
-            "value": "556677"
+            "value": "667788"
           }
         ],
         "active": true,
         "name": [
           {
             "use": "official",
-            "family": "Araya",
+            "family": "Mendez",
             "_family": {
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Cortés"
+                  "valueString": "Salazar"
                 }
               ]
             },
             "given": [
-              "Mauricio"
+              "Javier"
             ]
           }
         ],
         "telecom": [
           {
             "system": "phone",
-            "value": "+56999887766"
+            "value": "+569912345678"
           },
           {
             "system": "email",
-            "value": "mauricio.araya@cesfamvillasol.cl"
-          }
-        ],
-        "address": [
-          {
-            "use": "work",
-            "line": [
-              "Calle Los Aromos 123"
-            ],
-            "_city": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-                        "code": "10301",
-                        "display": "Osorno"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_district": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-                        "code": "103",
-                        "display": "Osorno"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_state": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
-                        "code": "10",
-                        "display": "De los Lagos"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_country": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                        "code": "056",
-                        "display": "Belgium"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
+            "value": "javier.mendez@hospitalosorno.cl"
           }
         ],
         "gender": "male",
-        "birthDate": "1975-01-01",
+        "birthDate": "1979-06-05",
         "qualification": [
           {
             "identifier": [
@@ -291,10 +219,10 @@
               "text": "Médico Cirujano"
             },
             "period": {
-              "start": "2005-12-20T00:00:00+00:00"
+              "start": "2003-12-20T00:00:00+00:00"
             },
             "issuer": {
-              "display": "Universidad Austral de Chile"
+              "display": "Universidad de Chile"
             }
           },
           {
@@ -308,13 +236,13 @@
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
                   "code": "3",
-                  "display": "Medicina Familiar"
+                  "display": "Medicina General"
                 }
               ],
-              "text": "Medicina Familiar"
+              "text": "Medicina General"
             },
             "period": {
-              "start": "2010-11-15T00:00:00+00:00"
+              "start": "2008-11-15T00:00:00+00:00"
             },
             "issuer": {
               "display": "Colegio Médico de Chile"
@@ -324,10 +252,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/d5519a22-cc6e-4ac9-a2cc-83a7be2396f9",
+      "fullUrl": "http://transformador-cens.cl/Organization/c2120e49-a7fa-492e-a707-9690ca8ea392",
       "resource": {
         "resourceType": "Organization",
-        "id": "d5519a22-cc6e-4ac9-a2cc-83a7be2396f9",
+        "id": "c2120e49-a7fa-492e-a707-9690ca8ea392",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -336,10 +264,10 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102100"
+            "value": "123100"
           }
         ],
-        "name": "Hospital Base de Osorno Dr. Pedro Montt"
+        "name": "Hospital Base San José de Osorno"
       }
     }
   ]

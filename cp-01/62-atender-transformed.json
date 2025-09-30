@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-29T14:26:56.577+00:00",
+  "timestamp": "2025-09-30T09:57:54.867+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/471e272a-88d9-4271-8b41-578b49fd02d4",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/1cec6d53-db71-4ab5-9909-111afb785b7b",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "471e272a-88d9-4271-8b41-578b49fd02d4",
+        "id": "1cec6d53-db71-4ab5-9909-111afb785b7b",
         "meta": {
-          "lastUpdated": "2025-09-29T14:26:56.581+00:00",
+          "lastUpdated": "2025-09-30T09:57:54.869+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,7 +25,7 @@
           "display": "Atender"
         },
         "author": {
-          "reference": "PractitionerRole/824516a5-6495-4abe-ac53-7c3c10077295"
+          "reference": "PractitionerRole/ee0736d2-5219-434a-a68f-1923e46d3b31"
         },
         "source": {
           "software": "conector-osorno",
@@ -36,7 +36,7 @@
             "reference": "ServiceRequest/ic-osorno-001"
           },
           {
-            "reference": "Encounter/5074aa3d-5717-4f09-a9ff-a2f35843a4c8"
+            "reference": "Encounter/0e39c3bf-b9fc-440a-b039-9f14ad08e0e8"
           }
         ]
       }
@@ -89,18 +89,18 @@
         "authoredOn": "2025-09-20T14:30:00+00:00",
         "performer": [
           {
-            "reference": "PractitionerRole/824516a5-6495-4abe-ac53-7c3c10077295"
+            "reference": "PractitionerRole/ee0736d2-5219-434a-a68f-1923e46d3b31"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/b32e078d-a927-4a0e-92a5-bd2e406ae9f5",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/598e20fc-9d22-44e2-9bdf-9ed88eabcf5d",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "b32e078d-a927-4a0e-92a5-bd2e406ae9f5",
+        "id": "598e20fc-9d22-44e2-9bdf-9ed88eabcf5d",
         "meta": {
-          "lastUpdated": "2025-09-29T14:26:56.586+00:00",
+          "lastUpdated": "2025-09-30T09:57:54.871+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -230,20 +230,20 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/824516a5-6495-4abe-ac53-7c3c10077295",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/ee0736d2-5219-434a-a68f-1923e46d3b31",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "824516a5-6495-4abe-ac53-7c3c10077295",
+        "id": "ee0736d2-5219-434a-a68f-1923e46d3b31",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/b32e078d-a927-4a0e-92a5-bd2e406ae9f5"
+          "reference": "Practitioner/598e20fc-9d22-44e2-9bdf-9ed88eabcf5d"
         },
         "organization": {
-          "reference": "Organization/188c3784-1240-4b38-bbad-f6c8ea60b490"
+          "reference": "Organization/8d1862f5-2983-4324-9842-aaf16a4fd5bb"
         },
         "code": [
           {
@@ -260,10 +260,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/188c3784-1240-4b38-bbad-f6c8ea60b490",
+      "fullUrl": "http://transformador-cens.cl/Organization/8d1862f5-2983-4324-9842-aaf16a4fd5bb",
       "resource": {
         "resourceType": "Organization",
-        "id": "188c3784-1240-4b38-bbad-f6c8ea60b490",
+        "id": "8d1862f5-2983-4324-9842-aaf16a4fd5bb",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -279,12 +279,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Condition/914ba2b0-9de0-4f28-bc82-a133defc13b5",
+      "fullUrl": "http://transformador-cens.cl/Condition/887b3267-40a0-40d7-a387-04d8fafe5373",
       "resource": {
         "resourceType": "Condition",
-        "id": "914ba2b0-9de0-4f28-bc82-a133defc13b5",
+        "id": "887b3267-40a0-40d7-a387-04d8fafe5373",
         "meta": {
-          "lastUpdated": "2025-09-29T14:26:56.605+00:00",
+          "lastUpdated": "2025-09-30T09:57:54.883+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"
           ]
@@ -341,12 +341,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Observation/c7a7ce90-eac9-4dad-802b-01c220b21941",
+      "fullUrl": "http://transformador-cens.cl/Observation/cd60b076-5b56-4194-95b3-8695a5dde980",
       "resource": {
         "resourceType": "Observation",
-        "id": "c7a7ce90-eac9-4dad-802b-01c220b21941",
+        "id": "cd60b076-5b56-4194-95b3-8695a5dde980",
         "meta": {
-          "lastUpdated": "2025-09-29T14:26:56.606+00:00",
+          "lastUpdated": "2025-09-30T09:57:54.885+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAnamnesisLE"
           ]
@@ -365,17 +365,17 @@
           "reference": "Patient/valentina-godoy-001"
         },
         "encounter": {
-          "reference": "Encounter/5074aa3d-5717-4f09-a9ff-a2f35843a4c8"
+          "reference": "Encounter/0e39c3bf-b9fc-440a-b039-9f14ad08e0e8"
         },
         "effectiveDateTime": "2025-09-23T10:00:00+00:00",
         "valueString": "Electromiografía confirma disminución de conducción nerviosa"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/52d83411-dda9-4395-a02c-4dc790f497da",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/eb552678-6f98-4d37-b41e-6776e3535e97",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "52d83411-dda9-4395-a02c-4dc790f497da",
+        "id": "eb552678-6f98-4d37-b41e-6776e3535e97",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
@@ -383,7 +383,7 @@
         },
         "identifier": [
           {
-            "value": "52d83411-dda9-4395-a02c-4dc790f497da"
+            "value": "eb552678-6f98-4d37-b41e-6776e3535e97"
           }
         ],
         "basedOn": [
@@ -408,7 +408,7 @@
         },
         "authoredOn": "2025-09-20T14:30:00+00:00",
         "requester": {
-          "reference": "Practitioner/b32e078d-a927-4a0e-92a5-bd2e406ae9f5"
+          "reference": "Practitioner/598e20fc-9d22-44e2-9bdf-9ed88eabcf5d"
         },
         "reasonCode": [
           {
@@ -418,10 +418,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Observation/4d3cf329-c874-465a-a9c1-d786984e441f",
+      "fullUrl": "http://transformador-cens.cl/Observation/f1bc9c07-fe70-4ee9-a3cb-7736cd75ae98",
       "resource": {
         "resourceType": "Observation",
-        "id": "4d3cf329-c874-465a-a9c1-d786984e441f",
+        "id": "f1bc9c07-fe70-4ee9-a3cb-7736cd75ae98",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen"
@@ -451,17 +451,17 @@
           "reference": "Patient/valentina-godoy-001"
         },
         "encounter": {
-          "reference": "Encounter/5074aa3d-5717-4f09-a9ff-a2f35843a4c8"
+          "reference": "Encounter/0e39c3bf-b9fc-440a-b039-9f14ad08e0e8"
         },
         "effectiveDateTime": "2025-09-23T10:00:00+00:00",
         "valueString": "Disminución en conducción nerviosa"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Encounter/5074aa3d-5717-4f09-a9ff-a2f35843a4c8",
+      "fullUrl": "http://transformador-cens.cl/Encounter/0e39c3bf-b9fc-440a-b039-9f14ad08e0e8",
       "resource": {
         "resourceType": "Encounter",
-        "id": "5074aa3d-5717-4f09-a9ff-a2f35843a4c8",
+        "id": "0e39c3bf-b9fc-440a-b039-9f14ad08e0e8",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
@@ -499,22 +499,22 @@
         "diagnosis": [
           {
             "condition": {
-              "reference": "Condition/914ba2b0-9de0-4f28-bc82-a133defc13b5"
+              "reference": "Condition/887b3267-40a0-40d7-a387-04d8fafe5373"
             }
           }
         ],
         "serviceProvider": {
-          "reference": "Organization/188c3784-1240-4b38-bbad-f6c8ea60b490"
+          "reference": "Organization/8d1862f5-2983-4324-9842-aaf16a4fd5bb"
         }
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/CarePlan/f82bb478-4196-4bae-8748-1b368e18351f",
+      "fullUrl": "http://transformador-cens.cl/CarePlan/eb3cbdc9-fb24-4d74-8ac3-e0509e4b7b6d",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "f82bb478-4196-4bae-8748-1b368e18351f",
+        "id": "eb3cbdc9-fb24-4d74-8ac3-e0509e4b7b6d",
         "meta": {
-          "lastUpdated": "2025-09-29T14:26:56.608+00:00",
+          "lastUpdated": "2025-09-30T09:57:54.887+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"
           ]
@@ -532,12 +532,12 @@
           "reference": "Patient/valentina-godoy-001"
         },
         "encounter": {
-          "reference": "Encounter/5074aa3d-5717-4f09-a9ff-a2f35843a4c8"
+          "reference": "Encounter/0e39c3bf-b9fc-440a-b039-9f14ad08e0e8"
         },
         "activity": [
           {
             "reference": {
-              "reference": "ServiceRequest/52d83411-dda9-4395-a02c-4dc790f497da"
+              "reference": "ServiceRequest/eb552678-6f98-4d37-b41e-6776e3535e97"
             }
           }
         ]

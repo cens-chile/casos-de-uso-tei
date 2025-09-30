@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:54.421+00:00",
+  "timestamp": "2025-09-30T09:57:57.496+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/da484406-5bfe-4b56-8a0b-abce93b2be33",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/975e092e-15c7-4414-a1bf-e0e87939acf2",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "da484406-5bfe-4b56-8a0b-abce93b2be33",
+        "id": "975e092e-15c7-4414-a1bf-e0e87939acf2",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.422+00:00",
+          "lastUpdated": "2025-09-30T09:57:57.496+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,24 +25,24 @@
           "display": "Revisar"
         },
         "author": {
-          "reference": "PractitionerRole/764dbaa6-a089-4294-8250-737a915b10a0"
+          "reference": "PractitionerRole/b7cc12f2-834b-4a04-b527-d597f28b71f9"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/SR-20250905-001"
+            "reference": "ServiceRequest/123"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/SR-20250905-001",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/123",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "SR-20250905-001",
+        "id": "123",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -51,7 +51,7 @@
         "extension": [
           {
             "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS",
-            "valueBoolean": true
+            "valueBoolean": false
           },
           {
             "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
@@ -71,20 +71,8 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "14",
-                  "display": "ENDOCRINOLOGÍA ADULTO"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "14",
-                  "display": "ENDOCRINOLOGÍA ADULTO"
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
                 }
               ]
             }
@@ -109,17 +97,17 @@
         ],
         "identifier": [
           {
-            "value": "IC-20250905-0001"
+            "value": "IC-2025-0005"
           }
         ],
         "status": "draft",
         "intent": "order",
         "subject": {
-          "reference": "Patient/17.456.321-5"
+          "reference": "Patient/valentina-godoy-001"
         },
         "performer": [
           {
-            "reference": "PractitionerRole/4a2db8c3-4b16-4783-8a09-8e9662d480c4"
+            "reference": "PractitionerRole/753c3bd6-6244-4b3c-9084-28cdbce45ec7"
           }
         ],
         "locationCode": [
@@ -136,12 +124,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/0a35db15-e194-4b9f-b63d-77b92f191fde",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/09f4f7b7-786e-493c-b494-47ddc33cdbb3",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "0a35db15-e194-4b9f-b63d-77b92f191fde",
+        "id": "09f4f7b7-786e-493c-b494-47ddc33cdbb3",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.422+00:00",
+          "lastUpdated": "2025-09-30T09:57:57.497+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -173,7 +161,7 @@
               ],
               "text": "RUN"
             },
-            "value": "12.678.345-1"
+            "value": "18.765.432-1"
           },
           {
             "use": "official",
@@ -187,7 +175,7 @@
               ],
               "text": "RNPI"
             },
-            "value": "889900"
+            "value": "778899"
           }
         ],
         "active": true,
@@ -199,27 +187,28 @@
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Silva"
+                  "valueString": "Ramírez"
                 }
               ]
             },
             "given": [
-              "Pamela"
+              "Ana",
+              "Sofía"
             ]
           }
         ],
         "telecom": [
           {
             "system": "phone",
-            "value": "+56987654321"
+            "value": "+56987543219"
           },
           {
             "system": "email",
-            "value": "pamela.torres@hospital-osorno.cl"
+            "value": "ana.torres@cesfam-lopetegui.cl"
           }
         ],
         "gender": "female",
-        "birthDate": "1978-05-10",
+        "birthDate": "1988-02-12",
         "qualification": [
           {
             "identifier": [
@@ -231,44 +220,24 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
-                  "code": "1",
-                  "display": "Médico Cirujano"
+                  "code": "2",
+                  "display": "Enfermera"
                 }
               ],
-              "text": "Médico Cirujano"
+              "text": "Enfermera"
             },
             "issuer": {
               "display": "Universidad Austral de Chile"
-            }
-          },
-          {
-            "identifier": [
-              {
-                "value": "esp"
-              }
-            ],
-            "code": {
-              "coding": [
-                {
-                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "14",
-                  "display": "Traumatología"
-                }
-              ],
-              "text": "Traumatología"
-            },
-            "issuer": {
-              "display": "Colegio Médico de Chile"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/f51d570d-af9e-4001-be74-c859c70bfa93",
+      "fullUrl": "http://transformador-cens.cl/Organization/94295faa-2c95-43dd-947e-dd03e76eb666",
       "resource": {
         "resourceType": "Organization",
-        "id": "f51d570d-af9e-4001-be74-c859c70bfa93",
+        "id": "94295faa-2c95-43dd-947e-dd03e76eb666",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -277,17 +246,17 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102601"
+            "value": "123301"
           }
         ],
-        "name": "CESFAM Villa El Sol"
+        "name": "CESFAM Dr. Marcelo Lopetegui"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/4807056e-a918-4667-8b9d-822b9e9ef173",
+      "fullUrl": "http://transformador-cens.cl/Organization/cc2655fa-b31b-4e15-93d1-725f912199e1",
       "resource": {
         "resourceType": "Organization",
-        "id": "4807056e-a918-4667-8b9d-822b9e9ef173",
+        "id": "cc2655fa-b31b-4e15-93d1-725f912199e1",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -296,27 +265,27 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102602"
+            "value": "PENDIENTE"
           }
         ],
-        "name": "Hospital Base de Osorno Dr. Pedro Montt"
+        "name": "Hospital Digital MINSAL"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/764dbaa6-a089-4294-8250-737a915b10a0",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/b7cc12f2-834b-4a04-b527-d597f28b71f9",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "764dbaa6-a089-4294-8250-737a915b10a0",
+        "id": "b7cc12f2-834b-4a04-b527-d597f28b71f9",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/0a35db15-e194-4b9f-b63d-77b92f191fde"
+          "reference": "Practitioner/09f4f7b7-786e-493c-b494-47ddc33cdbb3"
         },
         "organization": {
-          "reference": "Organization/f51d570d-af9e-4001-be74-c859c70bfa93"
+          "reference": "Organization/94295faa-2c95-43dd-947e-dd03e76eb666"
         },
         "code": [
           {
@@ -333,17 +302,17 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/4a2db8c3-4b16-4783-8a09-8e9662d480c4",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/753c3bd6-6244-4b3c-9084-28cdbce45ec7",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "4a2db8c3-4b16-4783-8a09-8e9662d480c4",
+        "id": "753c3bd6-6244-4b3c-9084-28cdbce45ec7",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "organization": {
-          "reference": "Organization/4807056e-a918-4667-8b9d-822b9e9ef173"
+          "reference": "Organization/cc2655fa-b31b-4e15-93d1-725f912199e1"
         },
         "code": [
           {
@@ -355,45 +324,6 @@
               }
             ],
             "text": "atendedor"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/323542fb-5c98-4222-b0f4-ec8718762365",
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "323542fb-5c98-4222-b0f4-ec8718762365",
-        "meta": {
-          "profile": [
-            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
-          ]
-        },
-        "basedOn": [
-          {
-            "reference": "ServiceRequest/SR-20250905-001"
-          }
-        ],
-        "status": "draft",
-        "intent": "order",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "100003-3"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/17.456.321-5"
-        },
-        "authoredOn": "2025-08-14T09:30:00+00:00",
-        "requester": {
-          "reference": "Practitioner/0a35db15-e194-4b9f-b63d-77b92f191fde"
-        },
-        "reasonCode": [
-          {
-            "text": "Electromiografía para confirmar diagnóstico de túnel carpiano"
           }
         ]
       }

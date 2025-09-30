@@ -1,0 +1,60 @@
+{
+  "datosSistema": {
+    "software": "MEDISYN",
+    "endpoint": "medisyn.hospitalosorno.cl"
+  },
+  "solicitudIC": {
+    "idInterconsulta": "SR-20250905-004",
+    "modalidadAtencion": "2",
+    "prioridadIc": "urgent"
+  },
+  "prestadorProfesional": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "15.678.901-2",
+      "RNPI": "667788"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Javier"
+      ],
+      "primerApellido": "Mendez",
+      "segundoApellido": "Salazar"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "056",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+569912345678"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "javier.mendez@hospitalosorno.cl"
+      }
+    ],
+    "fechaNacimiento": "1979-06-05",
+    "titulosProfesionales": [
+      {
+        "nombre": "Médico Cirujano",
+        "codigo": "1",
+        "fechaEmision": "2003-12-20",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "Medicina General",
+        "codigo": "3",
+        "fechaEmision": "2008-11-15",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "establecimiento": {
+    "nombreLegal": "Hospital Base San José de Osorno",
+    "codigoDEIS": "123100",
+    "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+  }
+}

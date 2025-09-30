@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:55.022+00:00",
+  "timestamp": "2025-09-30T09:57:58.894+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/d2ea7460-94d0-4f5b-ac41-419b3024c4f8",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/dfce0a05-4e45-4044-b1a8-c7a5097b1508",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "d2ea7460-94d0-4f5b-ac41-419b3024c4f8",
+        "id": "dfce0a05-4e45-4044-b1a8-c7a5097b1508",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:55.023+00:00",
+          "lastUpdated": "2025-09-30T09:57:58.897+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,24 +25,24 @@
           "display": "Terminar"
         },
         "author": {
-          "reference": "PractitionerRole/2ba8ae94-1024-4c2a-9923-4b4af5433202"
+          "reference": "PractitionerRole/e8bfbf0c-4c5a-4f81-b167-5ecd543be03a"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/ic-osorno-001"
+            "reference": "ServiceRequest/IC-2025-0006"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/ic-osorno-001",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/IC-2025-0006",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "ic-osorno-001",
+        "id": "IC-2025-0006",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -67,8 +67,8 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
-                  "code": "1",
-                  "display": "GES (0)"
+                  "code": "4",
+                  "display": "Atención Otorgada en el Extra sistema (4)"
                 }
               ]
             }
@@ -76,7 +76,7 @@
         ],
         "identifier": [
           {
-            "value": "interconsulta-789"
+            "value": "IC-CP06-0006"
           }
         ],
         "status": "draft",
@@ -95,39 +95,25 @@
         "subject": {
           "reference": "Patient/valentina-godoy-001"
         },
-        "authoredOn": "2025-09-20T00:00:00+00:00",
+        "authoredOn": "2025-09-05T10:15:00+00:00",
         "performer": [
           {
-            "reference": "PractitionerRole/2ba8ae94-1024-4c2a-9923-4b4af5433202"
+            "reference": "PractitionerRole/e8bfbf0c-4c5a-4f81-b167-5ecd543be03a"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/5d491ff5-2d4d-436b-94a6-b94cd571dfcb",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/8d5794e8-e0e8-4d0d-8d20-e92b9eedd0e4",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "5d491ff5-2d4d-436b-94a6-b94cd571dfcb",
+        "id": "8d5794e8-e0e8-4d0d-8d20-e92b9eedd0e4",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:55.025+00:00",
+          "lastUpdated": "2025-09-30T09:57:58.898+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
         },
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                  "code": "056",
-                  "display": "Belgium"
-                }
-              ]
-            }
-          }
-        ],
         "identifier": [
           {
             "use": "official",
@@ -141,7 +127,7 @@
               ],
               "text": "RUN"
             },
-            "value": "9876543-2"
+            "value": "18.765.432-1"
           },
           {
             "use": "official",
@@ -155,7 +141,7 @@
               ],
               "text": "RNPI"
             },
-            "value": "889900"
+            "value": "778899"
           }
         ],
         "active": true,
@@ -167,30 +153,30 @@
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Soto"
+                  "valueString": "Ramírez"
                 }
               ]
             },
             "given": [
-              "Pamela"
+              "Ana"
             ]
           }
         ],
         "telecom": [
           {
             "system": "phone",
-            "value": "+56912345678"
+            "value": "+56987543219"
           },
           {
             "system": "email",
-            "value": "pamela.torres@hospitalosorno.cl"
+            "value": "ana.torres@cesfam-lopetegui.cl"
           }
         ],
         "address": [
           {
             "use": "work",
             "line": [
-              "Av. Los Notros 1234"
+              "CESFAM Dr. Marcelo Lopetegui, Los Carreras N°1400"
             ],
             "_city": {
               "extension": [
@@ -200,24 +186,8 @@
                     "coding": [
                       {
                         "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-                        "code": "10201",
-                        "display": "Castro"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_district": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-                        "code": "102",
-                        "display": "Chiloé"
+                        "code": "10101",
+                        "display": "Puerto Montt"
                       }
                     ]
                   }
@@ -259,7 +229,7 @@
           }
         ],
         "gender": "female",
-        "birthDate": "1980-06-01",
+        "birthDate": "1988-02-12",
         "qualification": [
           {
             "identifier": [
@@ -271,50 +241,27 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
-                  "code": "1",
-                  "display": "MÉDICO CIRUJANO"
+                  "code": "16",
+                  "display": "Enfermera"
                 }
               ],
-              "text": "MÉDICO CIRUJANO"
+              "text": "Enfermera"
             },
             "period": {
-              "start": "2006-12-10T00:00:00+00:00"
+              "start": "2011-11-20T00:00:00+00:00"
             },
             "issuer": {
               "display": "Universidad de Chile"
-            }
-          },
-          {
-            "identifier": [
-              {
-                "value": "esp"
-              }
-            ],
-            "code": {
-              "coding": [
-                {
-                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "20",
-                  "display": "TRAUMATOLOGÍA"
-                }
-              ],
-              "text": "TRAUMATOLOGÍA"
-            },
-            "period": {
-              "start": "2012-04-18T00:00:00+00:00"
-            },
-            "issuer": {
-              "display": "Colegio Médico de Chile"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/d11eaaa2-1100-4527-94e8-0caec1cc8f55",
+      "fullUrl": "http://transformador-cens.cl/Organization/c2cf2646-1b1c-44ab-9136-2451dbfdfeea",
       "resource": {
         "resourceType": "Organization",
-        "id": "d11eaaa2-1100-4527-94e8-0caec1cc8f55",
+        "id": "c2cf2646-1b1c-44ab-9136-2451dbfdfeea",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -323,27 +270,27 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102015"
+            "value": "123301"
           }
         ],
-        "name": "Hospital Base San José de Osorno"
+        "name": "CESFAM Dr. Marcelo Lopetegui"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/2ba8ae94-1024-4c2a-9923-4b4af5433202",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/e8bfbf0c-4c5a-4f81-b167-5ecd543be03a",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "2ba8ae94-1024-4c2a-9923-4b4af5433202",
+        "id": "e8bfbf0c-4c5a-4f81-b167-5ecd543be03a",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/5d491ff5-2d4d-436b-94a6-b94cd571dfcb"
+          "reference": "Practitioner/8d5794e8-e0e8-4d0d-8d20-e92b9eedd0e4"
         },
         "organization": {
-          "reference": "Organization/d11eaaa2-1100-4527-94e8-0caec1cc8f55"
+          "reference": "Organization/c2cf2646-1b1c-44ab-9136-2451dbfdfeea"
         },
         "code": [
           {

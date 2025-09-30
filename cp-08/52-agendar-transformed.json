@@ -1,0 +1,49 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "code": "not-found",
+      "diagnostics": "datosSistema not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "solicitudIC not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "solicitudIC not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "prestadorProfesional not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "prestadorAdministrativo not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "prestadorAdministrativo not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "establecimiento not found or does not have a value"
+    },
+    {
+      "code": "exception",
+      "diagnostics": "rol del agendador have errors in definition [error en establecimiento o prestador administrativo]"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "rolDelProfesionalResolutor not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "cita not found or does not have a value"
+    },
+    {
+      "code": "not-found",
+      "diagnostics": "citaMedica not found or does not have a value"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "fechaSolicitudIC": "2025-09-05T10:15:00Z",
+    "modalidadAtencion": "1",
+    "derivadoPara": "2",
+    "prioridadIc": "routine",
+    "resolutividadAPS": false,
+    "fundamentoPriorizacion": "Síntomas persistentes y déficit funcional leve en mano derecha."
+  },
+  "encuentroIniciarAPS": {
+    "identificacionConsultaAPS": "encuentro-cesfam-20250905-1015",
+    "codigoModalidadAtencion": "1",
+    "periodo": {
+      "fechaInicio": "2025-09-05 10:15:00",
+      "fechaFin": "2025-09-05 10:45:00"
+    }
+  },
+  "paciente": {
+    "identidadGenero": "1",
+    "sexoBiologico": "female",
+    "nacionalidad": "152",
+    "paisOrigen": "152",
+    "pueblosOriginariosPerteneciente": false,
+    "identificadores": [
+      {
+        "valor": "17.456.321-5",
+        "codigo": "01",
+        "paisEmision": "152"
+      }
+    ],
+    "nombreCompleto": {
+      "nombres": [
+        "Valentina",
+        "Andrea"
+      ],
+      "primerApellido": "Godoy",
+      "segundoApellido": "Cifuentes"
+    },
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+569765432109",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "valentina.godoy@gmail.com",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "sexoRegistral": "female",
+    "fechaNacimiento": "1979-08-12T00:00:00Z",
+    "fallecimiento": {
+      "fallecido": false
+    },
+    "direcciones": [
+      {
+        "direccion": "Pasaje Las Violetas 456, Villa El Sol",
+        "codigoUso": "home",
+        "comuna": {
+          "nombre": "Osorno",
+          "codigo": "10301"
+        },
+        "provincia": {
+          "nombre": "Osorno",
+          "codigo": "103"
+        },
+        "region": {
+          "nombre": "Región de Los Lagos",
+          "codigo": "10"
+        },
+        "pais": {
+          "nombre": "Chile",
+          "codigo": "152"
+        }
+      }
+    ]
+  },
+  "profesionalClinicoSolicita": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "13.245.678-4",
+      "RNPI": "556677"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Mauricio"
+      ],
+      "primerApellido": "Araya",
+      "segundoApellido": "Cortés"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "152",
+    "fechaNacimiento": "1975-06-15",
+    "contacto": [
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "mauricio.araya@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
+      },
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56991234567",
+        "sistemaDeContacto": "phone"
+      }
+    ],
+    "titulosProfesionales": [
+      {
+        "codigo": "1",
+        "nombre": "MÉDICO CIRUJANO"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "codigo": "39",
+        "nombre": "Medicina Familiar"
+      }
+    ]
+  },
+  "diagnostico": {
+    "codeCIE10": "G56.0",
+    "glosa": "Síndrome del túnel carpiano",
+    "estadoDiagnostico": "active",
+    "estadoVerificacion": "provisional",
+    "categoria": "encounter-diagnosis"
+  },
+  "resultadoExamenes": [
+    {
+      "codigo": "248910004",
+      "resultado": "10828004",
+      "fechaExamen": "2025-09-05T10:20:00Z"
+    },
+    {
+      "codigo": "269102002",
+      "resultado": "10828004",
+      "fechaExamen": "2025-09-05T10:25:00Z"
+    }
+  ],
+  "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía.",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    }
+  },
+  "indiceComorbilidad": "G0",
+  "presentaDiscapacidad": false,
+  "cuidador": false
+}

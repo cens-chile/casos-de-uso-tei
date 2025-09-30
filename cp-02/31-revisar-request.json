@@ -1,0 +1,61 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "prestadorRevisor": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "12345678-9",
+      "RNPI": "778899"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Ana"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramirez"
+    },
+    "sexoRegistral": "female",
+    "fechaNacimiento": "1975-05-31",
+    "contacto": [
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl"
+      }
+    ],
+    "titulosProfesionales": [
+      {
+        "nombre": "ENFERMERA",
+        "codigo": "3",
+        "institucion": "Universidad de Los Lagos"
+      }
+    ]
+  },
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "1765"
+    }
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "SIC-2025-002",
+    "idInterconsulta": "IC-2025-0002",
+    "modalidadAtencion": 2,
+    "destinoAtencion": "4",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    },
+    "pertinenciaIC": {
+      "codigo": "2",
+      "motivoNoPertinencia": "La solicitud no cumple con los criterios clínicos establecidos para derivación a nivel secundario. Corresponde manejo y seguimiento en APS."
+    }
+  }
+}

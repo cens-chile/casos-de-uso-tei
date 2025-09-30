@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:54.721+00:00",
+  "timestamp": "2025-09-30T09:58:35.323+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/2be60990-187f-4377-a729-6f897d516a83",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/096754af-7370-4eb1-8bd9-2383a6b96203",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "2be60990-187f-4377-a729-6f897d516a83",
+        "id": "096754af-7370-4eb1-8bd9-2383a6b96203",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.724+00:00",
+          "lastUpdated": "2025-09-30T09:58:35.326+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,27 +25,27 @@
           "display": "Agendar"
         },
         "author": {
-          "reference": "PractitionerRole/d7d4cf19-0264-464b-b0eb-1137f53b79c5"
+          "reference": "PractitionerRole/290f2e69-ae8f-4ef0-826b-16e77087b808"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a"
+            "reference": "ServiceRequest/1e894c71-25f7-4183-bcce-467da96fd672"
           },
           {
-            "reference": "Appointment/f944f36c-51ce-4ff3-89aa-dfba820dc581"
+            "reference": "Appointment/09b25361-200f-411f-a183-eec217080e4e"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/1e894c71-25f7-4183-bcce-467da96fd672",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "9c4925aa-8a88-483c-9688-3cefb1c4262a",
+        "id": "1e894c71-25f7-4183-bcce-467da96fd672",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -67,7 +67,7 @@
         ],
         "identifier": [
           {
-            "value": "IC-2025-0001"
+            "value": "IC-2025-0004"
           }
         ],
         "status": "draft",
@@ -84,17 +84,17 @@
           }
         ],
         "subject": {
-          "reference": "Patient/id_paciente-ejemplo-001"
+          "reference": "Patient/valentina-godoy-001"
         }
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/7c3a6c85-3326-46d4-8c29-576da1635bbf",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/8d8fb979-7dae-485f-8ce1-2920786e2440",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "7c3a6c85-3326-46d4-8c29-576da1635bbf",
+        "id": "8d8fb979-7dae-485f-8ce1-2920786e2440",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.726+00:00",
+          "lastUpdated": "2025-09-30T09:58:35.326+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -112,7 +112,7 @@
               ],
               "text": "RUN"
             },
-            "value": "12.678.345-1"
+            "value": "12678345-1"
           },
           {
             "use": "official",
@@ -148,7 +148,7 @@
           }
         ],
         "gender": "female",
-        "birthDate": "1979-03-12",
+        "birthDate": "1979-03-03",
         "qualification": [
           {
             "identifier": [
@@ -194,12 +194,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/562b8167-e81e-4c58-b647-66b1d1e53df2",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4",
+        "id": "562b8167-e81e-4c58-b647-66b1d1e53df2",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.728+00:00",
+          "lastUpdated": "2025-09-30T09:58:35.329+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerAdministrativoLE"
           ]
@@ -217,7 +217,7 @@
               ],
               "text": "RUN"
             },
-            "value": "16.987.543-2"
+            "value": "16987543-2"
           }
         ],
         "active": true,
@@ -237,7 +237,7 @@
           },
           {
             "system": "email",
-            "value": "carolina.lopez@cesfam-villasol.cl"
+            "value": "carolina.lopez@hospitalosorno.cl"
           }
         ],
         "gender": "female",
@@ -245,10 +245,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55",
+      "fullUrl": "http://transformador-cens.cl/Organization/8abe966d-1ba6-463b-8d40-65a6dba1b79f",
       "resource": {
         "resourceType": "Organization",
-        "id": "f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55",
+        "id": "8abe966d-1ba6-463b-8d40-65a6dba1b79f",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -257,27 +257,27 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102"
+            "value": "123100"
           }
         ],
-        "name": "Hospital Base de Osorno"
+        "name": "Hospital Base San José de Osorno"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/d7d4cf19-0264-464b-b0eb-1137f53b79c5",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/290f2e69-ae8f-4ef0-826b-16e77087b808",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "d7d4cf19-0264-464b-b0eb-1137f53b79c5",
+        "id": "290f2e69-ae8f-4ef0-826b-16e77087b808",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4"
+          "reference": "Practitioner/562b8167-e81e-4c58-b647-66b1d1e53df2"
         },
         "organization": {
-          "reference": "Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55"
+          "reference": "Organization/8abe966d-1ba6-463b-8d40-65a6dba1b79f"
         },
         "code": [
           {
@@ -294,20 +294,20 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/350800eb-dcc1-4bc5-b3f1-5184b5aa1d81",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+        "id": "350800eb-dcc1-4bc5-b3f1-5184b5aa1d81",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/7c3a6c85-3326-46d4-8c29-576da1635bbf"
+          "reference": "Practitioner/8d8fb979-7dae-485f-8ce1-2920786e2440"
         },
         "organization": {
-          "reference": "Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55"
+          "reference": "Organization/8abe966d-1ba6-463b-8d40-65a6dba1b79f"
         },
         "code": [
           {
@@ -324,10 +324,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Appointment/f944f36c-51ce-4ff3-89aa-dfba820dc581",
+      "fullUrl": "http://transformador-cens.cl/Appointment/09b25361-200f-411f-a183-eec217080e4e",
       "resource": {
         "resourceType": "Appointment",
-        "id": "f944f36c-51ce-4ff3-89aa-dfba820dc581",
+        "id": "09b25361-200f-411f-a183-eec217080e4e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
@@ -358,7 +358,7 @@
         ],
         "identifier": [
           {
-            "value": "cita-agendada-001"
+            "value": "cita-agendada-002"
           }
         ],
         "status": "booked",
@@ -373,25 +373,25 @@
             ]
           }
         ],
-        "start": "2025-09-20T14:30:00.000+00:00",
-        "end": "2025-09-20T15:00:00.000+00:00",
-        "created": "2025-09-30T09:57:54+00:00",
+        "start": "0034-03-18T12:00:00.000+00:00",
+        "end": "0034-03-18T12:30:00.000+00:00",
+        "created": "2025-09-30T09:58:35+00:00",
         "basedOn": [
           {
-            "reference": "ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a"
+            "reference": "ServiceRequest/1e894c71-25f7-4183-bcce-467da96fd672"
           }
         ],
         "participant": [
           {
             "actor": {
-              "reference": "Patient/id_paciente-ejemplo-001",
+              "reference": "Patient/valentina-godoy-001",
               "type": "Patient"
             },
             "status": "tentative"
           },
           {
             "actor": {
-              "reference": "PractitionerRole/b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+              "reference": "PractitionerRole/350800eb-dcc1-4bc5-b3f1-5184b5aa1d81",
               "type": "PractitionerRole"
             },
             "status": "accepted"
