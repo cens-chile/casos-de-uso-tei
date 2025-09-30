@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:54.581+00:00",
+  "timestamp": "2025-09-30T18:01:28.066+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/0d543f59-45c7-409b-a85a-8bcd4b28cb8f",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/cd9ccf88-8b44-46d1-8e46-ab8002fee8d9",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "0d543f59-45c7-409b-a85a-8bcd4b28cb8f",
+        "id": "cd9ccf88-8b44-46d1-8e46-ab8002fee8d9",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.585+00:00",
+          "lastUpdated": "2025-09-30T18:01:28.068+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,7 +25,7 @@
           "display": "Priorizar"
         },
         "author": {
-          "reference": "PractitionerRole/659af8b8-6770-4ed0-8ae2-a49418ac3f98"
+          "reference": "PractitionerRole/f359f0fb-87a9-4669-903d-728b9c5665f1"
         },
         "source": {
           "software": "conector-osorno",
@@ -33,26 +33,26 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/602954e5-c980-4f3d-81a1-1a75adf6926e"
+            "reference": "ServiceRequest/5a622b0b-e8ac-49d5-93d1-97103487464e"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/659af8b8-6770-4ed0-8ae2-a49418ac3f98",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/f359f0fb-87a9-4669-903d-728b9c5665f1",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "659af8b8-6770-4ed0-8ae2-a49418ac3f98",
+        "id": "f359f0fb-87a9-4669-903d-728b9c5665f1",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/82c6ccbd-715b-4bd5-8173-cc580e42d91b"
+          "reference": "Practitioner/71ef1974-08d7-478e-af68-e548f8fd272f"
         },
         "organization": {
-          "reference": "Organization/d5519a22-cc6e-4ac9-a2cc-83a7be2396f9"
+          "reference": "Organization/72cfca2a-dd83-425d-95fb-503a6749bc61"
         },
         "code": [
           {
@@ -69,10 +69,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/602954e5-c980-4f3d-81a1-1a75adf6926e",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/5a622b0b-e8ac-49d5-93d1-97103487464e",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "602954e5-c980-4f3d-81a1-1a75adf6926e",
+        "id": "5a622b0b-e8ac-49d5-93d1-97103487464e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -117,12 +117,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/82c6ccbd-715b-4bd5-8173-cc580e42d91b",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/71ef1974-08d7-478e-af68-e548f8fd272f",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "82c6ccbd-715b-4bd5-8173-cc580e42d91b",
+        "id": "71ef1974-08d7-478e-af68-e548f8fd272f",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.590+00:00",
+          "lastUpdated": "2025-09-30T18:01:28.069+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -324,10 +324,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/d5519a22-cc6e-4ac9-a2cc-83a7be2396f9",
+      "fullUrl": "http://transformador-cens.cl/Organization/72cfca2a-dd83-425d-95fb-503a6749bc61",
       "resource": {
         "resourceType": "Organization",
-        "id": "d5519a22-cc6e-4ac9-a2cc-83a7be2396f9",
+        "id": "72cfca2a-dd83-425d-95fb-503a6749bc61",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"

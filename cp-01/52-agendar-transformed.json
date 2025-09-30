@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T09:57:54.721+00:00",
+  "timestamp": "2025-09-30T18:01:28.208+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/2be60990-187f-4377-a729-6f897d516a83",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/68ece75b-1f1d-4c5c-ba1a-aa57b29088ee",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "2be60990-187f-4377-a729-6f897d516a83",
+        "id": "68ece75b-1f1d-4c5c-ba1a-aa57b29088ee",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.724+00:00",
+          "lastUpdated": "2025-09-30T18:01:28.212+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,7 +25,7 @@
           "display": "Agendar"
         },
         "author": {
-          "reference": "PractitionerRole/d7d4cf19-0264-464b-b0eb-1137f53b79c5"
+          "reference": "PractitionerRole/538fc8e0-de68-44af-aa82-4f0471536853"
         },
         "source": {
           "software": "conector-osorno",
@@ -33,19 +33,19 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a"
+            "reference": "ServiceRequest/82c7f6aa-6dc1-4740-83dc-bc6b124b11e6"
           },
           {
-            "reference": "Appointment/f944f36c-51ce-4ff3-89aa-dfba820dc581"
+            "reference": "Appointment/64a2463b-e542-419d-8073-6283bcbf1fac"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/82c7f6aa-6dc1-4740-83dc-bc6b124b11e6",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "9c4925aa-8a88-483c-9688-3cefb1c4262a",
+        "id": "82c7f6aa-6dc1-4740-83dc-bc6b124b11e6",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -89,12 +89,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/7c3a6c85-3326-46d4-8c29-576da1635bbf",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/11c4eb00-0ad4-475e-af67-61146a5330d9",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "7c3a6c85-3326-46d4-8c29-576da1635bbf",
+        "id": "11c4eb00-0ad4-475e-af67-61146a5330d9",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.726+00:00",
+          "lastUpdated": "2025-09-30T18:01:28.212+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -194,12 +194,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/d4b6d612-63fd-49ac-99dc-620c27a703d9",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4",
+        "id": "d4b6d612-63fd-49ac-99dc-620c27a703d9",
         "meta": {
-          "lastUpdated": "2025-09-30T09:57:54.728+00:00",
+          "lastUpdated": "2025-09-30T18:01:28.216+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerAdministrativoLE"
           ]
@@ -245,10 +245,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55",
+      "fullUrl": "http://transformador-cens.cl/Organization/ab7e9a43-80eb-42c2-94b6-118d788e4973",
       "resource": {
         "resourceType": "Organization",
-        "id": "f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55",
+        "id": "ab7e9a43-80eb-42c2-94b6-118d788e4973",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -264,20 +264,20 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/d7d4cf19-0264-464b-b0eb-1137f53b79c5",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/538fc8e0-de68-44af-aa82-4f0471536853",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "d7d4cf19-0264-464b-b0eb-1137f53b79c5",
+        "id": "538fc8e0-de68-44af-aa82-4f0471536853",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/66a1fd4d-eb3c-4ba7-99ce-6fed2e4d1ad4"
+          "reference": "Practitioner/d4b6d612-63fd-49ac-99dc-620c27a703d9"
         },
         "organization": {
-          "reference": "Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55"
+          "reference": "Organization/ab7e9a43-80eb-42c2-94b6-118d788e4973"
         },
         "code": [
           {
@@ -294,20 +294,20 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/3e0baf64-8902-4abf-906c-cfd9b4e81eae",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+        "id": "3e0baf64-8902-4abf-906c-cfd9b4e81eae",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/7c3a6c85-3326-46d4-8c29-576da1635bbf"
+          "reference": "Practitioner/11c4eb00-0ad4-475e-af67-61146a5330d9"
         },
         "organization": {
-          "reference": "Organization/f39d39a6-6ec0-4ea9-a3eb-ff94b68eef55"
+          "reference": "Organization/ab7e9a43-80eb-42c2-94b6-118d788e4973"
         },
         "code": [
           {
@@ -324,10 +324,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Appointment/f944f36c-51ce-4ff3-89aa-dfba820dc581",
+      "fullUrl": "http://transformador-cens.cl/Appointment/64a2463b-e542-419d-8073-6283bcbf1fac",
       "resource": {
         "resourceType": "Appointment",
-        "id": "f944f36c-51ce-4ff3-89aa-dfba820dc581",
+        "id": "64a2463b-e542-419d-8073-6283bcbf1fac",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
@@ -375,10 +375,10 @@
         ],
         "start": "2025-09-20T14:30:00.000+00:00",
         "end": "2025-09-20T15:00:00.000+00:00",
-        "created": "2025-09-30T09:57:54+00:00",
+        "created": "2025-09-30T18:01:28+00:00",
         "basedOn": [
           {
-            "reference": "ServiceRequest/9c4925aa-8a88-483c-9688-3cefb1c4262a"
+            "reference": "ServiceRequest/82c7f6aa-6dc1-4740-83dc-bc6b124b11e6"
           }
         ],
         "participant": [
@@ -391,7 +391,7 @@
           },
           {
             "actor": {
-              "reference": "PractitionerRole/b0fe4f2e-fc26-4b52-88d1-6ac8e3fa362d",
+              "reference": "PractitionerRole/3e0baf64-8902-4abf-906c-cfd9b4e81eae",
               "type": "PractitionerRole"
             },
             "status": "accepted"
