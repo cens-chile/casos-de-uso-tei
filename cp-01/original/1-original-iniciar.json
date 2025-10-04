@@ -1,7 +1,7 @@
 {
   "datosSistema": {
-    "software": "conector-osorno",
-    "endpoint": "hbosorno.cl"
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
   },
   "paciente": {
     "identidadGenero": "1",
@@ -11,7 +11,7 @@
     "pueblosOriginariosPerteneciente": false,
     "identificadores": [
       {
-        "valor": "17456321-5",
+        "valor": "33.333.333-3",
         "codigo": "01",
         "paisEmision": "152"
       }
@@ -26,12 +26,18 @@
     },
     "contacto": [
       {
-        "sistemaDeContacto": "phone",
-        "valorContacto": "+569765432109"
+        "tipoDeContacto": "phone",
+        "valorContacto": "+569765432109",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "valentina.godoy@gmail.com",
+        "sistemaDeContacto": "email"
       }
     ],
     "sexoRegistral": "female",
-    "fechaNacimiento": "12-08-1979",
+    "fechaNacimiento": "1979-08-12",
     "fallecimiento": {
       "fallecido": false
     },
@@ -72,7 +78,7 @@
       "segundoApellido": "Cortes"
     },
     "sexoRegistral": "male",
-    "fechaNacimiento": "1975-06-15",
+    "fechaNacimiento": "1970-05-15",
     "titulosProfesionales": [
       {
         "codigo": "1",
@@ -81,7 +87,7 @@
     ],
     "especialidadesMedicas": [
       {
-        "codigo": "39",
+        "codigo": "28",
         "nombre": "Medicina Familiar"
       }
     ]
@@ -99,14 +105,15 @@
     "derivadoPara": "2",
     "prioridadIc": "routine",
     "resolutividadAPS": false,
-    "fundamentoPriorizacion": "Síntomas persistentes y déficit funcional leve en mano derecha."
+    "fundamentoPriorizacion": "Síntomas persistentes y déficit funcional leve en mano derecha.",
+    "fechaEnvioSIC": "2025-09-05 10:30:00"
   },
   "encuentroIniciarAPS": {
     "identificacionConsultaAPS": "encuentro-cesfam-05092025-1015",
     "codigoModalidadAtencion": "1",
     "periodo": {
-      "fechaInicio": "05-09-2025 10:15:00",
-      "fechaFin": "05-09-2025 10:45:00"
+      "fechaInicio": "2025-09-05 10:15:00",
+      "fechaFin": "2025-09-05 10:45:00"
     }
   },
   "indiceComorbilidad": "G0",
@@ -114,23 +121,30 @@
   "cuidador": false,
   "diagnostico": {
     "codeCIE10": "G56.0",
-    "codeSNOMED": "293871000119108",
     "glosa": "Síndrome del túnel carpiano",
     "estadoDiagnostico": "active",
-    "estadoVerificacion": "confirmed",
+    "estadoVerificacion": "provisional",
     "categoria": "encounter-diagnosis"
   },
   "resultadoExamenes": [
     {
-      "codigo": "248910004",
+      "codigo": "100000-9",
       "resultado": "10828004",
-      "fechaExamen": "2025-09-05 10:20:00"
+      "fechaExamen": "2025-09-25 10:20:00"
     },
     {
       "codigo": "269102002",
       "resultado": "10828004",
-      "fechaExamen": "2025-09-05 10:25:00"
+      "fechaExamen": "2025-09-25 10:25:00"
     }
   ],
-  "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía."
+  "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía.",
+  "solicitudExamen": [
+    {
+      "fechaSolicitudIC": "2025-09-25 10:30:00",
+      "razonSolicitud": "Confirmación diagnóstica mediante estudio electrodiagnóstico",
+      "examenSolicitadoCodigo": "100003-3",
+      "examenSolicitadoGlosa": "Estudio electrodiagnóstico de nervio mediano"
+    }
+  ]
 }

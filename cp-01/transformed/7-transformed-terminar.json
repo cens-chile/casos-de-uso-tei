@@ -2,77 +2,47 @@
   "resourceType": "Bundle",
   "meta": {
     "profile": [
-      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T18:01:28.066+00:00",
+  "timestamp": "2025-10-04T23:17:22.532+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/cd9ccf88-8b44-46d1-8e46-ab8002fee8d9",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/5d05a801-8cce-4082-b2e2-6cb0fd67b605",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "cd9ccf88-8b44-46d1-8e46-ab8002fee8d9",
+        "id": "5d05a801-8cce-4082-b2e2-6cb0fd67b605",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:28.068+00:00",
+          "lastUpdated": "2025-10-04T23:17:22.552+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
         },
         "eventCoding": {
           "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
-          "code": "priorizar",
-          "display": "Priorizar"
+          "code": "terminar",
+          "display": "Terminar"
         },
         "author": {
-          "reference": "PractitionerRole/f359f0fb-87a9-4669-903d-728b9c5665f1"
+          "reference": "PractitionerRole/91a3df71-44de-4e0d-8876-ee9a89dd89a6"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/5a622b0b-e8ac-49d5-93d1-97103487464e"
+            "reference": "ServiceRequest/0f20462d-e64d-474c-9b71-3bd13ce414dc"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/f359f0fb-87a9-4669-903d-728b9c5665f1",
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "f359f0fb-87a9-4669-903d-728b9c5665f1",
-        "meta": {
-          "profile": [
-            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-          ]
-        },
-        "practitioner": {
-          "reference": "Practitioner/71ef1974-08d7-478e-af68-e548f8fd272f"
-        },
-        "organization": {
-          "reference": "Organization/72cfca2a-dd83-425d-95fb-503a6749bc61"
-        },
-        "code": [
-          {
-            "coding": [
-              {
-                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
-                "code": "priorizador",
-                "display": "Priorizador"
-              }
-            ],
-            "text": "priorizador"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/5a622b0b-e8ac-49d5-93d1-97103487464e",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/0f20462d-e64d-474c-9b71-3bd13ce414dc",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "5a622b0b-e8ac-49d5-93d1-97103487464e",
+        "id": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -85,8 +55,20 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
-                  "code": "4",
-                  "display": "A la espera de agendamiento"
+                  "code": "7",
+                  "display": "Cerrada"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
+                  "code": "1",
+                  "display": "GES (0)"
                 }
               ]
             }
@@ -94,7 +76,7 @@
         ],
         "identifier": [
           {
-            "value": "IC-2025-0001"
+            "value": "2dd95390-74a0-450f-9d2e-fdd02d6d8657"
           }
         ],
         "status": "draft",
@@ -104,25 +86,30 @@
             "coding": [
               {
                 "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
-                "code": "2",
-                "display": "Remota"
+                "code": "1",
+                "display": "Presencial"
               }
             ]
           }
         ],
-        "priority": "urgent",
         "subject": {
-          "reference": "Patient/valentina-godoy-17456321-5"
-        }
+          "reference": "Patient/AC1759438544804"
+        },
+        "authoredOn": "2025-09-20T00:00:00+00:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/91a3df71-44de-4e0d-8876-ee9a89dd89a6"
+          }
+        ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/71ef1974-08d7-478e-af68-e548f8fd272f",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/26cbbe8e-78b6-4503-8eba-747e534e40d0",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "71ef1974-08d7-478e-af68-e548f8fd272f",
+        "id": "26cbbe8e-78b6-4503-8eba-747e534e40d0",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:28.069+00:00",
+          "lastUpdated": "2025-10-04T23:17:23.860+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -154,7 +141,7 @@
               ],
               "text": "RUN"
             },
-            "value": "13245678-4"
+            "value": "9876543-2"
           },
           {
             "use": "official",
@@ -168,42 +155,42 @@
               ],
               "text": "RNPI"
             },
-            "value": "556677"
+            "value": "889900"
           }
         ],
         "active": true,
         "name": [
           {
             "use": "official",
-            "family": "Araya",
+            "family": "Torres",
             "_family": {
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Cortés"
+                  "valueString": "Soto"
                 }
               ]
             },
             "given": [
-              "Mauricio"
+              "Pamela"
             ]
           }
         ],
         "telecom": [
           {
             "system": "phone",
-            "value": "+56999887766"
+            "value": "+56912345678"
           },
           {
             "system": "email",
-            "value": "mauricio.araya@cesfamvillasol.cl"
+            "value": "pamela.torres@hospitalosorno.cl"
           }
         ],
         "address": [
           {
             "use": "work",
             "line": [
-              "Calle Los Aromos 123"
+              "Av. Los Notros 1234"
             ],
             "_city": {
               "extension": [
@@ -213,8 +200,8 @@
                     "coding": [
                       {
                         "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-                        "code": "10301",
-                        "display": "Osorno"
+                        "code": "10201",
+                        "display": "Castro"
                       }
                     ]
                   }
@@ -229,8 +216,8 @@
                     "coding": [
                       {
                         "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-                        "code": "103",
-                        "display": "Osorno"
+                        "code": "102",
+                        "display": "Chiloé"
                       }
                     ]
                   }
@@ -261,8 +248,8 @@
                     "coding": [
                       {
                         "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                        "code": "056",
-                        "display": "Belgium"
+                        "code": "152",
+                        "display": "Chile"
                       }
                     ]
                   }
@@ -271,8 +258,8 @@
             }
           }
         ],
-        "gender": "male",
-        "birthDate": "1975-01-01",
+        "gender": "female",
+        "birthDate": "1979-03-12",
         "qualification": [
           {
             "identifier": [
@@ -285,16 +272,16 @@
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
                   "code": "1",
-                  "display": "Médico Cirujano"
+                  "display": "MÉDICO CIRUJANO"
                 }
               ],
-              "text": "Médico Cirujano"
+              "text": "MÉDICO CIRUJANO"
             },
             "period": {
-              "start": "2005-12-20T00:00:00+00:00"
+              "start": "2006-12-10T00:00:00+00:00"
             },
             "issuer": {
-              "display": "Universidad Austral de Chile"
+              "display": "Universidad de Chile"
             }
           },
           {
@@ -307,14 +294,14 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "3",
-                  "display": "Medicina Familiar"
+                  "code": "20",
+                  "display": "TRAUMATOLOGÍA"
                 }
               ],
-              "text": "Medicina Familiar"
+              "text": "TRAUMATOLOGÍA"
             },
             "period": {
-              "start": "2010-11-15T00:00:00+00:00"
+              "start": "2012-04-18T00:00:00+00:00"
             },
             "issuer": {
               "display": "Colegio Médico de Chile"
@@ -324,10 +311,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/72cfca2a-dd83-425d-95fb-503a6749bc61",
+      "fullUrl": "http://transformador-cens.cl/Organization/7b168870-1fda-465b-8d4f-756d9d6429b4",
       "resource": {
         "resourceType": "Organization",
-        "id": "72cfca2a-dd83-425d-95fb-503a6749bc61",
+        "id": "7b168870-1fda-465b-8d4f-756d9d6429b4",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -336,10 +323,40 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102100"
+            "value": "123100"
           }
         ],
-        "name": "Hospital Base de Osorno Dr. Pedro Montt"
+        "name": "Hospital Base San José de Osorno"
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/91a3df71-44de-4e0d-8876-ee9a89dd89a6",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "91a3df71-44de-4e0d-8876-ee9a89dd89a6",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/26cbbe8e-78b6-4503-8eba-747e534e40d0"
+        },
+        "organization": {
+          "reference": "Organization/7b168870-1fda-465b-8d4f-756d9d6429b4"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "terminador",
+                "display": "Terminador"
+              }
+            ],
+            "text": "terminador"
+          }
+        ]
       }
     }
   ]

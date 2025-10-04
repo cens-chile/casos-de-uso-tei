@@ -1,7 +1,14 @@
 {
   "datosSistema": {
-    "software": "conector-osorno",
-    "endpoint": "hbosorno.cl"
+    "software": "MEDISYN",
+    "endpoint": "medisyn.hospitalosorno.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
+    "idInterconsulta": "2dd95390-74a0-450f-9d2e-fdd02d6d8657",
+    "fechaSolicitudIC": "2025-09-20",
+    "modalidadAtencion": "1",
+    "codigoMotivoCierreIC": "1"
   },
   "prestador": {
     "tipoPrestador": "profesional",
@@ -47,7 +54,7 @@
         "codigo": "152"
       }
     },
-    "fechaNacimiento": "1980-06-01",
+    "fechaNacimiento": "1979-03-12",
     "titulosProfesionales": [
       {
         "nombre": "MÉDICO CIRUJANO",
@@ -65,16 +72,9 @@
       }
     ]
   },
-  "solicitudIC": {
-    "idSolicitudServicio": "ic-osorno-001",
-    "idInterconsulta": "interconsulta-789",
-    "fechaSolicitudIC": "2025-09-20",
-    "modalidadAtencion": "1",
-    "codigoMotivoCierreIC": "1"
-  },
-  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "referenciaPaciente": "Patient/AC1759438544804",
   "establecimiento": {
     "nombreLegal": "Hospital Base San José de Osorno",
-    "codigoDEIS": "102015"
+    "codigoDEIS": "123100"
   }
 }

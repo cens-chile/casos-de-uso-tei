@@ -1,20 +1,24 @@
 {
   "resourceType": "Bundle",
+  "id": "c5985c7e-eed1-4f7b-bd55-c89e3e980e62",
   "meta": {
-    "profile": [
-      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
+    "versionId": "1",
+    "lastUpdated": "2025-10-04T20:17:35.423-03:00",
+    "tag": [
+      {
+        "system": "message",
+        "code": "response"
+      }
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T18:01:28.582+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/312f5290-66a0-4667-8b9c-662686201794",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "312f5290-66a0-4667-8b9c-662686201794",
+        "id": "955bb048-75bf-4ad4-b45b-9f680aeaee6b",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:28.589+00:00",
+          "lastUpdated": "2025-10-04T23:17:22.552+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,25 +29,66 @@
           "display": "Terminar"
         },
         "author": {
-          "reference": "PractitionerRole/538d4368-0a27-44ff-bc98-209b05fb59b9"
+          "reference": "PractitionerRole/cb32bbe8-5692-4537-8f87-04a849ed1ef1"
         },
         "source": {
-          "software": "conector-osorno",
-          "endpoint": "hbosorno.cl"
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
         },
         "focus": [
           {
-            "reference": "ServiceRequest/ic-osorno-001"
+            "reference": "ServiceRequest/0f20462d-e64d-474c-9b71-3bd13ce414dc"
           }
         ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MessageHeader/955bb048-75bf-4ad4-b45b-9f680aeaee6b"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/ic-osorno-001",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "955bb048-75bf-4ad4-b45b-9f680aeaee6b",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-04T23:17:35.248+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "terminar",
+          "display": "Terminar"
+        },
+        "author": {
+          "reference": "PractitionerRole/cb32bbe8-5692-4537-8f87-04a849ed1ef1"
+        },
+        "source": {
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/0f20462d-e64d-474c-9b71-3bd13ce414dc"
+          }
+        ]
+      },
+      "response": {
+        "id": "955bb048-75bf-4ad4-b45b-9f680aeaee6b",
+        "status": "201 Created",
+        "location": "MessageHeader/955bb048-75bf-4ad4-b45b-9f680aeaee6b/_history/1",
+        "lastModified": "2025-10-04T20:17:35.248-03:00"
+      }
+    },
+    {
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "ic-osorno-001",
+        "id": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
         "meta": {
+          "versionId": "13",
+          "lastUpdated": "2025-10-04T20:17:35.279-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
           ]
@@ -76,7 +121,7 @@
         ],
         "identifier": [
           {
-            "value": "interconsulta-789"
+            "value": "2dd95390-74a0-450f-9d2e-fdd02d6d8657"
           }
         ],
         "status": "draft",
@@ -93,23 +138,29 @@
           }
         ],
         "subject": {
-          "reference": "Patient/valentina-godoy-001"
+          "reference": "Patient/AC1759438544804"
         },
         "authoredOn": "2025-09-20T00:00:00+00:00",
         "performer": [
           {
-            "reference": "PractitionerRole/538d4368-0a27-44ff-bc98-209b05fb59b9"
+            "reference": "PractitionerRole/91a3df71-44de-4e0d-8876-ee9a89dd89a6"
           }
         ]
+      },
+      "response": {
+        "id": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
+        "status": "200 OK",
+        "location": "ServiceRequest/0f20462d-e64d-474c-9b71-3bd13ce414dc/_history/13",
+        "lastModified": "2025-10-04T20:17:35.279-03:00"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/585417ec-aefb-449d-a9a6-c3d01bee07bb",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "585417ec-aefb-449d-a9a6-c3d01bee07bb",
+        "id": "25c38165-a605-403f-8f3b-b51cc69f20c4",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:28.595+00:00",
+          "versionId": "1",
+          "lastUpdated": "2025-10-04T23:17:35.311+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -259,7 +310,7 @@
           }
         ],
         "gender": "female",
-        "birthDate": "1980-06-01",
+        "birthDate": "1979-03-12",
         "qualification": [
           {
             "identifier": [
@@ -308,42 +359,30 @@
             }
           }
         ]
+      },
+      "response": {
+        "id": "25c38165-a605-403f-8f3b-b51cc69f20c4",
+        "status": "201 Created",
+        "location": "Practitioner/25c38165-a605-403f-8f3b-b51cc69f20c4/_history/1",
+        "lastModified": "2025-10-04T20:17:35.311-03:00"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/256e67f8-018e-4949-ac09-cd816705683e",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "256e67f8-018e-4949-ac09-cd816705683e",
-        "meta": {
-          "profile": [
-            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "102015"
-          }
-        ],
-        "name": "Hospital Base San José de Osorno"
-      }
-    },
-    {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/538d4368-0a27-44ff-bc98-209b05fb59b9",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "538d4368-0a27-44ff-bc98-209b05fb59b9",
+        "id": "cb32bbe8-5692-4537-8f87-04a849ed1ef1",
         "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-04T20:17:35.331-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/585417ec-aefb-449d-a9a6-c3d01bee07bb"
+          "reference": "Practitioner/25c38165-a605-403f-8f3b-b51cc69f20c4"
         },
         "organization": {
-          "reference": "Organization/256e67f8-018e-4949-ac09-cd816705683e"
+          "reference": "Organization/966ffe91-6042-43cb-9560-fa8ab10f8771"
         },
         "code": [
           {
@@ -357,6 +396,38 @@
             "text": "terminador"
           }
         ]
+      },
+      "response": {
+        "id": "cb32bbe8-5692-4537-8f87-04a849ed1ef1",
+        "status": "201 Created",
+        "location": "PractitionerRole/cb32bbe8-5692-4537-8f87-04a849ed1ef1/_history/1",
+        "lastModified": "2025-10-04T20:17:35.331-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "966ffe91-6042-43cb-9560-fa8ab10f8771",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-04T20:17:35.262-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123100"
+          }
+        ],
+        "name": "Hospital Base San José de Osorno"
+      },
+      "response": {
+        "id": "966ffe91-6042-43cb-9560-fa8ab10f8771",
+        "status": "201 Created",
+        "location": "Organization/966ffe91-6042-43cb-9560-fa8ab10f8771/_history/1",
+        "lastModified": "2025-10-04T20:17:35.262-03:00"
       }
     }
   ]
