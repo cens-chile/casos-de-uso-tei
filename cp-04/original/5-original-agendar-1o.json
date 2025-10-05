@@ -4,8 +4,8 @@
     "endpoint": "medisyn.hospitalosorno.cl"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "46de5e47-1bbe-4134-a9d4-7ceb8cf39269",
-    "idInterconsulta": "ff9edcb1-9f01-4014-8d03-5f16b96bda86",
+    "idSolicitudServicio": "ec43e5ab-5c74-4dd5-9197-f02e6cf34957",
+    "idInterconsulta": "41233af5-060f-4b71-b809-b63a0d1db6ac",
     "modalidadAtencion": "1"
   },
   "cita": {

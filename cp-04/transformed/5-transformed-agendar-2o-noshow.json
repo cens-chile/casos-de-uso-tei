@@ -361,7 +361,7 @@
             "value": "cita-agendada-004"
           }
         ],
-        "status": "booked",
+        "status": "noshow",
         "reasonCode": [
           {
             "coding": [
