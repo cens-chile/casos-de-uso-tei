@@ -1,0 +1,77 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "5d10262d-3795-45e2-a5e9-db2e36ae8524",
+    "idInterconsulta": "0e958738-1572-4a3b-be16-051b6e0ec570",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "1",
+    "prioridadIC": "routine",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    },
+    "subEspecialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    }
+  },
+  "prestadorReferenciador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "13.245.678-4",
+      "RNPI": "556677"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Mauricio"
+      ],
+      "primerApellido": "Araya",
+      "segundoApellido": "Cortes"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56991234567",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "mauricio.araya@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "fechaNacimiento": "1975-06-15",
+    "titulosProfesionales": [
+      {
+        "nombre": "Médico Cirujano",
+        "codigo": "1",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "Medicina Familiar",
+        "codigo": "14",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "123100"
+    }
+  }
+}

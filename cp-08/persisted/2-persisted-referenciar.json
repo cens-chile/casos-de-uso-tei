@@ -1,0 +1,431 @@
+{
+  "resourceType": "Bundle",
+  "id": "137c77cc-f333-4fc0-a6c0-b69c25c6ed43",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-05T16:20:02.470-03:00",
+    "tag": [
+      {
+        "system": "message",
+        "code": "response"
+      }
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "2c125912-dc32-4be0-b2e4-3fb33f2891a9",
+        "meta": {
+          "lastUpdated": "2025-10-05T19:18:07.397+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "referenciar",
+          "display": "Referenciar"
+        },
+        "author": {
+          "reference": "PractitionerRole/20b05c33-dd0f-43f0-b34f-58dab97284fc"
+        },
+        "source": {
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/5d10262d-3795-45e2-a5e9-db2e36ae8524"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MessageHeader/2c125912-dc32-4be0-b2e4-3fb33f2891a9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "2c125912-dc32-4be0-b2e4-3fb33f2891a9",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T19:20:02.343+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "referenciar",
+          "display": "Referenciar"
+        },
+        "author": {
+          "reference": "PractitionerRole/20b05c33-dd0f-43f0-b34f-58dab97284fc"
+        },
+        "source": {
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/5d10262d-3795-45e2-a5e9-db2e36ae8524"
+          }
+        ]
+      },
+      "response": {
+        "id": "2c125912-dc32-4be0-b2e4-3fb33f2891a9",
+        "status": "201 Created",
+        "location": "MessageHeader/2c125912-dc32-4be0-b2e4-3fb33f2891a9/_history/1",
+        "lastModified": "2025-10-05T16:20:02.343-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "5d10262d-3795-45e2-a5e9-db2e36ae8524",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2025-10-05T16:20:02.393-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS",
+            "valueBoolean": true
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "2",
+                  "display": "A la espera de revisión"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "0e958738-1572-4a3b-be16-051b6e0ec570"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/AC1759438544804"
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/c50d9965-6bc6-47b6-b4fc-4a5545717cd4"
+          }
+        ],
+        "locationCode": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
+                "code": "1",
+                "display": "Nivel Secundario"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "id": "5d10262d-3795-45e2-a5e9-db2e36ae8524",
+        "status": "200 OK",
+        "location": "ServiceRequest/5d10262d-3795-45e2-a5e9-db2e36ae8524/_history/3",
+        "lastModified": "2025-10-05T16:20:02.393-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "20b05c33-dd0f-43f0-b34f-58dab97284fc",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T16:20:02.416-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/44fc1808-05b2-4bec-9bcc-05d9a9d24393"
+        },
+        "organization": {
+          "reference": "Organization/565d8904-8365-44c6-9b7a-be591fa1204a"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "referenciador",
+                "display": "Referenciador"
+              }
+            ],
+            "text": "referenciador"
+          }
+        ]
+      },
+      "response": {
+        "id": "20b05c33-dd0f-43f0-b34f-58dab97284fc",
+        "status": "201 Created",
+        "location": "PractitionerRole/20b05c33-dd0f-43f0-b34f-58dab97284fc/_history/1",
+        "lastModified": "2025-10-05T16:20:02.416-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "c50d9965-6bc6-47b6-b4fc-4a5545717cd4",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T16:20:02.432-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "organization": {
+          "reference": "Organization/7f273916-9dd1-46f7-9819-06fe459c113b"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "atendedor",
+                "display": "Atendedor"
+              }
+            ],
+            "text": "atendedor"
+          }
+        ]
+      },
+      "response": {
+        "id": "c50d9965-6bc6-47b6-b4fc-4a5545717cd4",
+        "status": "201 Created",
+        "location": "PractitionerRole/c50d9965-6bc6-47b6-b4fc-4a5545717cd4/_history/1",
+        "lastModified": "2025-10-05T16:20:02.432-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "44fc1808-05b2-4bec-9bcc-05d9a9d24393",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T19:20:02.453+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "13.245.678-4"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "556677"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Araya",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Cortes"
+                }
+              ]
+            },
+            "given": [
+              "Mauricio"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+56991234567"
+          },
+          {
+            "system": "email",
+            "value": "mauricio.araya@cesfam-lopetegui.cl"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1975-06-15",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "1",
+                  "display": "Médico Cirujano"
+                }
+              ],
+              "text": "Médico Cirujano"
+            },
+            "issuer": {
+              "display": "Universidad de Chile"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "14",
+                  "display": "Medicina Familiar"
+                }
+              ],
+              "text": "Medicina Familiar"
+            },
+            "issuer": {
+              "display": "Colegio Médico de Chile"
+            }
+          }
+        ]
+      },
+      "response": {
+        "id": "44fc1808-05b2-4bec-9bcc-05d9a9d24393",
+        "status": "201 Created",
+        "location": "Practitioner/44fc1808-05b2-4bec-9bcc-05d9a9d24393/_history/1",
+        "lastModified": "2025-10-05T16:20:02.453-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "565d8904-8365-44c6-9b7a-be591fa1204a",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T16:20:02.359-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123301"
+          }
+        ],
+        "name": "CESFAM Dr. Marcelo Lopetegui"
+      },
+      "response": {
+        "id": "565d8904-8365-44c6-9b7a-be591fa1204a",
+        "status": "201 Created",
+        "location": "Organization/565d8904-8365-44c6-9b7a-be591fa1204a/_history/1",
+        "lastModified": "2025-10-05T16:20:02.359-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "7f273916-9dd1-46f7-9819-06fe459c113b",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T16:20:02.375-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123100"
+          }
+        ],
+        "name": "Hospital Base San José de Osorno"
+      },
+      "response": {
+        "id": "7f273916-9dd1-46f7-9819-06fe459c113b",
+        "status": "201 Created",
+        "location": "Organization/7f273916-9dd1-46f7-9819-06fe459c113b/_history/1",
+        "lastModified": "2025-10-05T16:20:02.375-03:00"
+      }
+    }
+  ]
+}

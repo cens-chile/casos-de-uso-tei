@@ -1,0 +1,74 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "5d10262d-3795-45e2-a5e9-db2e36ae8524",
+    "idInterconsulta": "0e958738-1572-4a3b-be16-051b6e0ec570",
+    "modalidadAtencion": 1,
+    "destinoAtencion": "1",
+    "resolutividadAPS": true,
+    "especialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    },
+    "subEspecialidadMedicaDestino": {
+      "codigo": "53",
+      "tipo": "medica"
+    },
+    "pertinenciaIC": {
+      "codigo": "1",
+      "motivoNoPertinencia": ""
+    }
+  },
+  "prestadorRevisor": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "18.765.432-1",
+      "RNPI": "778899"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Ana"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramirez"
+    },
+    "sexoRegistral": "female",
+    "nacionalidad": "152",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56987543219",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "fechaNacimiento": "1988-02-12",
+    "titulosProfesionales": [
+      {
+        "nombre": "Enfermera",
+        "codigo": "2",
+        "institucion": "Universidad Austral de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "origen": {
+      "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+      "codigoDEIS": "123301",
+      "direccion": "Calle Los Aromos 123, Osorno"
+    },
+    "destino": {
+      "nombreLegal": "Hospital Base San José de Osorno",
+      "codigoDEIS": "123100",
+      "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+    }
+  }
+}
