@@ -1,0 +1,261 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2025-10-05T21:03:21.437+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/5ef14c19-ba39-4353-a063-1d9954efd2e8",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "5ef14c19-ba39-4353-a063-1d9954efd2e8",
+        "meta": {
+          "lastUpdated": "2025-10-05T21:03:21.438+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "priorizar",
+          "display": "Priorizar"
+        },
+        "author": {
+          "reference": "PractitionerRole/16cf34eb-1da8-4a93-b0ff-95aab6a549e6"
+        },
+        "source": {
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "a19c0eb5-ce44-4a91-94c0-4d962812908a",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "4",
+                  "display": "A la espera de agendamiento"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionStringFundamentoPriorizacion",
+            "valueString": "Paciente con condición clínica que requiere atención inmediata"
+          }
+        ],
+        "identifier": [
+          {
+            "value": "2308d97e-f2a9-41a1-83b4-ba14ef9452a9"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                "code": "3",
+                "display": "Telemedicina"
+              }
+            ]
+          }
+        ],
+        "priority": "urgent",
+        "subject": {
+          "reference": "Patient/AC1759438544804"
+        },
+        "authoredOn": "2025-09-05T11:45:00+00:00"
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/a19c0eb5-ce44-4a91-94c0-4d962812908a",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "16cf34eb-1da8-4a93-b0ff-95aab6a549e6",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/87c395ed-36d7-430a-8c03-c2574a770bb6"
+        },
+        "organization": {
+          "reference": "Organization/18034ec6-444a-46f1-bd7c-31ee108a4b27"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "priorizador",
+                "display": "Priorizador"
+              }
+            ],
+            "text": "priorizador"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Practitioner/87c395ed-36d7-430a-8c03-c2574a770bb6",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "87c395ed-36d7-430a-8c03-c2574a770bb6",
+        "meta": {
+          "lastUpdated": "2025-10-05T21:03:21.445+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "13245678-4"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "556677"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Araya",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Cortés"
+                }
+              ]
+            },
+            "given": [
+              "Mauricio"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "mauricio.araya@cesfam-lopetegui.cl"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1970-05-15",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "1",
+                  "display": "MÉDICO CIRUJANO"
+                }
+              ],
+              "text": "MÉDICO CIRUJANO"
+            },
+            "period": {
+              "start": "1995-05-15T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Universidad de Chile"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "39",
+                  "display": "Medicina Familiar"
+                }
+              ],
+              "text": "Medicina Familiar"
+            },
+            "period": {
+              "start": "2000-05-15T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Colegio Médico de Chile"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Organization/18034ec6-444a-46f1-bd7c-31ee108a4b27",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "18034ec6-444a-46f1-bd7c-31ee108a4b27",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123301"
+          }
+        ],
+        "name": "CESFAM Dr. Marcelo Lopetegui"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "datosSistema": {
+    "software": "MEDISYN",
+    "endpoint": "medisyn.hospitalosorno.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "a19c0eb5-ce44-4a91-94c0-4d962812908a",
+    "idInterconsulta": "2308d97e-f2a9-41a1-83b4-ba14ef9452a9",
+    "fechaSolicitudIC": "2025-09-20 14:30:00",
+    "modalidadAtencion": "1",
+    "derivadoPara": "1",
+    "prioridadIc": "urgent",
+    "atencionPreferente": false,
+    "resolutividadAPS": false,
+    "fundamentoPriorizacion": "Sospecha clínica sidnorme túnel carpiano"
+  },
+  "cita": {
+    "identificador": "cita-agendada-002",
+    "estado": "booked",
+    "motivo": {
+      "codigo": "409073007",
+      "glosa": "Evaluación traumatología",
+      "sistema": "http://snomed.info/sct"
+    },
+    "fechaInicio": "2025-09-25 12:00:00",
+    "fechaFin": "2025-09-25 12:30:00",
+    "estadoActorPaciente": "tentative",
+    "medioDeContacto": "3",
+    "contactadoLE": {
+      "contactado": true,
+      "motivoNoContactabilidad": ""
+    },
+    "ubicacion": "Location/Hospital_Base_Osorno"
+  },
+  "encuentroAtender": {
+    "identificadorConsultaEspecialidad": "id-consulta-especialidad",
+    "pertinencia": false,
+    "codigoModalidadAtencion": "1",
+    "periodo": {
+      "fechaInicio": "2023-01-01 09:00:00",
+      "fechaFin": "2024-01-01 10:00:00"
+    }
+  },
+  "planDeAtencion": {
+    "indicacionesMedicas": "Plan de atención para hipertensión arterial",
+    "requiereExamen": true
+  },
+  "prestador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "9876543-2",
+      "RNPI": "889900"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Pamela"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Soto"
+    },
+    "sexoRegistral": "female",
+    "nacionalidad": "056",
+    "contacto": [
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "pamela.torres@hospitalosorno.cl"
+      },
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56912345678"
+      }
+    ],
+    "fechaNacimiento": "1979-03-12",
+    "titulosProfesionales": [
+      {
+        "nombre": "MÉDICO CIRUJANO",
+        "codigo": "1",
+        "fechaEmision": "2006-12-10",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "TRAUMATOLOGÍA",
+        "codigo": "20",
+        "fechaEmision": "2012-04-18",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "nombreLegal": "Hospital Base San José de Osorno",
+    "codigoDEIS": "123100"
+  },
+  "diagnostico": {
+    "codeCIE10": "G56.01",
+    "texto": "Síndrome del túnel carpiano derecho",
+    "estadoDiagnostico": "active",
+    "estadoVerificacion": "confirmed",
+    "categoria": "encounter-diagnosis",
+    "severidad": "6736007"
+  },
+  "solicitudExamen": [
+    {
+      "fechaSolicitudIC": "2025-09-25 14:30:00",
+      "razonSolicitud": "Síntomas persistentes en muñeca derecha",
+      "examenSolicitadoCodigo": "98716-4",
+      "examenSolicitadoGlosa": "Electromiografía",
+      "examenSolicitadoDescripcion": "Evaluación de la conducción nerviosa"
+    }
+  ]
+}

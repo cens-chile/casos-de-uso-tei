@@ -1,0 +1,497 @@
+{
+  "resourceType": "Bundle",
+  "id": "bc64711c-387e-4919-b28d-66c8e8e353ac",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-05T18:38:24.588-03:00",
+    "tag": [
+      {
+        "system": "message",
+        "code": "response"
+      }
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "5b25b560-f629-4621-a94b-2af1e1a6c637",
+        "meta": {
+          "lastUpdated": "2025-10-05T21:32:52.852+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "agendar",
+          "display": "Agendar"
+        },
+        "author": {
+          "reference": "PractitionerRole/f47b3c49-0bdb-42ef-9f86-4fbe457b82ec"
+        },
+        "source": {
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a"
+          },
+          {
+            "reference": "Appointment/b3a8dc7f-1b89-472e-a1d5-2e31b9674032"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MessageHeader/5b25b560-f629-4621-a94b-2af1e1a6c637"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "5b25b560-f629-4621-a94b-2af1e1a6c637",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T21:38:24.357+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "agendar",
+          "display": "Agendar"
+        },
+        "author": {
+          "reference": "PractitionerRole/f47b3c49-0bdb-42ef-9f86-4fbe457b82ec"
+        },
+        "source": {
+          "software": "MEDISYN",
+          "endpoint": "medisyn.hospitalosorno.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a"
+          },
+          {
+            "reference": "Appointment/b3a8dc7f-1b89-472e-a1d5-2e31b9674032"
+          }
+        ]
+      },
+      "response": {
+        "id": "5b25b560-f629-4621-a94b-2af1e1a6c637",
+        "status": "201 Created",
+        "location": "MessageHeader/5b25b560-f629-4621-a94b-2af1e1a6c637/_history/1",
+        "lastModified": "2025-10-05T18:38:24.357-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "a19c0eb5-ce44-4a91-94c0-4d962812908a",
+        "meta": {
+          "versionId": "8",
+          "lastUpdated": "2025-10-05T18:38:24.488-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "5",
+                  "display": "En espera de la atención"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "2308d97e-f2a9-41a1-83b4-ba14ef9452a9"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                "code": "1",
+                "display": "Presencial"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/AC1759438544804"
+        }
+      },
+      "response": {
+        "id": "a19c0eb5-ce44-4a91-94c0-4d962812908a",
+        "status": "200 OK",
+        "location": "ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a/_history/8",
+        "lastModified": "2025-10-05T18:38:24.488-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "f47b3c49-0bdb-42ef-9f86-4fbe457b82ec",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T18:38:24.509-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/eb6d0498-4641-46e2-8732-ffc4503a1f59"
+        },
+        "organization": {
+          "reference": "Organization/e5df4eb5-0137-46dc-a393-19bf5ad434b5"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "agendador",
+                "display": "Agendador"
+              }
+            ],
+            "text": "agendador"
+          }
+        ]
+      },
+      "response": {
+        "id": "f47b3c49-0bdb-42ef-9f86-4fbe457b82ec",
+        "status": "201 Created",
+        "location": "PractitionerRole/f47b3c49-0bdb-42ef-9f86-4fbe457b82ec/_history/1",
+        "lastModified": "2025-10-05T18:38:24.509-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "f309fe45-69bd-47b1-9f8d-a146e0c4f6a7",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2025-10-05T18:38:24.525-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/c5351ce3-5a46-48f4-995c-675ec504c45d"
+        },
+        "organization": {
+          "reference": "Organization/7f16b511-02d5-49d3-b03a-713a4fa597ad"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "atendedor",
+                "display": "Atendedor"
+              }
+            ],
+            "text": "atendedor"
+          }
+        ]
+      },
+      "response": {
+        "id": "f309fe45-69bd-47b1-9f8d-a146e0c4f6a7",
+        "status": "200 OK",
+        "location": "PractitionerRole/f309fe45-69bd-47b1-9f8d-a146e0c4f6a7/_history/2",
+        "lastModified": "2025-10-05T18:38:24.525-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c5351ce3-5a46-48f4-995c-675ec504c45d",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T21:38:24.551+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "12678345-1"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "889900"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Torres",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Silva"
+                }
+              ]
+            },
+            "given": [
+              "Pamela"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1979-03-03",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "1",
+                  "display": "MÉDICO CIRUJANO"
+                }
+              ],
+              "text": "MÉDICO CIRUJANO"
+            },
+            "issuer": {
+              "display": "Universidad de Chile"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "4",
+                  "display": "TRAUMATOLOGÍA"
+                }
+              ],
+              "text": "TRAUMATOLOGÍA"
+            },
+            "issuer": {
+              "display": "Colegio Médico de Chile"
+            }
+          }
+        ]
+      },
+      "response": {
+        "id": "c5351ce3-5a46-48f4-995c-675ec504c45d",
+        "status": "201 Created",
+        "location": "Practitioner/c5351ce3-5a46-48f4-995c-675ec504c45d/_history/1",
+        "lastModified": "2025-10-05T18:38:24.551-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "eb6d0498-4641-46e2-8732-ffc4503a1f59",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T21:38:24.572+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerAdministrativoLE"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "16987543-2"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "López",
+            "given": [
+              "Carolina"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+56976543210"
+          },
+          {
+            "system": "email",
+            "value": "carolina.lopez@hospitalosorno.cl"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1975-01-01"
+      },
+      "response": {
+        "id": "eb6d0498-4641-46e2-8732-ffc4503a1f59",
+        "status": "201 Created",
+        "location": "Practitioner/eb6d0498-4641-46e2-8732-ffc4503a1f59/_history/1",
+        "lastModified": "2025-10-05T18:38:24.572-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "b3a8dc7f-1b89-472e-a1d5-2e31b9674032",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T18:38:24.454-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMediodeContacto",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMediodeContacto",
+                  "code": "3",
+                  "display": "Llamada"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado",
+            "extension": [
+              {
+                "url": "Contactado",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "value": "cita-agendada-007"
+          }
+        ],
+        "status": "booked",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "409073007",
+                "display": "Evaluación traumatología"
+              }
+            ]
+          }
+        ],
+        "start": "2025-09-20T14:30:00.000+00:00",
+        "end": "2025-09-20T15:00:00.000+00:00",
+        "created": "2025-10-05T21:32:52+00:00",
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/a19c0eb5-ce44-4a91-94c0-4d962812908a"
+          }
+        ],
+        "participant": [
+          {
+            "actor": {
+              "reference": "Patient/AC1759438544804",
+              "type": "Patient"
+            },
+            "status": "tentative"
+          },
+          {
+            "actor": {
+              "reference": "f309fe45-69bd-47b1-9f8d-a146e0c4f6a7",
+              "type": "PractitionerRole"
+            },
+            "status": "accepted"
+          }
+        ]
+      },
+      "response": {
+        "id": "b3a8dc7f-1b89-472e-a1d5-2e31b9674032",
+        "status": "201 Created",
+        "location": "Appointment/b3a8dc7f-1b89-472e-a1d5-2e31b9674032/_history/1",
+        "lastModified": "2025-10-05T18:38:24.454-03:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "e5df4eb5-0137-46dc-a393-19bf5ad434b5",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-10-05T18:38:24.472-03:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "1765"
+          }
+        ],
+        "name": "Hospital Base San José de Osorno"
+      },
+      "response": {
+        "id": "e5df4eb5-0137-46dc-a393-19bf5ad434b5",
+        "status": "201 Created",
+        "location": "Organization/e5df4eb5-0137-46dc-a393-19bf5ad434b5/_history/1",
+        "lastModified": "2025-10-05T18:38:24.472-03:00"
+      }
+    }
+  ]
+}
