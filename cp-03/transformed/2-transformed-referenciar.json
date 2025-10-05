@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T18:01:35.280+00:00",
+  "timestamp": "2025-10-05T00:09:46.330+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/c10a49e7-1b2a-46ab-9636-47849900fc7c",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/3d4ab5c4-5946-4548-9285-470ee568ec49",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "c10a49e7-1b2a-46ab-9636-47849900fc7c",
+        "id": "3d4ab5c4-5946-4548-9285-470ee568ec49",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:35.281+00:00",
+          "lastUpdated": "2025-10-05T00:09:46.335+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -25,7 +25,7 @@
           "display": "Referenciar"
         },
         "author": {
-          "reference": "PractitionerRole/5d37fc0b-e911-4d9c-b503-45acb37b82fe"
+          "reference": "PractitionerRole/e2c9fdf7-41cf-4078-8750-eddd10d99b2e"
         },
         "source": {
           "software": "rayen-cesfam-lopetegui",
@@ -33,16 +33,16 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/SIC-2025-007"
+            "reference": "ServiceRequest/629804aa-fe68-4f09-8cb0-72c8d768fc67"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/SIC-2025-007",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/629804aa-fe68-4f09-8cb0-72c8d768fc67",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "SIC-2025-007",
+        "id": "629804aa-fe68-4f09-8cb0-72c8d768fc67",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -71,8 +71,20 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "20",
-                  "display": "GENÉTICA CLÍNICA"
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
                 }
               ]
             }
@@ -80,17 +92,17 @@
         ],
         "identifier": [
           {
-            "value": "IC-2025-0007"
+            "value": "4a03271d-ce19-4911-9147-40913322dd5e"
           }
         ],
         "status": "draft",
         "intent": "order",
         "subject": {
-          "reference": "Patient/valentina-godoy-007"
+          "reference": "Patient/AC1759438544804"
         },
         "performer": [
           {
-            "reference": "PractitionerRole/0ba0524a-b008-4e8e-8019-31d3a0876bd1"
+            "reference": "PractitionerRole/efe2be26-2c78-4d8e-ad32-f8be77686c86"
           }
         ],
         "locationCode": [
@@ -98,8 +110,8 @@
             "coding": [
               {
                 "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
-                "code": "4",
-                "display": "Hospital Digital"
+                "code": "2",
+                "display": "APS"
               }
             ]
           }
@@ -107,16 +119,30 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/a01d1599-488f-4381-86f0-7b647227c619",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/fabd2872-0ed6-44e8-a0e7-8c3a2aa27691",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "a01d1599-488f-4381-86f0-7b647227c619",
+        "id": "fabd2872-0ed6-44e8-a0e7-8c3a2aa27691",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:35.284+00:00",
+          "lastUpdated": "2025-10-05T00:09:46.335+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
         },
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
         "identifier": [
           {
             "use": "official",
@@ -156,7 +182,7 @@
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Cortés"
+                  "valueString": "Cortes"
                 }
               ]
             },
@@ -167,12 +193,16 @@
         ],
         "telecom": [
           {
+            "system": "phone",
+            "value": "+56991234567"
+          },
+          {
             "system": "email",
             "value": "mauricio.araya@cesfam-lopetegui.cl"
           }
         ],
         "gender": "male",
-        "birthDate": "1975-06-15",
+        "birthDate": "1970-05-15",
         "qualification": [
           {
             "identifier": [
@@ -185,13 +215,10 @@
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
                   "code": "1",
-                  "display": "MÉDICO CIRUJANO"
+                  "display": "Médico Cirujano"
                 }
               ],
-              "text": "MÉDICO CIRUJANO"
-            },
-            "period": {
-              "start": "2000-05-15T00:00:00+00:00"
+              "text": "Médico Cirujano"
             },
             "issuer": {
               "display": "Universidad de Chile"
@@ -207,14 +234,11 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "39",
+                  "code": "14",
                   "display": "Medicina Familiar"
                 }
               ],
               "text": "Medicina Familiar"
-            },
-            "period": {
-              "start": "2010-05-15T00:00:00+00:00"
             },
             "issuer": {
               "display": "Colegio Médico de Chile"
@@ -224,10 +248,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/4fab2109-d2d2-4764-a4f7-6b4e4d588b7b",
+      "fullUrl": "http://transformador-cens.cl/Organization/083da9f3-1989-4a65-b0a7-ee09ae5d4c62",
       "resource": {
         "resourceType": "Organization",
-        "id": "4fab2109-d2d2-4764-a4f7-6b4e4d588b7b",
+        "id": "083da9f3-1989-4a65-b0a7-ee09ae5d4c62",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -243,10 +267,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/0030930b-b6c8-46d1-b02d-d9610efb745e",
+      "fullUrl": "http://transformador-cens.cl/Organization/bc622148-051b-46f1-a4bc-a211ce9f1cbc",
       "resource": {
         "resourceType": "Organization",
-        "id": "0030930b-b6c8-46d1-b02d-d9610efb745e",
+        "id": "bc622148-051b-46f1-a4bc-a211ce9f1cbc",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -255,27 +279,27 @@
         "identifier": [
           {
             "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
-            "value": "123100"
+            "value": "1765"
           }
         ],
         "name": "Hospital Base San José de Osorno"
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/5d37fc0b-e911-4d9c-b503-45acb37b82fe",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/e2c9fdf7-41cf-4078-8750-eddd10d99b2e",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "5d37fc0b-e911-4d9c-b503-45acb37b82fe",
+        "id": "e2c9fdf7-41cf-4078-8750-eddd10d99b2e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/a01d1599-488f-4381-86f0-7b647227c619"
+          "reference": "Practitioner/fabd2872-0ed6-44e8-a0e7-8c3a2aa27691"
         },
         "organization": {
-          "reference": "Organization/4fab2109-d2d2-4764-a4f7-6b4e4d588b7b"
+          "reference": "Organization/083da9f3-1989-4a65-b0a7-ee09ae5d4c62"
         },
         "code": [
           {
@@ -292,17 +316,17 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/0ba0524a-b008-4e8e-8019-31d3a0876bd1",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/efe2be26-2c78-4d8e-ad32-f8be77686c86",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "0ba0524a-b008-4e8e-8019-31d3a0876bd1",
+        "id": "efe2be26-2c78-4d8e-ad32-f8be77686c86",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "organization": {
-          "reference": "Organization/0030930b-b6c8-46d1-b02d-d9610efb745e"
+          "reference": "Organization/bc622148-051b-46f1-a4bc-a211ce9f1cbc"
         },
         "code": [
           {

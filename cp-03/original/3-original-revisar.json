@@ -3,19 +3,18 @@
     "software": "rayen-cesfam-lopetegui",
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
-  "referenciaPaciente": "Patient/valentina-godoy-001",
   "solicitudIC": {
-    "idSolicitudServicio": "SR-20250905-007",
-    "idInterconsulta": "IC-20250905-0007",
+    "idSolicitudServicio": "629804aa-fe68-4f09-8cb0-72c8d768fc67",
+    "idInterconsulta": "4a03271d-ce19-4911-9147-40913322dd5e",
     "modalidadAtencion": 1,
     "destinoAtencion": "4",
     "resolutividadAPS": true,
     "especialidadMedicaDestino": {
-      "codigo": "14",
+      "codigo": "53",
       "tipo": "medica"
     },
     "subEspecialidadMedicaDestino": {
-      "codigo": "14",
+      "codigo": "53",
       "tipo": "medica"
     },
     "pertinenciaIC": {
@@ -58,6 +57,7 @@
       }
     ]
   },
+  "referenciaPaciente": "Patient/AC1759438544804",
   "establecimiento": {
     "origen": {
       "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
@@ -69,5 +69,9 @@
       "codigoDEIS": "123100",
       "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
     }
+  },
+  "evaluacion": {
+    "resultadoRevision": "aprobada",
+    "justificacion": "Se realiza revisión definitiva considerando que todos los antecedentes clínicos están completos y actualizados."
   }
 }

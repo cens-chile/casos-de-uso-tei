@@ -3,36 +3,15 @@
     "software": "rayen-cesfam-lopetegui",
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
-  "solicitudIC": {
-    "idLocalIC": "sic-004",
-    "fechaSolicitudIC": "2025-09-05 10:15:00",
-    "modalidadAtencion": "1",
-    "derivadoPara": "2",
-    "prioridadIc": "routine",
-    "resolutividadAPS": false,
-    "atencionPreferente": false,
-    "fundamentoPriorizacion": "Síntomas persistentes y déficit funcional leve en mano derecha.",
-    "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía.",
-    "fechaEnvioSIC": "2025-09-05 10:30:00"
-  },
-  "encuentroIniciarAPS": {
-    "identificacionConsultaAPS": "encuentro-cesfam-05092025-1015",
-    "codigoModalidadAtencion": "1",
-    "periodo": {
-      "fechaInicio": "2025-09-05 10:15:00",
-      "fechaFin": "2025-09-05 10:45:00"
-    }
-  },
   "paciente": {
     "identidadGenero": "1",
     "sexoBiologico": "female",
-    "sexoRegistral": "female",
     "nacionalidad": "152",
     "paisOrigen": "152",
     "pueblosOriginariosPerteneciente": false,
     "identificadores": [
       {
-        "valor": "17.456.321-5",
+        "valor": "33.333.333-3",
         "codigo": "01",
         "paisEmision": "152"
       }
@@ -47,21 +26,21 @@
     },
     "contacto": [
       {
-        "sistemaDeContacto": "phone",
         "tipoDeContacto": "phone",
-        "valorContacto": "+569765432109"
+        "valorContacto": "+569765432109",
+        "sistemaDeContacto": "phone"
       },
       {
-        "sistemaDeContacto": "email",
         "tipoDeContacto": "email",
-        "valorContacto": "valentina.godoy@gmail.com"
+        "valorContacto": "valentina.godoy@gmail.com",
+        "sistemaDeContacto": "email"
       }
     ],
+    "sexoRegistral": "female",
     "fechaNacimiento": "1979-08-12",
     "fallecimiento": {
       "fallecido": false
     },
-    "estadoCivil": "01",
     "direcciones": [
       {
         "direccion": "Pasaje Las Violetas 456, Villa El Sol",
@@ -88,7 +67,7 @@
   "profesionalClinicoSolicita": {
     "tipoPrestador": "profesional",
     "identificadores": {
-      "RUN": "13245678-4",
+      "RUN": "13.245.678-4",
       "RNPI": "556677"
     },
     "nombreCompleto": {
@@ -100,19 +79,6 @@
     },
     "sexoRegistral": "male",
     "fechaNacimiento": "1970-05-15",
-    "nacionalidad": "152",
-    "contacto": [
-      {
-        "sistemaDeContacto": "phone",
-        "tipoDeContacto": "phone",
-        "valorContacto": "+56991234567"
-      },
-      {
-        "sistemaDeContacto": "email",
-        "tipoDeContacto": "email",
-        "valorContacto": "mauricio.araya@cesfam-lopetegui.cl"
-      }
-    ],
     "titulosProfesionales": [
       {
         "codigo": "1",
@@ -121,7 +87,7 @@
     ],
     "especialidadesMedicas": [
       {
-        "codigo": "39",
+        "codigo": "28",
         "nombre": "Medicina Familiar"
       }
     ]
@@ -133,18 +99,49 @@
       "direccion": "Calle Los Aromos 123, Osorno"
     }
   },
+  "solicitudIC": {
+    "fechaSolicitudIC": "2025-09-05 10:15:00",
+    "modalidadAtencion": "1",
+    "derivadoPara": "2",
+    "prioridadIc": "routine",
+    "resolutividadAPS": false,
+    "fundamentoPriorizacion": "Síntomas persistentes y déficit funcional leve en mano derecha.",
+    "fechaEnvioSIC": "2025-09-05 10:30:00"
+  },
+  "encuentroIniciarAPS": {
+    "identificacionConsultaAPS": "encuentro-cesfam-05092025-1015",
+    "codigoModalidadAtencion": "1",
+    "periodo": {
+      "fechaInicio": "2025-09-05 10:15:00",
+      "fechaFin": "2025-09-05 10:45:00"
+    }
+  },
+  "indiceComorbilidad": "G0",
+  "presentaDiscapacidad": false,
+  "cuidador": false,
   "diagnostico": {
     "codeCIE10": "G56.0",
     "glosa": "Síndrome del túnel carpiano",
-    "texto": "Síndrome del túnel carpiano de muñeca derecha",
     "estadoDiagnostico": "active",
     "estadoVerificacion": "provisional",
     "categoria": "encounter-diagnosis"
   },
+  "resultadoExamenes": [
+    {
+      "codigo": "100000-9",
+      "resultado": "10828004",
+      "fechaExamen": "2025-09-25 10:20:00"
+    },
+    {
+      "codigo": "269102002",
+      "resultado": "10828004",
+      "fechaExamen": "2025-09-25 10:25:00"
+    }
+  ],
   "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía.",
   "solicitudExamen": [
     {
-      "fechaSolicitudIC": "2025-09-05 10:30:00",
+      "fechaSolicitudIC": "2025-09-25 10:30:00",
       "razonSolicitud": "Confirmación diagnóstica mediante estudio electrodiagnóstico",
       "examenSolicitadoCodigo": "100003-3",
       "examenSolicitadoGlosa": "Estudio electrodiagnóstico de nervio mediano"
