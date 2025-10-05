@@ -2,30 +2,30 @@
   "resourceType": "Bundle",
   "meta": {
     "profile": [
-      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleRevisarLE"
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"
     ]
   },
   "type": "message",
-  "timestamp": "2025-09-30T18:01:29.227+00:00",
+  "timestamp": "2025-10-04T23:40:40.104+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/76607251-30ae-47f3-af84-b9b4dbe09ad0",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/61271081-1fd0-4a97-99d5-fd70ead4fe99",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "76607251-30ae-47f3-af84-b9b4dbe09ad0",
+        "id": "61271081-1fd0-4a97-99d5-fd70ead4fe99",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:29.231+00:00",
+          "lastUpdated": "2025-10-04T23:40:40.106+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
         },
         "eventCoding": {
           "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
-          "code": "revisar",
-          "display": "Revisar"
+          "code": "referenciar",
+          "display": "Referenciar"
         },
         "author": {
-          "reference": "PractitionerRole/7bcc8aa5-3ae4-4846-8c63-67abd4d6eeec"
+          "reference": "PractitionerRole/10d0f00c-8bb5-4c24-b09c-b054ec9a6f1e"
         },
         "source": {
           "software": "rayen-cesfam-lopetegui",
@@ -33,16 +33,16 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/SIC-2025-002"
+            "reference": "ServiceRequest/1c05ee7f-8314-4cc2-961d-390231818eca"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/SIC-2025-002",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/1c05ee7f-8314-4cc2-961d-390231818eca",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "SIC-2025-002",
+        "id": "1c05ee7f-8314-4cc2-961d-390231818eca",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -51,7 +51,7 @@
         "extension": [
           {
             "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS",
-            "valueBoolean": true
+            "valueBoolean": false
           },
           {
             "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
@@ -59,8 +59,8 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
-                  "code": "3",
-                  "display": "A la espera de priorización"
+                  "code": "2",
+                  "display": "A la espera de revisión"
                 }
               ]
             }
@@ -76,42 +76,21 @@
                 }
               ]
             }
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaInterconsulta",
-            "extension": [
-              {
-                "url": "EvaluacionPertinencia",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta",
-                      "code": "2",
-                      "display": "No Pertinente"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "MotivoNoPertinencia",
-                "valueString": "La solicitud no cumple con los criterios clínicos establecidos para derivación a nivel secundario. Corresponde manejo y seguimiento en APS."
-              }
-            ]
           }
         ],
         "identifier": [
           {
-            "value": "IC-2025-0002"
+            "value": "390d438a-564b-4dc7-bf03-107798041092"
           }
         ],
         "status": "draft",
         "intent": "order",
         "subject": {
-          "reference": "Patient/valentina-godoy-001"
+          "reference": "Patient/AC1759438544804"
         },
         "performer": [
           {
-            "reference": "PractitionerRole/ace24951-6a50-4f9a-a225-0bc76315e76c"
+            "reference": "PractitionerRole/20f50ffb-05bd-4421-8852-d5dc978b7f2e"
           }
         ],
         "locationCode": [
@@ -128,12 +107,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/b972b048-ea1d-4c38-b4ec-eddfbc7afe99",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/b5886b09-9fcc-4af4-88b6-6a3ff3e40f06",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "b972b048-ea1d-4c38-b4ec-eddfbc7afe99",
+        "id": "b5886b09-9fcc-4af4-88b6-6a3ff3e40f06",
         "meta": {
-          "lastUpdated": "2025-09-30T18:01:29.232+00:00",
+          "lastUpdated": "2025-10-04T23:40:40.108+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -151,7 +130,7 @@
               ],
               "text": "RUN"
             },
-            "value": "12345678-9"
+            "value": "13.245.678-4"
           },
           {
             "use": "official",
@@ -165,35 +144,29 @@
               ],
               "text": "RNPI"
             },
-            "value": "778899"
+            "value": "556677"
           }
         ],
         "active": true,
         "name": [
           {
             "use": "official",
-            "family": "Torres",
+            "family": "Araya",
             "_family": {
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Ramirez"
+                  "valueString": "Cortes"
                 }
               ]
             },
             "given": [
-              "Ana"
+              "Mauricio"
             ]
           }
         ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "ana.torres@cesfam-lopetegui.cl"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1975-05-31",
+        "gender": "male",
+        "birthDate": "1975-06-15",
         "qualification": [
           {
             "identifier": [
@@ -205,24 +178,38 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
-                  "code": "3",
-                  "display": "ENFERMERA"
+                  "code": "1",
+                  "display": "MÉDICO CIRUJANO"
                 }
               ],
-              "text": "ENFERMERA"
-            },
-            "issuer": {
-              "display": "Universidad de Los Lagos"
+              "text": "MÉDICO CIRUJANO"
+            }
+          },
+          {
+            "identifier": [
+              {
+                "value": "esp"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "39",
+                  "display": "Medicina Familiar"
+                }
+              ],
+              "text": "Medicina Familiar"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/78ff2151-27b0-4b1a-ad9b-5d0c86d7fc6d",
+      "fullUrl": "http://transformador-cens.cl/Organization/c3e80271-e909-49e8-99a5-a92ba83c3dc0",
       "resource": {
         "resourceType": "Organization",
-        "id": "78ff2151-27b0-4b1a-ad9b-5d0c86d7fc6d",
+        "id": "c3e80271-e909-49e8-99a5-a92ba83c3dc0",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -238,10 +225,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/7d12b66c-5347-44f4-b24d-bdc39f5dbe17",
+      "fullUrl": "http://transformador-cens.cl/Organization/b913ca23-a720-42cc-bc55-33fc54a1bfc7",
       "resource": {
         "resourceType": "Organization",
-        "id": "7d12b66c-5347-44f4-b24d-bdc39f5dbe17",
+        "id": "b913ca23-a720-42cc-bc55-33fc54a1bfc7",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -257,47 +244,47 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/7bcc8aa5-3ae4-4846-8c63-67abd4d6eeec",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/10d0f00c-8bb5-4c24-b09c-b054ec9a6f1e",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "7bcc8aa5-3ae4-4846-8c63-67abd4d6eeec",
+        "id": "10d0f00c-8bb5-4c24-b09c-b054ec9a6f1e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/b972b048-ea1d-4c38-b4ec-eddfbc7afe99"
+          "reference": "Practitioner/b5886b09-9fcc-4af4-88b6-6a3ff3e40f06"
         },
         "organization": {
-          "reference": "Organization/78ff2151-27b0-4b1a-ad9b-5d0c86d7fc6d"
+          "reference": "Organization/c3e80271-e909-49e8-99a5-a92ba83c3dc0"
         },
         "code": [
           {
             "coding": [
               {
                 "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
-                "code": "revisor",
-                "display": "Revisor"
+                "code": "referenciador",
+                "display": "Referenciador"
               }
             ],
-            "text": "revisor"
+            "text": "referenciador"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/ace24951-6a50-4f9a-a225-0bc76315e76c",
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/20f50ffb-05bd-4421-8852-d5dc978b7f2e",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "ace24951-6a50-4f9a-a225-0bc76315e76c",
+        "id": "20f50ffb-05bd-4421-8852-d5dc978b7f2e",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "organization": {
-          "reference": "Organization/7d12b66c-5347-44f4-b24d-bdc39f5dbe17"
+          "reference": "Organization/b913ca23-a720-42cc-bc55-33fc54a1bfc7"
         },
         "code": [
           {

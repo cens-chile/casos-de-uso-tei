@@ -11,7 +11,7 @@
     "pueblosOriginariosPerteneciente": false,
     "identificadores": [
       {
-        "valor": "17.456.321-5",
+        "valor": "33.333.333-3",
         "codigo": "01",
         "paisEmision": "152"
       }
@@ -26,14 +26,14 @@
     },
     "contacto": [
       {
-        "sistemaDeContacto": "phone",
         "tipoDeContacto": "phone",
-        "valorContacto": "+569765432109"
+        "valorContacto": "+569765432109",
+        "sistemaDeContacto": "phone"
       },
       {
-        "sistemaDeContacto": "email",
         "tipoDeContacto": "email",
-        "valorContacto": "valentina.godoy@gmail.com"
+        "valorContacto": "valentina.godoy@gmail.com",
+        "sistemaDeContacto": "email"
       }
     ],
     "sexoRegistral": "female",
@@ -78,7 +78,7 @@
       "segundoApellido": "Cortes"
     },
     "sexoRegistral": "male",
-    "fechaNacimiento": "1975-06-15",
+    "fechaNacimiento": "1970-05-15",
     "titulosProfesionales": [
       {
         "codigo": "1",
@@ -87,7 +87,7 @@
     ],
     "especialidadesMedicas": [
       {
-        "codigo": "39",
+        "codigo": "28",
         "nombre": "Medicina Familiar"
       }
     ]
@@ -128,20 +128,20 @@
   },
   "resultadoExamenes": [
     {
-      "codigo": "248910004",
+      "codigo": "100000-9",
       "resultado": "10828004",
-      "fechaExamen": "2025-09-05 10:20:00"
+      "fechaExamen": "2025-09-25 10:20:00"
     },
     {
       "codigo": "269102002",
       "resultado": "10828004",
-      "fechaExamen": "2025-09-05 10:25:00"
+      "fechaExamen": "2025-09-25 10:25:00"
     }
   ],
   "motivoDerivacion": "Sospecha de síndrome del túnel carpiano, requiere evaluación traumatológica y eventual cirugía.",
   "solicitudExamen": [
     {
-      "fechaSolicitudIC": "2025-09-05 10:30:00",
+      "fechaSolicitudIC": "2025-09-25 10:30:00",
       "razonSolicitud": "Confirmación diagnóstica mediante estudio electrodiagnóstico",
       "examenSolicitadoCodigo": "100003-3",
       "examenSolicitadoGlosa": "Estudio electrodiagnóstico de nervio mediano"

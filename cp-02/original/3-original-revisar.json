@@ -3,7 +3,13 @@
     "software": "rayen-cesfam-lopetegui",
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
-  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "rolDelProfesionalAgendador": {
+    "ID": "rol-agendador-001"
+  },
+  "rolDelProfesionalResolutor": {
+    "ID": "rol-resolutor-001"
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
   "prestadorRevisor": {
     "tipoPrestador": "profesional",
     "identificadores": {
@@ -18,11 +24,12 @@
       "segundoApellido": "Ramirez"
     },
     "sexoRegistral": "female",
-    "fechaNacimiento": "1975-05-31",
+    "fechaNacimiento": "1988-02-12",
     "contacto": [
       {
         "tipoDeContacto": "email",
-        "valorContacto": "ana.torres@cesfam-lopetegui.cl"
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
       }
     ],
     "titulosProfesionales": [
@@ -44,9 +51,9 @@
     }
   },
   "solicitudIC": {
-    "idSolicitudServicio": "SIC-2025-002",
-    "idInterconsulta": "IC-2025-0002",
-    "modalidadAtencion": 2,
+    "idSolicitudServicio": "1c05ee7f-8314-4cc2-961d-390231818eca",
+    "idInterconsulta": "390d438a-564b-4dc7-bf03-107798041092",
+    "modalidadAtencion": "2",
     "destinoAtencion": "4",
     "resolutividadAPS": true,
     "especialidadMedicaDestino": {

@@ -3,7 +3,7 @@
     "software": "rayen-cesfam-lopetegui",
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
-  "referenciaPaciente": "Patient/valentina-godoy-001",
+  "referenciaPaciente": "Patient/AC1759438544804",
   "prestadorReferenciador": {
     "tipoPrestador": "profesional",
     "identificadores": {
@@ -39,19 +39,18 @@
     },
     "destino": {
       "nombreLegal": "Hospital Base San José de Osorno",
-      "codigoDEIS": "1765",
-      "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+      "codigoDEIS": "1765"
     }
   },
   "solicitudIC": {
-    "idSolicitudServicio": "SIC-2025-002",
-    "idInterconsulta": "IC-2025-0002",
+    "idSolicitudServicio": "1c05ee7f-8314-4cc2-961d-390231818eca",
+    "idInterconsulta": "390d438a-564b-4dc7-bf03-107798041092",
     "idLocalIC": "local-IC-002",
     "modalidadAtencion": 1,
     "destinoAtencion": "4",
     "resolutividadAPS": false,
     "especialidadMedicaDestino": {
-      "codigo": "20",
+      "codigo": "53",
       "tipo": "medica"
     }
   }
