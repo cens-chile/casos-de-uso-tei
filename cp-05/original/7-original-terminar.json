@@ -1,0 +1,80 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "prestador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "889900",
+      "RNPI": "889900"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Javier"
+      ],
+      "primerApellido": "Molina",
+      "segundoApellido": "Reyes"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "152",
+    "fechaNacimiento": "1979-06-05",
+    "titulosProfesionales": [
+      {
+        "nombre": "MÉDICO CIRUJANO",
+        "codigo": "1",
+        "fechaEmision": "2005-12-10",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "TRAUMATOLOGÍA",
+        "codigo": "34",
+        "fechaEmision": "2010-04-18",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ],
+    "contacto": [
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "javier.molina@hospitaldigital.cl"
+      }
+    ]
+  },
+  "paciente": {
+    "identificadores": [
+      {
+        "valor": "17.456.321-5",
+        "codigo": "01",
+        "paisEmision": "152"
+      }
+    ],
+    "nombreCompleto": {
+      "nombres": [
+        "Valentina",
+        "Andrea"
+      ],
+      "primerApellido": "Godoy",
+      "segundoApellido": "Cifuentes"
+    },
+    "sexoBiologico": "female",
+    "sexoRegistral": "female",
+    "identidadGenero": "1",
+    "fechaNacimiento": "1979-08-12"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "8e97fe07-8f79-433d-a657-5ee929116aa7",
+    "idInterconsulta": "a1578fae-293e-4170-b94e-5522194f2ed6",
+    "fechaSolicitudIC": "2025-09-05T10:15:00",
+    "modalidadAtencion": "3",
+    "codigoMotivoCierreIC": "18",
+    "observacionesCierre": "Paciente atendido en Hospital Digital y caso egresado por APS bajo causal 19."
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+    "codigoDEIS": "123301",
+    "direccion": "Calle Los Aromos 123, Osorno"
+  }
+}
