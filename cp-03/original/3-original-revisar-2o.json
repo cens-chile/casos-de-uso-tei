@@ -7,9 +7,8 @@
     "idSolicitudServicio": "ec43e5ab-5c74-4dd5-9197-f02e6cf34957",
     "idInterconsulta": "41233af5-060f-4b71-b809-b63a0d1db6ac",
     "modalidadAtencion": 1,
-    "destinoAtencion": "2",
-    "prioridadIC": "routine",
-    "resolutividadAPS": false,
+    "destinoAtencion": "4",
+    "resolutividadAPS": true,
     "especialidadMedicaDestino": {
       "codigo": "53",
       "tipo": "medica"
@@ -17,46 +16,44 @@
     "subEspecialidadMedicaDestino": {
       "codigo": "53",
       "tipo": "medica"
+    },
+    "pertinenciaIC": {
+      "codigo": "1",
+      "motivoNoPertinencia": ""
     }
   },
-  "prestadorReferenciador": {
+  "prestadorRevisor": {
     "tipoPrestador": "profesional",
     "identificadores": {
-      "RUN": "13.245.678-4",
-      "RNPI": "556677"
+      "RUN": "18.765.432-1",
+      "RNPI": "778899"
     },
     "nombreCompleto": {
       "nombres": [
-        "Mauricio"
+        "Ana",
+        "Sofía"
       ],
-      "primerApellido": "Araya",
-      "segundoApellido": "Cortes"
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramírez"
     },
-    "sexoRegistral": "male",
+    "sexoRegistral": "female",
     "nacionalidad": "152",
     "contacto": [
       {
         "tipoDeContacto": "phone",
-        "valorContacto": "+56991234567"
+        "valorContacto": "+56987543219"
       },
       {
         "tipoDeContacto": "email",
-        "valorContacto": "mauricio.araya@cesfam-lopetegui.cl"
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl"
       }
     ],
-    "fechaNacimiento": "1970-05-15",
+    "fechaNacimiento": "1988-02-12",
     "titulosProfesionales": [
       {
-        "nombre": "Médico Cirujano",
-        "codigo": "1",
-        "institucion": "Universidad de Chile"
-      }
-    ],
-    "especialidadesMedicas": [
-      {
-        "nombre": "Medicina Familiar",
-        "codigo": "14",
-        "institucion": "Colegio Médico de Chile"
+        "nombre": "Enfermera",
+        "codigo": "2",
+        "institucion": "Universidad Austral de Chile"
       }
     ]
   },
@@ -69,7 +66,12 @@
     },
     "destino": {
       "nombreLegal": "Hospital Base San José de Osorno",
-      "codigoDEIS": "1765"
+      "codigoDEIS": "123100",
+      "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
     }
+  },
+  "evaluacion": {
+    "resultadoRevision": "aprobada",
+    "justificacion": "Se realiza revisión definitiva considerando que todos los antecedentes clínicos están completos y actualizados."
   }
 }

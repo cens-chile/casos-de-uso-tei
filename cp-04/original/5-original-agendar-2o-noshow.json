@@ -1,0 +1,98 @@
+{
+  "datosSistema": {
+    "software": "MEDISYN",
+    "endpoint": "medisyn.hospitalosorno.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "46de5e47-1bbe-4134-a9d4-7ceb8cf39269",
+    "idInterconsulta": "ff9edcb1-9f01-4014-8d03-5f16b96bda86",
+    "modalidadAtencion": "1"
+  },
+  "cita": {
+    "identificador": "cita-agendada-004",
+    "estado": "noshow",
+    "motivo": {
+      "codigo": "409073007",
+      "glosa": "Evaluación traumatología",
+      "sistema": "http://snomed.info/sct"
+    },
+    "fechaInicio": "2025-09-28 12:00:00",
+    "fechaFin": "2025-09-28 12:45:00",
+    "estadoActorPaciente": "absent",
+    "medioDeContacto": "3",
+    "contactadoLE": {
+      "contactado": true,
+      "motivoNoContactabilidad": ""
+    },
+    "ubicacion": "Location/Hospital_Base_Osorno"
+  },
+  "prestadorProfesional": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "12678345-1",
+      "RNPI": "889900"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Pamela"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Silva"
+    },
+    "sexoRegistral": "female",
+    "fechaNacimiento": "1979-03-03",
+    "titulosProfesionales": [
+      {
+        "nombre": "MÉDICO CIRUJANO",
+        "codigo": "1",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "TRAUMATOLOGÍA",
+        "codigo": "4",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "prestadorAdministrativo": {
+    "identificadores": {
+      "RUN": "16987543-2"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Carolina"
+      ],
+      "primerApellido": "López",
+      "segundoApellido": ""
+    },
+    "sexoRegistral": "female",
+    "fechaNacimiento": "1975-01-01",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56976543210",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "carolina.lopez@hospitalosorno.cl",
+        "sistemaDeContacto": "email"
+      }
+    ]
+  },
+  "rolDelProfesionalAgendador": {
+    "ID": "rol-agendador-001"
+  },
+  "rolDelProfesionalResolutor": {
+    "ID": "rol-resolutor-001"
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "nombreLegal": "Hospital Base San José de Osorno",
+    "codigoDEIS": "1765",
+    "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+  },
+  "mensaje": "El paciente no asistió a la cita médica (No Show)."
+}
