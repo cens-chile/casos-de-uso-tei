@@ -1,0 +1,310 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2025-10-05T19:09:45.042+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/bc109b87-3b26-4a6a-a722-3594d24963f8",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "bc109b87-3b26-4a6a-a722-3594d24963f8",
+        "meta": {
+          "lastUpdated": "2025-10-05T19:09:45.043+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+          "code": "terminar",
+          "display": "Terminar"
+        },
+        "author": {
+          "reference": "PractitionerRole/395b154d-5f8e-418e-8377-ac033e40c13b"
+        },
+        "source": {
+          "software": "rayen-cesfam-lopetegui",
+          "endpoint": "rayen.cesfam-lopetegui.cl"
+        },
+        "focus": [
+          {
+            "reference": "ServiceRequest/b6e867ef-b93b-4735-bbde-0773daaf130e"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/b6e867ef-b93b-4735-bbde-0773daaf130e",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "b6e867ef-b93b-4735-bbde-0773daaf130e",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+                  "code": "7",
+                  "display": "Cerrada"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
+                  "code": "4",
+                  "display": "Atención Otorgada en el Extra sistema (4)"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "2bfa43f2-e258-4485-b23b-f2ce0ac366e9"
+          }
+        ],
+        "status": "draft",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+                "code": "1",
+                "display": "Presencial"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/AC1759438544804"
+        },
+        "authoredOn": "2025-09-05T10:15:00+00:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/395b154d-5f8e-418e-8377-ac033e40c13b"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Practitioner/7488a089-457d-4bfd-949b-bda0d5f99abf",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "7488a089-457d-4bfd-949b-bda0d5f99abf",
+        "meta": {
+          "lastUpdated": "2025-10-05T19:09:45.049+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "01",
+                  "display": "RUN"
+                }
+              ],
+              "text": "RUN"
+            },
+            "value": "18.765.432-1"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                  "code": "13",
+                  "display": "RNPI"
+                }
+              ],
+              "text": "RNPI"
+            },
+            "value": "778899"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Torres",
+            "_family": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                  "valueString": "Ramírez"
+                }
+              ]
+            },
+            "given": [
+              "Ana"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+56987543219"
+          },
+          {
+            "system": "email",
+            "value": "ana.torres@cesfam-lopetegui.cl"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "CESFAM Dr. Marcelo Lopetegui, Los Carreras N°1400"
+            ],
+            "_city": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                        "code": "10101",
+                        "display": "Puerto Montt"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_state": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                        "code": "10",
+                        "display": "De los Lagos"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "_country": {
+              "extension": [
+                {
+                  "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                        "code": "152",
+                        "display": "Chile"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1988-02-12",
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "cert"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+                  "code": "16",
+                  "display": "Enfermera"
+                }
+              ],
+              "text": "Enfermera"
+            },
+            "period": {
+              "start": "2011-11-20T00:00:00+00:00"
+            },
+            "issuer": {
+              "display": "Universidad de Chile"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/Organization/0feee2ff-01e9-42d8-8a11-092fbdd69551",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "0feee2ff-01e9-42d8-8a11-092fbdd69551",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123301"
+          }
+        ],
+        "name": "CESFAM Dr. Marcelo Lopetegui"
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/395b154d-5f8e-418e-8377-ac033e40c13b",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "395b154d-5f8e-418e-8377-ac033e40c13b",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/7488a089-457d-4bfd-949b-bda0d5f99abf"
+        },
+        "organization": {
+          "reference": "Organization/0feee2ff-01e9-42d8-8a11-092fbdd69551"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "terminador",
+                "display": "Terminador"
+              }
+            ],
+            "text": "terminador"
+          }
+        ]
+      }
+    }
+  ]
+}

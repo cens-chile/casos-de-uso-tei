@@ -1,0 +1,70 @@
+{
+  "datosSistema": {
+    "software": "rayen-cesfam-lopetegui",
+    "endpoint": "rayen.cesfam-lopetegui.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "b6e867ef-b93b-4735-bbde-0773daaf130e",
+    "idInterconsulta": "2bfa43f2-e258-4485-b23b-f2ce0ac366e9",
+    "fechaSolicitudIC": "2025-09-05 10:15:00",
+    "modalidadAtencion": "1",
+    "codigoMotivoCierreIC": "4"
+  },
+  "prestador": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "18.765.432-1",
+      "RNPI": "778899"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Ana"
+      ],
+      "primerApellido": "Torres",
+      "segundoApellido": "Ramírez"
+    },
+    "sexoRegistral": "female",
+    "fechaNacimiento": "1988-02-12",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+56987543219",
+        "sistemaDeContctoa": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "ana.torres@cesfam-lopetegui.cl",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "direccion": {
+      "descripcion": "CESFAM Dr. Marcelo Lopetegui, Los Carreras N°1400",
+      "comuna": {
+        "nombre": "Osorno",
+        "codigo": "10101"
+      },
+      "region": {
+        "nombre": "Región de Los Lagos",
+        "codigo": "10"
+      },
+      "pais": {
+        "nombre": "Chile",
+        "codigo": "152"
+      }
+    },
+    "titulosProfesionales": [
+      {
+        "nombre": "Enfermera",
+        "codigo": "16",
+        "fechaEmision": "2011-11-20",
+        "institucion": "Universidad de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
+    "codigoDEIS": "123301",
+    "direccion": "Los Carreras N°1400, Osorno, Región de Los Lagos"
+  }
+}

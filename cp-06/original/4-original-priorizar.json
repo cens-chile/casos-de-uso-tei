@@ -1,0 +1,63 @@
+{
+  "datosSistema": {
+    "software": "MEDISYN",
+    "endpoint": "medisyn.hospitalosorno.cl"
+  },
+  "solicitudIC": {
+    "idSolicitudServicio": "b6e867ef-b93b-4735-bbde-0773daaf130e",
+    "idInterconsulta": "2bfa43f2-e258-4485-b23b-f2ce0ac366e9",
+    "modalidadAtencion": "2",
+    "prioridadIc": "urgent"
+  },
+  "prestadorProfesional": {
+    "tipoPrestador": "profesional",
+    "identificadores": {
+      "RUN": "15.678.901-2",
+      "RNPI": "667788"
+    },
+    "nombreCompleto": {
+      "nombres": [
+        "Javier"
+      ],
+      "primerApellido": "Mendez",
+      "segundoApellido": "Salazar"
+    },
+    "sexoRegistral": "male",
+    "nacionalidad": "056",
+    "contacto": [
+      {
+        "tipoDeContacto": "phone",
+        "valorContacto": "+569912345678",
+        "sistemaDeContacto": "phone"
+      },
+      {
+        "tipoDeContacto": "email",
+        "valorContacto": "javier.mendez@hospitalosorno.cl",
+        "sistemaDeContacto": "email"
+      }
+    ],
+    "fechaNacimiento": "1979-06-05",
+    "titulosProfesionales": [
+      {
+        "nombre": "Médico Cirujano",
+        "codigo": "1",
+        "fechaEmision": "2003-12-20",
+        "institucion": "Universidad de Chile"
+      }
+    ],
+    "especialidadesMedicas": [
+      {
+        "nombre": "Medicina General",
+        "codigo": "3",
+        "fechaEmision": "2008-11-15",
+        "institucion": "Colegio Médico de Chile"
+      }
+    ]
+  },
+  "referenciaPaciente": "Patient/AC1759438544804",
+  "establecimiento": {
+    "nombreLegal": "Hospital Base San José de Osorno",
+    "codigoDEIS": "123100",
+    "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
+  }
+}
