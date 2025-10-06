@@ -4,8 +4,8 @@
     "endpoint": "medisyn.hospitalosorno.cl"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
-    "idInterconsulta": "2dd95390-74a0-450f-9d2e-fdd02d6d8657",
+    "idSolicitudServicio": "87f4c735-6b0d-4bcf-a735-13f6230bed4d",
+    "idInterconsulta": "ec15b484-0a47-46a4-943d-f6ab222cf25c",
     "fechaSolicitudIC": "2025-09-20 14:30:00",
     "modalidadAtencion": "1",
     "derivadoPara": "1",
@@ -18,8 +18,8 @@
     "identificador": "cita-agendada-001",
     "estado": "booked",
     "motivo": {
-      "codigo": "409073007",
-      "glosa": "Evaluación traumatología",
+      "codigo": "225391007",
+      "glosa": "evaluación de lesión traumática (procedimiento)",
       "sistema": "http://snomed.info/sct"
     },
     "fechaInicio": "2025-09-20 14:30:00",
@@ -91,14 +91,14 @@
   "solicitudExamen": [
     {
       "fechaSolicitudIC": "2025-09-20 14:30:00",
-      "razonSolicitud": "Síntomas persistentes en muñeca derecha",
+      "razonSolicitud": "Síntomas persistentes dolor y funcionalidad en muñeca derecha",
       "examenSolicitadoCodigo": "98716-4",
-      "examenSolicitadoGlosa": "Panel de Electromiografía",
+      "examenSolicitadoGlosa": "Electromyography panel",
       "examenSolicitadoDescripcion": "Evaluación de la conducción nerviosa"
     }
   ],
   "planDeAtencion": {
-    "indicacionesMedicas": "Plan de atención para hipertensión arterial",
+    "indicacionesMedicas": "Plan de atención para manejo de incluye uso de férula nocturna, recomendaciones ergonómicas y prescripcipción antinflamatoria más examen de electromiografía.",
     "requiereExamen": true
   },
   "encuentroAtender": {
@@ -109,5 +109,10 @@
       "fechaInicio": "2023-01-01 09:00:00",
       "fechaFin": "2024-01-01 10:00:00"
     }
+  },
+  "solicitudMedicamento": {
+    "medicamento": "688521000167109",
+    "nombreMedicamento": "ibuprofeno 400 mg oral comprimido",
+    "indicacion": "1 comprimido cada 8 horas durante 5 días"
   }
 }

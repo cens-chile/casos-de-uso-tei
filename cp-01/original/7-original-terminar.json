@@ -4,8 +4,8 @@
     "endpoint": "medisyn.hospitalosorno.cl"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "0f20462d-e64d-474c-9b71-3bd13ce414dc",
-    "idInterconsulta": "2dd95390-74a0-450f-9d2e-fdd02d6d8657",
+    "idSolicitudServicio": "87f4c735-6b0d-4bcf-a735-13f6230bed4d",
+    "idInterconsulta": "ec15b484-0a47-46a4-943d-f6ab222cf25c",
     "fechaSolicitudIC": "2025-09-20",
     "modalidadAtencion": "1",
     "codigoMotivoCierreIC": "1"

@@ -6,15 +6,15 @@
     ]
   },
   "type": "message",
-  "timestamp": "2025-10-04T00:25:25.021+00:00",
+  "timestamp": "2025-10-06T20:12:18.082+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/6992ed4c-5c9c-41eb-b4d8-67dfd02c2401",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/fec0272a-a9df-4f47-b8b3-ff4bb641be4d",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "6992ed4c-5c9c-41eb-b4d8-67dfd02c2401",
+        "id": "fec0272a-a9df-4f47-b8b3-ff4bb641be4d",
         "meta": {
-          "lastUpdated": "2025-10-04T00:25:25.033+00:00",
+          "lastUpdated": "2025-10-06T20:12:18.084+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -33,19 +33,19 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/846c770b-3c51-4737-b650-2e8b737bec70"
+            "reference": "ServiceRequest/87f4c735-6b0d-4bcf-a735-13f6230bed4d"
           },
           {
-            "reference": "Encounter/03181548-9c68-46db-9f39-60ff5fca9252"
+            "reference": "Encounter/3f5c8a22-5be3-459b-a1ff-854d43cdd3bb"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/846c770b-3c51-4737-b650-2e8b737bec70",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/87f4c735-6b0d-4bcf-a735-13f6230bed4d",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "846c770b-3c51-4737-b650-2e8b737bec70",
+        "id": "87f4c735-6b0d-4bcf-a735-13f6230bed4d",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -63,28 +63,11 @@
                 }
               ]
             }
-          },
-          {
-            "extension": [
-              {
-                "url": "EvaluacionPertinencia",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta",
-                      "code": "3",
-                      "display": "Pertinente Incompleta"
-                    }
-                  ]
-                }
-              }
-            ],
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaInterconsulta"
           }
         ],
         "identifier": [
           {
-            "value": "231a648d-5e48-4fc3-9539-4122f3991c9e"
+            "value": "ec15b484-0a47-46a4-943d-f6ab222cf25c"
           }
         ],
         "status": "draft",
@@ -100,56 +83,24 @@
             ]
           }
         ],
-        "priority": "routine",
         "subject": {
           "reference": "Patient/AC1759438544804"
         },
-        "encounter": {
-          "reference": "Encounter/03181548-9c68-46db-9f39-60ff5fca9252"
-        },
-        "performer": {
-          "reference": "PractitionerRole/878c5aba-b2a4-4631-843a-b5acd4b90210"
-        },
         "authoredOn": "2025-09-20T14:30:00+00:00",
-        "locationCode": [
-          {
-            "coding": [
-              {
-                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
-                "code": "1",
-                "display": "Nivel Secundario"
-              }
-            ]
-          }
-        ],
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo",
-                "code": "1",
-                "display": "Confirmación"
-              }
-            ]
-          }
-        ],
         "supportingInfo": [
           {
-            "reference": "Condition/19450c94-4993-4452-9b3c-d4401c410261"
-          },
-          {
-            "reference": "ServiceRequest/0730ced0-2b64-4382-ada5-0fad2b65361c"
+            "reference": "CarePlan/af74628e-a6c0-4446-a433-dd39134a4d64"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/3b9387e3-cb44-4947-b6a7-8c08bc272ba5",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/acc2a127-f71d-4918-8f6c-71c164ec3722",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "3b9387e3-cb44-4947-b6a7-8c08bc272ba5",
+        "id": "acc2a127-f71d-4918-8f6c-71c164ec3722",
         "meta": {
-          "lastUpdated": "2025-10-04T00:25:25.673+00:00",
+          "lastUpdated": "2025-10-06T20:12:18.086+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -279,12 +230,12 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Condition/19450c94-4993-4452-9b3c-d4401c410261",
+      "fullUrl": "http://transformador-cens.cl/Condition/ca9abf92-726e-4647-a056-d2a750b5d613",
       "resource": {
         "resourceType": "Condition",
-        "id": "19450c94-4993-4452-9b3c-d4401c410261",
+        "id": "ca9abf92-726e-4647-a056-d2a750b5d613",
         "meta": {
-          "lastUpdated": "2025-10-04T00:25:27.941+00:00",
+          "lastUpdated": "2025-10-06T20:12:18.096+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"
           ]
@@ -337,20 +288,14 @@
         },
         "subject": {
           "reference": "Patient/AC1759438544804"
-        },
-        "encounter": {
-          "reference": "Encounter/03181548-9c68-46db-9f39-60ff5fca9252"
-        },
-        "author": {
-          "reference": "PractitionerRole/878c5aba-b2a4-4631-843a-b5acd4b90210"
         }
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/0730ced0-2b64-4382-ada5-0fad2b65361c",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/8d4b835a-4a98-41cc-b1ee-853afc96bea3",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "0730ced0-2b64-4382-ada5-0fad2b65361c",
+        "id": "8d4b835a-4a98-41cc-b1ee-853afc96bea3",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
@@ -358,12 +303,12 @@
         },
         "identifier": [
           {
-            "value": "0730ced0-2b64-4382-ada5-0fad2b65361c"
+            "value": "8d4b835a-4a98-41cc-b1ee-853afc96bea3"
           }
         ],
         "basedOn": [
           {
-            "reference": "ServiceRequest/846c770b-3c51-4737-b650-2e8b737bec70"
+            "reference": "ServiceRequest/87f4c735-6b0d-4bcf-a735-13f6230bed4d"
           }
         ],
         "status": "draft",
@@ -383,20 +328,20 @@
         },
         "authoredOn": "2025-09-20T14:30:00+00:00",
         "requester": {
-          "reference": "PractitionerRole/878c5aba-b2a4-4631-843a-b5acd4b90210"
+          "reference": "Practitioner/acc2a127-f71d-4918-8f6c-71c164ec3722"
         },
         "reasonCode": [
           {
-            "text": "Síntomas persistentes en muñeca derecha"
+            "text": "Síntomas persistentes dolor y funcionalidad en muñeca derecha"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Encounter/03181548-9c68-46db-9f39-60ff5fca9252",
+      "fullUrl": "http://transformador-cens.cl/Encounter/3f5c8a22-5be3-459b-a1ff-854d43cdd3bb",
       "resource": {
         "resourceType": "Encounter",
-        "id": "03181548-9c68-46db-9f39-60ff5fca9252",
+        "id": "3f5c8a22-5be3-459b-a1ff-854d43cdd3bb",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
@@ -419,30 +364,12 @@
           "code": "1",
           "display": "Presencial"
         },
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta",
-                "code": "1",
-                "display": "Nueva"
-              }
-            ]
-          }
-        ],
         "subject": {
           "reference": "Patient/AC1759438544804"
         },
-        "participant": [
-          {
-            "individual": {
-              "reference": "PractitionerRole/878c5aba-b2a4-4631-843a-b5acd4b90210"
-            }
-          }
-        ],
         "basedOn": [
           {
-            "reference": "ServiceRequest/846c770b-3c51-4737-b650-2e8b737bec70"
+            "reference": "ServiceRequest/87f4c735-6b0d-4bcf-a735-13f6230bed4d"
           }
         ],
         "period": {
@@ -452,19 +379,19 @@
         "diagnosis": [
           {
             "condition": {
-              "reference": "Condition/19450c94-4993-4452-9b3c-d4401c410261"
+              "reference": "Condition/ca9abf92-726e-4647-a056-d2a750b5d613"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/CarePlan/b557956f-fd6c-4390-8dce-ed9492583a94",
+      "fullUrl": "http://transformador-cens.cl/CarePlan/af74628e-a6c0-4446-a433-dd39134a4d64",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "b557956f-fd6c-4390-8dce-ed9492583a94",
+        "id": "af74628e-a6c0-4446-a433-dd39134a4d64",
         "meta": {
-          "lastUpdated": "2025-10-04T00:25:27.973+00:00",
+          "lastUpdated": "2025-10-06T20:12:18.097+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"
           ]
@@ -477,18 +404,58 @@
         ],
         "status": "active",
         "intent": "plan",
-        "description": "Plan de atención para hipertensión arterial",
+        "description": "Plan de atención para manejo de incluye uso de férula nocturna, recomendaciones ergonómicas y prescripcipción antinflamatoria más examen de electromiografía.",
         "subject": {
           "reference": "Patient/AC1759438544804"
         },
         "encounter": {
-          "reference": "Encounter/03181548-9c68-46db-9f39-60ff5fca9252"
+          "reference": "Encounter/3f5c8a22-5be3-459b-a1ff-854d43cdd3bb"
         },
         "activity": [
           {
             "reference": {
-              "reference": "ServiceRequest/0730ced0-2b64-4382-ada5-0fad2b65361c"
+              "reference": "ServiceRequest/8d4b835a-4a98-41cc-b1ee-853afc96bea3"
             }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/22cc1675-46df-4e8d-8f2e-c58776d1e90c"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/MedicationRequest/22cc1675-46df-4e8d-8f2e-c58776d1e90c",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "22cc1675-46df-4e8d-8f2e-c58776d1e90c",
+        "meta": {
+          "lastUpdated": "2025-10-06T20:20:16.765+00:00",
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MedicationRequestLE"
+          ]
+        },
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/medication-codes",
+              "code": "688521000167109",
+              "display": "ibuprofeno 400 mg oral comprimido"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/AC1759438544804"
+        },
+        "encounter": {
+          "reference": "Encounter/3f5c8a22-5be3-459b-a1ff-854d43cdd3bb"
+        },
+        "note": [
+          {
+            "text": "1 comprimido cada 8 horas durante 5 días"
           }
         ]
       }
@@ -519,7 +486,7 @@
           "reference": "Organization/4c72235a-4c37-4811-916d-fcfae2bd374f"
         },
         "practitioner": {
-          "reference": "Practitioner/3b9387e3-cb44-4947-b6a7-8c08bc272ba5"
+          "reference": "Practitioner/acc2a127-f71d-4918-8f6c-71c164ec3722"
         }
       }
     },
