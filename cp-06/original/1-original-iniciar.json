@@ -117,8 +117,6 @@
     }
   },
   "indiceComorbilidad": "G0",
-  "presentaDiscapacidad": false,
-  "cuidador": false,
   "diagnostico": {
     "codeCIE10": "G56.0",
     "glosa": "Síndrome del túnel carpiano",
@@ -128,13 +126,13 @@
   },
   "resultadoExamenes": [
     {
-      "codigo": "100000-9",
-      "resultado": "10828004",
+      "codigo": "11446-2",
+      "resultado": "prueba de Phalen positiva",
       "fechaExamen": "2025-09-25 10:20:00"
     },
     {
-      "codigo": "269102002",
-      "resultado": "10828004",
+      "codigo": "11446-2",
+      "resultado": "signo de Tinel, positivo",
       "fechaExamen": "2025-09-25 10:25:00"
     }
   ],
@@ -143,7 +141,7 @@
     {
       "fechaSolicitudIC": "2025-09-25 10:30:00",
       "razonSolicitud": "Confirmación diagnóstica mediante estudio electrodiagnóstico",
-      "examenSolicitadoCodigo": "100003-3",
+      "examenSolicitadoCodigo": "98716-4",
       "examenSolicitadoGlosa": "Estudio electrodiagnóstico de nervio mediano"
     }
   ]
