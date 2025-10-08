@@ -4,8 +4,8 @@
     "endpoint": "medisyn.hospitalosorno.cl"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "6df3db85-b5c2-42ee-bdeb-741ff9a0f018",
-    "idInterconsulta": "3a9e74a0-1fb1-4c59-84c4-c71e400cb5b5",
+    "idSolicitudServicio": "943691a1-cf7e-459e-87db-d348aaebf513",
+    "idInterconsulta": "a4a8b70d-336a-4e2a-bcf1-f83dfd8e5322",
     "modalidadAtencion": "2",
     "prioridadIc": "urgent"
   },
@@ -54,7 +54,8 @@
   },
   "referenciaPaciente": "Patient/AC1759438544804",
   "establecimiento": {
-    "nombreLegal": "Hospital Base de Osorno Dr. Pedro Montt",
-    "codigoDEIS": "102100"
+    "nombreLegal": "Hospital Base San José de Osorno",
+    "codigoDEIS": "123100",
+    "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
   }
 }

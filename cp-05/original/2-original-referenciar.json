@@ -4,8 +4,8 @@
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "8e97fe07-8f79-433d-a657-5ee929116aa7",
-    "idInterconsulta": "a1578fae-293e-4170-b94e-5522194f2ed6",
+    "idSolicitudServicio": "6426f050-1a00-4ceb-9105-b9a6a152e342",
+    "idInterconsulta": "f09daa9d-d2f9-4977-8758-f401ad9ebe4e",
     "modalidadAtencion": 1,
     "destinoAtencion": "2",
     "prioridadIC": "routine",

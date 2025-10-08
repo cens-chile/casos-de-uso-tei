@@ -3,12 +3,13 @@
     "software": "rayen-cesfam-lopetegui",
     "endpoint": "rayen.cesfam-lopetegui.cl"
   },
+  "referenciaPaciente": "Patient/AC1759438544804",
   "solicitudIC": {
-    "idSolicitudServicio": "50bd96ac-0d15-4fee-9036-539cdcc6b593",
-    "idInterconsulta": "c171292f-8b18-47ee-b0a0-7c1e2b8d70e2",
-    "modalidadAtencion": 1,
-    "destinoAtencion": "4",
-    "resolutividadAPS": true,
+    "idSolicitudServicio": "943691a1-cf7e-459e-87db-d348aaebf513",
+    "idInterconsulta": "a4a8b70d-336a-4e2a-bcf1-f83dfd8e5322",
+    "modalidadAtencion": "1",
+    "destinoAtencion": "2",
+    "resolutividadAPS": false,
     "especialidadMedicaDestino": {
       "codigo": "53",
       "tipo": "medica"
@@ -57,7 +58,6 @@
       }
     ]
   },
-  "referenciaPaciente": "Patient/AC1759438544804",
   "establecimiento": {
     "origen": {
       "nombreLegal": "CESFAM Dr. Marcelo Lopetegui",
@@ -66,12 +66,8 @@
     },
     "destino": {
       "nombreLegal": "Hospital Base San José de Osorno",
-      "codigoDEIS": "123100",
+      "codigoDEIS": "1765",
       "direccion": "Dr. Guillermo Buhler 1765, Osorno, Los Lagos"
     }
-  },
-  "evaluacion": {
-    "resultadoRevision": "aprobada",
-    "justificacion": "Se realiza revisión definitiva considerando que todos los antecedentes clínicos están completos y actualizados."
   }
 }

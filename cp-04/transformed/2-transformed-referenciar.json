@@ -2,30 +2,30 @@
   "resourceType": "Bundle",
   "meta": {
     "profile": [
-      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"
     ]
   },
   "type": "message",
-  "timestamp": "2025-10-05T17:01:03.603+00:00",
+  "timestamp": "2025-10-05T00:26:41.807+00:00",
   "entry": [
     {
-      "fullUrl": "http://transformador-cens.cl/MessageHeader/d18d675a-0a26-4f17-967f-ab030f921391",
+      "fullUrl": "http://transformador-cens.cl/MessageHeader/1367c153-f3c0-455f-a7ff-6aff6d68393d",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "d18d675a-0a26-4f17-967f-ab030f921391",
+        "id": "1367c153-f3c0-455f-a7ff-6aff6d68393d",
         "meta": {
-          "lastUpdated": "2025-10-05T17:01:03.604+00:00",
+          "lastUpdated": "2025-10-05T00:26:41.814+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
         },
         "eventCoding": {
           "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
-          "code": "terminar",
-          "display": "Terminar"
+          "code": "referenciar",
+          "display": "Referenciar"
         },
         "author": {
-          "reference": "PractitionerRole/0e68d9d2-e643-4529-93ff-aaaa77852149"
+          "reference": "PractitionerRole/b7838fe6-a233-4060-a4d9-177f126fbb4f"
         },
         "source": {
           "software": "rayen-cesfam-lopetegui",
@@ -33,16 +33,16 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/6426f050-1a00-4ceb-9105-b9a6a152e342"
+            "reference": "ServiceRequest/943691a1-cf7e-459e-87db-d348aaebf513"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/6426f050-1a00-4ceb-9105-b9a6a152e342",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/943691a1-cf7e-459e-87db-d348aaebf513",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "6426f050-1a00-4ceb-9105-b9a6a152e342",
+        "id": "943691a1-cf7e-459e-87db-d348aaebf513",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -50,25 +50,41 @@
         },
         "extension": [
           {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS",
+            "valueBoolean": true
+          },
+          {
             "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE",
             "valueCodeableConcept": {
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
-                  "code": "7",
-                  "display": "Cerrada"
+                  "code": "2",
+                  "display": "A la espera de revisión"
                 }
               ]
             }
           },
           {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta",
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
-                  "code": "18",
-                  "display": "Atención hospital digital (19)"
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+                  "code": "53",
+                  "display": "TRAUMATOLOGÍA Y ORTOPEDIA"
                 }
               ]
             }
@@ -76,40 +92,39 @@
         ],
         "identifier": [
           {
-            "value": "f09daa9d-d2f9-4977-8758-f401ad9ebe4e"
+            "value": "a4a8b70d-336a-4e2a-bcf1-f83dfd8e5322"
           }
         ],
         "status": "draft",
         "intent": "order",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
-                "code": "3",
-                "display": "Telemedicina"
-              }
-            ]
-          }
-        ],
         "subject": {
           "reference": "Patient/AC1759438544804"
         },
-        "authoredOn": "2025-09-05T00:00:00+00:00",
         "performer": [
           {
-            "reference": "PractitionerRole/0e68d9d2-e643-4529-93ff-aaaa77852149"
+            "reference": "PractitionerRole/96906afc-086d-4815-8dc2-63b1672bd290"
+          }
+        ],
+        "locationCode": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
+                "code": "1",
+                "display": "Nivel Secundario"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Practitioner/f9c38d02-332e-4012-941e-c2532e2ab28f",
+      "fullUrl": "http://transformador-cens.cl/Practitioner/00db1963-1432-48ac-b696-e3cc00c45c78",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "f9c38d02-332e-4012-941e-c2532e2ab28f",
+        "id": "00db1963-1432-48ac-b696-e3cc00c45c78",
         "meta": {
-          "lastUpdated": "2025-10-05T17:01:03.607+00:00",
+          "lastUpdated": "2025-10-05T00:26:41.818+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -141,7 +156,7 @@
               ],
               "text": "RUN"
             },
-            "value": "889900"
+            "value": "12345678-9"
           },
           {
             "use": "official",
@@ -155,35 +170,39 @@
               ],
               "text": "RNPI"
             },
-            "value": "889900"
+            "value": "556677"
           }
         ],
         "active": true,
         "name": [
           {
             "use": "official",
-            "family": "Molina",
+            "family": "Araya",
             "_family": {
               "extension": [
                 {
                   "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                  "valueString": "Reyes"
+                  "valueString": "Cortes"
                 }
               ]
             },
             "given": [
-              "Javier"
+              "Mauricio"
             ]
           }
         ],
         "telecom": [
           {
+            "system": "phone",
+            "value": "+56991234567"
+          },
+          {
             "system": "email",
-            "value": "javier.molina@hospitaldigital.cl"
+            "value": "mauricio.araya@cesfam-lopetegui.cl"
           }
         ],
         "gender": "male",
-        "birthDate": "1979-06-05",
+        "birthDate": "1970-05-15",
         "qualification": [
           {
             "identifier": [
@@ -196,13 +215,10 @@
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
                   "code": "1",
-                  "display": "MÉDICO CIRUJANO"
+                  "display": "Médico Cirujano"
                 }
               ],
-              "text": "MÉDICO CIRUJANO"
-            },
-            "period": {
-              "start": "2005-12-10T00:00:00+00:00"
+              "text": "Médico Cirujano"
             },
             "issuer": {
               "display": "Universidad de Chile"
@@ -218,14 +234,11 @@
               "coding": [
                 {
                   "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-                  "code": "34",
-                  "display": "TRAUMATOLOGÍA"
+                  "code": "14",
+                  "display": "Medicina Familiar"
                 }
               ],
-              "text": "TRAUMATOLOGÍA"
-            },
-            "period": {
-              "start": "2010-04-18T00:00:00+00:00"
+              "text": "Medicina Familiar"
             },
             "issuer": {
               "display": "Colegio Médico de Chile"
@@ -235,10 +248,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/Organization/644fe1e0-8504-4fb7-ad3b-b36db831608c",
+      "fullUrl": "http://transformador-cens.cl/Organization/317477a7-1594-40d9-8a6f-0abac8b18eb7",
       "resource": {
         "resourceType": "Organization",
-        "id": "644fe1e0-8504-4fb7-ad3b-b36db831608c",
+        "id": "317477a7-1594-40d9-8a6f-0abac8b18eb7",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
@@ -254,31 +267,77 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/PractitionerRole/0e68d9d2-e643-4529-93ff-aaaa77852149",
+      "fullUrl": "http://transformador-cens.cl/Organization/d1a60b90-5645-4862-93e8-eafa256c336f",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "d1a60b90-5645-4862-93e8-eafa256c336f",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
+            "value": "123100"
+          }
+        ],
+        "name": "Hospital Base San José de Osorno"
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/b7838fe6-a233-4060-a4d9-177f126fbb4f",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "0e68d9d2-e643-4529-93ff-aaaa77852149",
+        "id": "b7838fe6-a233-4060-a4d9-177f126fbb4f",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/f9c38d02-332e-4012-941e-c2532e2ab28f"
+          "reference": "Practitioner/00db1963-1432-48ac-b696-e3cc00c45c78"
         },
         "organization": {
-          "reference": "Organization/644fe1e0-8504-4fb7-ad3b-b36db831608c"
+          "reference": "Organization/317477a7-1594-40d9-8a6f-0abac8b18eb7"
         },
         "code": [
           {
             "coding": [
               {
                 "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
-                "code": "terminador",
-                "display": "Terminador"
+                "code": "referenciador",
+                "display": "Referenciador"
               }
             ],
-            "text": "terminador"
+            "text": "referenciador"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://transformador-cens.cl/PractitionerRole/96906afc-086d-4815-8dc2-63b1672bd290",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "96906afc-086d-4815-8dc2-63b1672bd290",
+        "meta": {
+          "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
+          ]
+        },
+        "organization": {
+          "reference": "Organization/d1a60b90-5645-4862-93e8-eafa256c336f"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+                "code": "atendedor",
+                "display": "Atendedor"
+              }
+            ],
+            "text": "atendedor"
           }
         ]
       }

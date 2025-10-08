@@ -64,8 +64,8 @@
     "fechaNacimiento": "1979-08-12"
   },
   "solicitudIC": {
-    "idSolicitudServicio": "8e97fe07-8f79-433d-a657-5ee929116aa7",
-    "idInterconsulta": "a1578fae-293e-4170-b94e-5522194f2ed6",
+    "idSolicitudServicio": "6426f050-1a00-4ceb-9105-b9a6a152e342",
+    "idInterconsulta": "f09daa9d-d2f9-4977-8758-f401ad9ebe4e",
     "fechaSolicitudIC": "2025-09-05T10:15:00",
     "modalidadAtencion": "3",
     "codigoMotivoCierreIC": "18",

@@ -33,7 +33,7 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/46de5e47-1bbe-4134-a9d4-7ceb8cf39269"
+            "reference": "ServiceRequest/50bd96ac-0d15-4fee-9036-539cdcc6b593"
           },
           {
             "reference": "Appointment/cc1cedf0-63ac-430a-b712-3733357b6c21"
@@ -42,10 +42,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/46de5e47-1bbe-4134-a9d4-7ceb8cf39269",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/50bd96ac-0d15-4fee-9036-539cdcc6b593",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "46de5e47-1bbe-4134-a9d4-7ceb8cf39269",
+        "id": "50bd96ac-0d15-4fee-9036-539cdcc6b593",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -67,7 +67,7 @@
         ],
         "identifier": [
           {
-            "value": "ff9edcb1-9f01-4014-8d03-5f16b96bda86"
+            "value": "c171292f-8b18-47ee-b0a0-7c1e2b8d70e2"
           }
         ],
         "status": "draft",
@@ -361,7 +361,7 @@
             "value": "cita-agendada-004"
           }
         ],
-        "status": "noshow",
+        "status": "booked",
         "reasonCode": [
           {
             "coding": [
@@ -378,7 +378,7 @@
         "created": "2025-10-05T00:49:55+00:00",
         "basedOn": [
           {
-            "reference": "ServiceRequest/46de5e47-1bbe-4134-a9d4-7ceb8cf39269"
+            "reference": "ServiceRequest/50bd96ac-0d15-4fee-9036-539cdcc6b593"
           }
         ],
         "participant": [

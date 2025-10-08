@@ -57,8 +57,8 @@
     }
   },
   "solicitudIC": {
-    "idSolicitudServicio": "87f4c735-6b0d-4bcf-a735-13f6230bed4d",
-    "idInterconsulta": "ec15b484-0a47-46a4-943d-f6ab222cf25c",
+    "idSolicitudServicio": "6df3db85-b5c2-42ee-bdeb-741ff9a0f018",
+    "idInterconsulta": "3a9e74a0-1fb1-4c59-84c4-c71e400cb5b5",
     "fechaEnvioReferencia": "2025-09-05 10:30:00",
     "modalidadAtencion": "1",
     "destinoAtencion": "2",

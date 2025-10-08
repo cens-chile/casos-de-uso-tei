@@ -43,8 +43,8 @@
     }
   },
   "solicitudIC": {
-    "idSolicitudServicio": "1c05ee7f-8314-4cc2-961d-390231818eca",
-    "idInterconsulta": "390d438a-564b-4dc7-bf03-107798041092",
+    "idSolicitudServicio": "343422d4-d2a1-40e5-bfdf-2fbaeea798aa",
+    "idInterconsulta": "cfe8d637-ae3e-4989-bb73-5cbc3d26b3f4",
     "idLocalIC": "local-IC-002",
     "modalidadAtencion": 1,
     "destinoAtencion": "4",
