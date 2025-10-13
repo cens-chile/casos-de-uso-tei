@@ -29,7 +29,7 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/a6e25efb-792b-48fc-9419-7c952318cb83"
+            "reference": "ServiceRequest/ec21c55e-fef2-4690-8b7c-4058373e5db8"
           },
           {
             "reference": "Appointment/20223686-de11-4057-8064-d6488fe4d870"
@@ -42,10 +42,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/a6e25efb-792b-48fc-9419-7c952318cb83",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/ec21c55e-fef2-4690-8b7c-4058373e5db8",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "a6e25efb-792b-48fc-9419-7c952318cb83",
+        "id": "ec21c55e-fef2-4690-8b7c-4058373e5db8",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -67,7 +67,7 @@
         ],
         "identifier": [
           {
-            "value": "ea1d0098-edf5-406b-9341-da4f043727c1"
+            "value": "595dbe45-e9e6-4e06-b2da-ec9f05f6fa71"
           }
         ],
         "authoredOn": "2025-09-05T00:00:00+00:00",
@@ -364,7 +364,7 @@
         ],
         "basedOn": [
           {
-            "reference": "ServiceRequest/a6e25efb-792b-48fc-9419-7c952318cb83"
+            "reference": "ServiceRequest/ec21c55e-fef2-4690-8b7c-4058373e5db8"
           }
         ],
         "created": "2025-10-20T14:30:00.000+00:00",
@@ -397,7 +397,7 @@
             "text": "Evaluación traumatología"
           }
         ],
-        "start": "0026-03-18T14:30:00.000+00:00",
+        "start": "2025-10-20T14:30:00.000+00:00",
         "status": "booked"
       }
     }
