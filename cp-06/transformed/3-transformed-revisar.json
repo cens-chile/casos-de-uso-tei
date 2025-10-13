@@ -33,16 +33,16 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/b734b64f-3466-4c99-8c97-4ea845917992"
+            "reference": "ServiceRequest/7b334148-dd8f-4513-8511-06e0c97ad9ac"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/b734b64f-3466-4c99-8c97-4ea845917992",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/7b334148-dd8f-4513-8511-06e0c97ad9ac",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "b734b64f-3466-4c99-8c97-4ea845917992",
+        "id": "7b334148-dd8f-4513-8511-06e0c97ad9ac",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -97,7 +97,7 @@
         ],
         "identifier": [
           {
-            "value": "2e0b9732-0209-4607-b85c-9b49bbce62d7"
+            "value": "334a7b44-b596-43fb-a5b3-da7807c32ede"
           }
         ],
         "status": "draft",

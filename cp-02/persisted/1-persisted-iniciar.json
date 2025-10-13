@@ -1,9 +1,9 @@
 {
   "resourceType": "Bundle",
-  "id": "cf8db639-f8f9-4d50-8ee3-4a651e2d3289",
+  "id": "02c04ee5-6107-4d25-8fd0-6c2e635af4e8",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-10-08T09:34:06.597-03:00",
+    "lastUpdated": "2025-10-13T09:23:19.589-03:00",
     "tag": [
       {
         "system": "message",
@@ -16,7 +16,7 @@
     {
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "ad69775b-01c6-45a7-a554-1ee7a64e3df7",
+        "id": "6166f4f9-755d-402f-aae1-5e48b118e2d8",
         "meta": {
           "lastUpdated": "2025-10-06T18:22:12.236+00:00",
           "profile": [
@@ -29,7 +29,7 @@
           "display": "Iniciar"
         },
         "author": {
-          "reference": "PractitionerRole/badcf395-18d2-4070-975b-ac960b883ad2"
+          "reference": "PractitionerRole/3bfbf114-c236-44d1-a235-b033089e07a2"
         },
         "source": {
           "software": "rayen-cesfam-lopetegui",
@@ -37,22 +37,22 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/343422d4-d2a1-40e5-bfdf-2fbaeea798aa"
+            "reference": "ServiceRequest/5950879e-6ec0-4f91-8ef9-3981c66c0023"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "MessageHeader/ad69775b-01c6-45a7-a554-1ee7a64e3df7"
+        "url": "MessageHeader/6166f4f9-755d-402f-aae1-5e48b118e2d8"
       }
     },
     {
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "ad69775b-01c6-45a7-a554-1ee7a64e3df7",
+        "id": "6166f4f9-755d-402f-aae1-5e48b118e2d8",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T12:34:06.264+00:00",
+          "lastUpdated": "2025-10-13T12:23:19.266+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -63,7 +63,7 @@
           "display": "Iniciar"
         },
         "author": {
-          "reference": "PractitionerRole/badcf395-18d2-4070-975b-ac960b883ad2"
+          "reference": "PractitionerRole/3bfbf114-c236-44d1-a235-b033089e07a2"
         },
         "source": {
           "software": "rayen-cesfam-lopetegui",
@@ -71,24 +71,24 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/343422d4-d2a1-40e5-bfdf-2fbaeea798aa"
+            "reference": "ServiceRequest/5950879e-6ec0-4f91-8ef9-3981c66c0023"
           }
         ]
       },
       "response": {
-        "id": "ad69775b-01c6-45a7-a554-1ee7a64e3df7",
+        "id": "6166f4f9-755d-402f-aae1-5e48b118e2d8",
         "status": "201 Created",
-        "location": "MessageHeader/ad69775b-01c6-45a7-a554-1ee7a64e3df7/_history/1",
-        "lastModified": "2025-10-08T09:34:06.264-03:00"
+        "location": "MessageHeader/6166f4f9-755d-402f-aae1-5e48b118e2d8/_history/1",
+        "lastModified": "2025-10-13T09:23:19.266-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Encounter",
-        "id": "9b07d19d-aaf3-42f8-b396-57aec58e1580",
+        "id": "fbe882b5-d31f-476c-97ca-7e5f898db9cf",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.280-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.280-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"
           ]
@@ -110,7 +110,7 @@
         "participant": [
           {
             "individual": {
-              "reference": "PractitionerRole/badcf395-18d2-4070-975b-ac960b883ad2"
+              "reference": "PractitionerRole/3bfbf114-c236-44d1-a235-b033089e07a2"
             }
           }
         ],
@@ -121,16 +121,16 @@
         "diagnosis": [
           {
             "condition": {
-              "reference": "Condition/577db317-88bb-497b-b094-4190e86b6075"
+              "reference": "Condition/027d5a0d-0811-4773-8616-dc3643c34058"
             }
           }
         ]
       },
       "response": {
-        "id": "9b07d19d-aaf3-42f8-b396-57aec58e1580",
+        "id": "fbe882b5-d31f-476c-97ca-7e5f898db9cf",
         "status": "201 Created",
-        "location": "Encounter/9b07d19d-aaf3-42f8-b396-57aec58e1580/_history/1",
-        "lastModified": "2025-10-08T09:34:06.280-03:00"
+        "location": "Encounter/fbe882b5-d31f-476c-97ca-7e5f898db9cf/_history/1",
+        "lastModified": "2025-10-13T09:23:19.280-03:00"
       }
     },
     {
@@ -138,8 +138,8 @@
         "resourceType": "Patient",
         "id": "AC1759438544804",
         "meta": {
-          "versionId": "44",
-          "lastUpdated": "2025-10-08T12:34:06.310+00:00",
+          "versionId": "65",
+          "lastUpdated": "2025-10-13T12:23:19.308+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE"
           ]
@@ -338,17 +338,17 @@
       "response": {
         "id": "AC1759438544804",
         "status": "200 OK",
-        "location": "Patient/AC1759438544804/_history/44",
-        "lastModified": "2025-10-08T09:34:06.310-03:00"
+        "location": "Patient/AC1759438544804/_history/65",
+        "lastModified": "2025-10-13T09:23:19.308-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "926a9b5e-e486-4d7b-8f22-252b2932abea",
+        "id": "d1339f0f-5750-4fb4-b07d-bcf5e99b823b",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.334-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.330-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE"
           ]
@@ -358,7 +358,7 @@
           "reference": "http://pruebas.hcc.cl/ispob/fhir/Patient/AC1759438544804"
         },
         "author": {
-          "reference": "Practitioner/3b9c34ce-74ce-4260-897e-4940a96329c2"
+          "reference": "Practitioner/e37f81dd-b21f-4cde-b287-626faff8e1cc"
         },
         "item": [
           {
@@ -373,19 +373,19 @@
         ]
       },
       "response": {
-        "id": "926a9b5e-e486-4d7b-8f22-252b2932abea",
+        "id": "d1339f0f-5750-4fb4-b07d-bcf5e99b823b",
         "status": "201 Created",
-        "location": "QuestionnaireResponse/926a9b5e-e486-4d7b-8f22-252b2932abea/_history/1",
-        "lastModified": "2025-10-08T09:34:06.334-03:00"
+        "location": "QuestionnaireResponse/d1339f0f-5750-4fb4-b07d-bcf5e99b823b/_history/1",
+        "lastModified": "2025-10-13T09:23:19.330-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "d95ee98a-6a04-41d4-9ca2-3e08bb1c507e",
+        "id": "e1936ac2-6689-470c-ad53-354091457b0d",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.349-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.344-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIndiceComorbilidadLE"
           ]
@@ -423,19 +423,19 @@
         }
       },
       "response": {
-        "id": "d95ee98a-6a04-41d4-9ca2-3e08bb1c507e",
+        "id": "e1936ac2-6689-470c-ad53-354091457b0d",
         "status": "201 Created",
-        "location": "Observation/d95ee98a-6a04-41d4-9ca2-3e08bb1c507e/_history/1",
-        "lastModified": "2025-10-08T09:34:06.349-03:00"
+        "location": "Observation/e1936ac2-6689-470c-ad53-354091457b0d/_history/1",
+        "lastModified": "2025-10-13T09:23:19.344-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "393a8b24-26a6-4790-b919-63ecc4d0accb",
+        "id": "ad69d01c-98d3-4679-8432-6c2cd7b41a48",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.371-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.363-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen"
           ]
@@ -465,25 +465,25 @@
           "reference": "http://pruebas.hcc.cl/ispob/fhir/Patient/AC1759438544804"
         },
         "encounter": {
-          "reference": "Encounter/9b07d19d-aaf3-42f8-b396-57aec58e1580"
+          "reference": "Encounter/fbe882b5-d31f-476c-97ca-7e5f898db9cf"
         },
         "effectiveDateTime": "2025-09-25T10:20:00+00:00",
         "valueString": "prueba de Phalen positiva"
       },
       "response": {
-        "id": "393a8b24-26a6-4790-b919-63ecc4d0accb",
+        "id": "ad69d01c-98d3-4679-8432-6c2cd7b41a48",
         "status": "201 Created",
-        "location": "Observation/393a8b24-26a6-4790-b919-63ecc4d0accb/_history/1",
-        "lastModified": "2025-10-08T09:34:06.371-03:00"
+        "location": "Observation/ad69d01c-98d3-4679-8432-6c2cd7b41a48/_history/1",
+        "lastModified": "2025-10-13T09:23:19.363-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b7ad131c-fed1-47d6-aee1-c4fa6259c673",
+        "id": "2700866d-ee3b-4a5b-a8b3-6b9dab12c7ac",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.474-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.383-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen"
           ]
@@ -513,34 +513,34 @@
           "reference": "http://pruebas.hcc.cl/ispob/fhir/Patient/AC1759438544804"
         },
         "encounter": {
-          "reference": "Encounter/9b07d19d-aaf3-42f8-b396-57aec58e1580"
+          "reference": "Encounter/fbe882b5-d31f-476c-97ca-7e5f898db9cf"
         },
         "effectiveDateTime": "2025-09-25T10:25:00+00:00",
         "valueString": "signo de Tinel, positivo"
       },
       "response": {
-        "id": "b7ad131c-fed1-47d6-aee1-c4fa6259c673",
+        "id": "2700866d-ee3b-4a5b-a8b3-6b9dab12c7ac",
         "status": "201 Created",
-        "location": "Observation/b7ad131c-fed1-47d6-aee1-c4fa6259c673/_history/1",
-        "lastModified": "2025-10-08T09:34:06.474-03:00"
+        "location": "Observation/2700866d-ee3b-4a5b-a8b3-6b9dab12c7ac/_history/1",
+        "lastModified": "2025-10-13T09:23:19.383-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "badcf395-18d2-4070-975b-ac960b883ad2",
+        "id": "3bfbf114-c236-44d1-a235-b033089e07a2",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.495-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.402-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/3b9c34ce-74ce-4260-897e-4940a96329c2"
+          "reference": "Practitioner/e37f81dd-b21f-4cde-b287-626faff8e1cc"
         },
         "organization": {
-          "reference": "Organization/0ee33d2c-8af9-4e8b-929a-7eeb1a43ede7"
+          "reference": "Organization/7a752883-91f1-40e8-a10e-9bf213a31e3d"
         },
         "code": [
           {
@@ -556,19 +556,19 @@
         ]
       },
       "response": {
-        "id": "badcf395-18d2-4070-975b-ac960b883ad2",
+        "id": "3bfbf114-c236-44d1-a235-b033089e07a2",
         "status": "201 Created",
-        "location": "PractitionerRole/badcf395-18d2-4070-975b-ac960b883ad2/_history/1",
-        "lastModified": "2025-10-08T09:34:06.495-03:00"
+        "location": "PractitionerRole/3bfbf114-c236-44d1-a235-b033089e07a2/_history/1",
+        "lastModified": "2025-10-13T09:23:19.402-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Practitioner",
-        "id": "3b9c34ce-74ce-4260-897e-4940a96329c2",
+        "id": "e37f81dd-b21f-4cde-b287-626faff8e1cc",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T12:34:06.511+00:00",
+          "lastUpdated": "2025-10-13T12:23:19.417+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -661,19 +661,19 @@
         ]
       },
       "response": {
-        "id": "3b9c34ce-74ce-4260-897e-4940a96329c2",
+        "id": "e37f81dd-b21f-4cde-b287-626faff8e1cc",
         "status": "201 Created",
-        "location": "Practitioner/3b9c34ce-74ce-4260-897e-4940a96329c2/_history/1",
-        "lastModified": "2025-10-08T09:34:06.511-03:00"
+        "location": "Practitioner/e37f81dd-b21f-4cde-b287-626faff8e1cc/_history/1",
+        "lastModified": "2025-10-13T09:23:19.417-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Organization",
-        "id": "0ee33d2c-8af9-4e8b-929a-7eeb1a43ede7",
+        "id": "7a752883-91f1-40e8-a10e-9bf213a31e3d",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.527-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.432-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
           ]
@@ -687,19 +687,19 @@
         "name": "CESFAM Dr. Marcelo Lopetegui"
       },
       "response": {
-        "id": "0ee33d2c-8af9-4e8b-929a-7eeb1a43ede7",
+        "id": "7a752883-91f1-40e8-a10e-9bf213a31e3d",
         "status": "201 Created",
-        "location": "Organization/0ee33d2c-8af9-4e8b-929a-7eeb1a43ede7/_history/1",
-        "lastModified": "2025-10-08T09:34:06.527-03:00"
+        "location": "Organization/7a752883-91f1-40e8-a10e-9bf213a31e3d/_history/1",
+        "lastModified": "2025-10-13T09:23:19.432-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "577db317-88bb-497b-b094-4190e86b6075",
+        "id": "027d5a0d-0811-4773-8616-dc3643c34058",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T12:34:06.541+00:00",
+          "lastUpdated": "2025-10-13T12:23:19.445+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"
           ]
@@ -746,30 +746,30 @@
           "reference": "http://pruebas.hcc.cl/ispob/fhir/Patient/AC1759438544804"
         },
         "encounter": {
-          "reference": "Encounter/9b07d19d-aaf3-42f8-b396-57aec58e1580"
+          "reference": "Encounter/fbe882b5-d31f-476c-97ca-7e5f898db9cf"
         }
       },
       "response": {
-        "id": "577db317-88bb-497b-b094-4190e86b6075",
+        "id": "027d5a0d-0811-4773-8616-dc3643c34058",
         "status": "201 Created",
-        "location": "Condition/577db317-88bb-497b-b094-4190e86b6075/_history/1",
-        "lastModified": "2025-10-08T09:34:06.541-03:00"
+        "location": "Condition/027d5a0d-0811-4773-8616-dc3643c34058/_history/1",
+        "lastModified": "2025-10-13T09:23:19.445-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "0c543436-5234-46d0-bb21-eba5a486e97e",
+        "id": "bfc1da78-4d27-4bd7-a199-349fe5856de6",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.558-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.462-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
           ]
         },
         "basedOn": [
           {
-            "reference": "ServiceRequest/343422d4-d2a1-40e5-bfdf-2fbaeea798aa"
+            "reference": "ServiceRequest/5950879e-6ec0-4f91-8ef9-3981c66c0023"
           }
         ],
         "status": "draft",
@@ -789,7 +789,7 @@
         },
         "authoredOn": "2025-09-25T10:30:00+00:00",
         "requester": {
-          "reference": "Practitioner/3b9c34ce-74ce-4260-897e-4940a96329c2"
+          "reference": "Practitioner/e37f81dd-b21f-4cde-b287-626faff8e1cc"
         },
         "reasonCode": [
           {
@@ -798,19 +798,19 @@
         ]
       },
       "response": {
-        "id": "0c543436-5234-46d0-bb21-eba5a486e97e",
+        "id": "bfc1da78-4d27-4bd7-a199-349fe5856de6",
         "status": "201 Created",
-        "location": "ServiceRequest/0c543436-5234-46d0-bb21-eba5a486e97e/_history/1",
-        "lastModified": "2025-10-08T09:34:06.558-03:00"
+        "location": "ServiceRequest/bfc1da78-4d27-4bd7-a199-349fe5856de6/_history/1",
+        "lastModified": "2025-10-13T09:23:19.462-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "343422d4-d2a1-40e5-bfdf-2fbaeea798aa",
+        "id": "5950879e-6ec0-4f91-8ef9-3981c66c0023",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-08T09:34:06.580-03:00",
+          "lastUpdated": "2025-10-13T09:23:19.569-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
           ]
@@ -851,7 +851,7 @@
         ],
         "identifier": [
           {
-            "value": "cfe8d637-ae3e-4989-bb73-5cbc3d26b3f4"
+            "value": "8ab972d5-284e-477c-93df-ac8da47012cd"
           }
         ],
         "status": "draft",
@@ -881,11 +881,11 @@
           "reference": "http://pruebas.hcc.cl/ispob/fhir/Patient/AC1759438544804"
         },
         "encounter": {
-          "reference": "Encounter/9b07d19d-aaf3-42f8-b396-57aec58e1580"
+          "reference": "Encounter/fbe882b5-d31f-476c-97ca-7e5f898db9cf"
         },
         "authoredOn": "2025-09-05T10:15:00+00:00",
         "requester": {
-          "reference": "PractitionerRole/badcf395-18d2-4070-975b-ac960b883ad2"
+          "reference": "PractitionerRole/3bfbf114-c236-44d1-a235-b033089e07a2"
         },
         "reasonCode": [
           {
@@ -900,30 +900,30 @@
         ],
         "supportingInfo": [
           {
-            "reference": "QuestionnaireResponse/926a9b5e-e486-4d7b-8f22-252b2932abea"
+            "reference": "QuestionnaireResponse/d1339f0f-5750-4fb4-b07d-bcf5e99b823b"
           },
           {
-            "reference": "Observation/d95ee98a-6a04-41d4-9ca2-3e08bb1c507e"
+            "reference": "Observation/e1936ac2-6689-470c-ad53-354091457b0d"
           },
           {
-            "reference": "Observation/393a8b24-26a6-4790-b919-63ecc4d0accb"
+            "reference": "Observation/ad69d01c-98d3-4679-8432-6c2cd7b41a48"
           },
           {
-            "reference": "Observation/b7ad131c-fed1-47d6-aee1-c4fa6259c673"
+            "reference": "Observation/2700866d-ee3b-4a5b-a8b3-6b9dab12c7ac"
           },
           {
-            "reference": "Condition/577db317-88bb-497b-b094-4190e86b6075"
+            "reference": "Condition/027d5a0d-0811-4773-8616-dc3643c34058"
           },
           {
-            "reference": "ServiceRequest/0c543436-5234-46d0-bb21-eba5a486e97e"
+            "reference": "ServiceRequest/bfc1da78-4d27-4bd7-a199-349fe5856de6"
           }
         ]
       },
       "response": {
-        "id": "343422d4-d2a1-40e5-bfdf-2fbaeea798aa",
+        "id": "5950879e-6ec0-4f91-8ef9-3981c66c0023",
         "status": "201 Created",
-        "location": "ServiceRequest/343422d4-d2a1-40e5-bfdf-2fbaeea798aa/_history/1",
-        "lastModified": "2025-10-08T09:34:06.580-03:00"
+        "location": "ServiceRequest/5950879e-6ec0-4f91-8ef9-3981c66c0023/_history/1",
+        "lastModified": "2025-10-13T09:23:19.569-03:00"
       }
     }
   ]

@@ -51,8 +51,8 @@
     }
   },
   "solicitudIC": {
-    "idSolicitudServicio": "343422d4-d2a1-40e5-bfdf-2fbaeea798aa",
-    "idInterconsulta": "cfe8d637-ae3e-4989-bb73-5cbc3d26b3f4",
+    "idSolicitudServicio": "5950879e-6ec0-4f91-8ef9-3981c66c0023",
+    "idInterconsulta": "8ab972d5-284e-477c-93df-ac8da47012cd",
     "modalidadAtencion": "2",
     "destinoAtencion": "4",
     "resolutividadAPS": true,
