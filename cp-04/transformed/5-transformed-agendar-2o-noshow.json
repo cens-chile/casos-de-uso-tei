@@ -327,7 +327,7 @@
       "fullUrl": "http://transformador-cens.cl/Appointment/883f8aee-9d7d-4100-92e0-74725813b7eb",
       "resource": {
         "resourceType": "Appointment",
-        "id": "3de48097-26a6-471e-abe7-44468fd4b8f8",
+        "id": "94f66845-0bee-4382-beee-dab2a7a5f5a7",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"

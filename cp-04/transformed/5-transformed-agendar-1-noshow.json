@@ -327,7 +327,7 @@
       "fullUrl": "http://transformador-cens.cl/Appointment/cc1cedf0-63ac-430a-b712-3733357b6c21",
       "resource": {
         "resourceType": "Appointment",
-        "id": "1b340e50-875c-42ed-84ac-930008401be0",
+        "id": "56a81c24-984d-44b9-9e4e-769b82dc10f8",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
@@ -361,7 +361,7 @@
             "value": "cita-agendada-004"
           }
         ],
-        "status": "booked",
+        "status": "noshow",
         "reasonCode": [
           {
             "coding": [
