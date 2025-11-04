@@ -1,9 +1,9 @@
 {
   "resourceType": "Bundle",
-  "id": "0dac3c35-9fce-4f0a-aefc-f70d0bd29cdc",
+  "id": "f4f7c3de-6128-4f26-8824-e9a779a926b3",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-10-13T09:23:35.824-03:00",
+    "lastUpdated": "2025-11-04T07:03:42.673-03:00",
     "tag": [
       {
         "system": "message",
@@ -16,7 +16,7 @@
     {
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "91c8bfa3-6355-49cb-99c4-70f992422f99",
+        "id": "5ac3022a-d0f0-4932-938e-c53d80b5ed67",
         "meta": {
           "lastUpdated": "2025-10-05T00:49:55.172+00:00",
           "profile": [
@@ -29,7 +29,7 @@
           "display": "Agendar"
         },
         "author": {
-          "reference": "PractitionerRole/8cb6d485-3754-45f8-9789-f57de21f3607"
+          "reference": "PractitionerRole/6d6438a6-11b5-45ae-ac11-615b0c7ae8c5"
         },
         "source": {
           "software": "MEDISYN",
@@ -37,25 +37,25 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4"
+            "reference": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a"
           },
           {
-            "reference": "Appointment/8150ff4c-8b40-4758-9758-5c3cfe37206d"
+            "reference": "Appointment/3ba01a14-d616-4509-a9e5-4985328d8ab0"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "MessageHeader/91c8bfa3-6355-49cb-99c4-70f992422f99"
+        "url": "MessageHeader/5ac3022a-d0f0-4932-938e-c53d80b5ed67"
       }
     },
     {
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "91c8bfa3-6355-49cb-99c4-70f992422f99",
+        "id": "5ac3022a-d0f0-4932-938e-c53d80b5ed67",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T12:23:35.667+00:00",
+          "lastUpdated": "2025-11-04T10:03:42.521+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
           ]
@@ -66,7 +66,7 @@
           "display": "Agendar"
         },
         "author": {
-          "reference": "PractitionerRole/8cb6d485-3754-45f8-9789-f57de21f3607"
+          "reference": "PractitionerRole/6d6438a6-11b5-45ae-ac11-615b0c7ae8c5"
         },
         "source": {
           "software": "MEDISYN",
@@ -74,27 +74,27 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4"
+            "reference": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a"
           },
           {
-            "reference": "Appointment/8150ff4c-8b40-4758-9758-5c3cfe37206d"
+            "reference": "Appointment/3ba01a14-d616-4509-a9e5-4985328d8ab0"
           }
         ]
       },
       "response": {
-        "id": "91c8bfa3-6355-49cb-99c4-70f992422f99",
+        "id": "5ac3022a-d0f0-4932-938e-c53d80b5ed67",
         "status": "201 Created",
-        "location": "MessageHeader/91c8bfa3-6355-49cb-99c4-70f992422f99/_history/1",
-        "lastModified": "2025-10-13T09:23:35.667-03:00"
+        "location": "MessageHeader/5ac3022a-d0f0-4932-938e-c53d80b5ed67/_history/1",
+        "lastModified": "2025-11-04T07:03:42.521-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "4eeef5cb-7e74-4bd4-9f74-4b980886f6b4",
+        "id": "6dc17adb-2e6c-489a-92cc-3b010c4f769a",
         "meta": {
           "versionId": "6",
-          "lastUpdated": "2025-10-13T09:23:35.722-03:00",
+          "lastUpdated": "2025-11-04T07:03:42.575-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
           ]
@@ -115,7 +115,7 @@
         ],
         "identifier": [
           {
-            "value": "3d85e2ee-c57c-4c3c-9863-90cdff0c6225"
+            "value": "4f0d0107-be47-4b1f-b2be-cac606348c02"
           }
         ],
         "status": "draft",
@@ -136,28 +136,28 @@
         }
       },
       "response": {
-        "id": "4eeef5cb-7e74-4bd4-9f74-4b980886f6b4",
+        "id": "6dc17adb-2e6c-489a-92cc-3b010c4f769a",
         "status": "200 OK",
-        "location": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4/_history/6",
-        "lastModified": "2025-10-13T09:23:35.722-03:00"
+        "location": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a/_history/6",
+        "lastModified": "2025-11-04T07:03:42.575-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "8cb6d485-3754-45f8-9789-f57de21f3607",
+        "id": "6d6438a6-11b5-45ae-ac11-615b0c7ae8c5",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T09:23:35.745-03:00",
+          "lastUpdated": "2025-11-04T07:03:42.595-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/8a4e5fa5-e1f5-4955-98ef-5604f06b3b18"
+          "reference": "Practitioner/b9f93adb-0f42-4e83-ac7b-4e9356b38cae"
         },
         "organization": {
-          "reference": "Organization/f401e05f-8e92-444b-ac52-0f8aab78882b"
+          "reference": "Organization/cf76040c-376f-4752-8e77-f6db53763978"
         },
         "code": [
           {
@@ -173,10 +173,10 @@
         ]
       },
       "response": {
-        "id": "8cb6d485-3754-45f8-9789-f57de21f3607",
+        "id": "6d6438a6-11b5-45ae-ac11-615b0c7ae8c5",
         "status": "201 Created",
-        "location": "PractitionerRole/8cb6d485-3754-45f8-9789-f57de21f3607/_history/1",
-        "lastModified": "2025-10-13T09:23:35.745-03:00"
+        "location": "PractitionerRole/6d6438a6-11b5-45ae-ac11-615b0c7ae8c5/_history/1",
+        "lastModified": "2025-11-04T07:03:42.595-03:00"
       }
     },
     {
@@ -184,14 +184,14 @@
         "resourceType": "PractitionerRole",
         "id": "95aed9a8-e523-4cbc-a52c-bb35da31f591",
         "meta": {
-          "versionId": "7",
-          "lastUpdated": "2025-10-13T09:23:35.761-03:00",
+          "versionId": "9",
+          "lastUpdated": "2025-11-04T07:03:42.616-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/e88c6886-b748-4611-b76c-8cc4d0d50393"
+          "reference": "Practitioner/456c0d27-c6ee-4b82-ab05-bd4ef840191d"
         },
         "organization": {
           "reference": "Organization/cbf440af-0205-47c2-8c3c-d9c905176a6c"
@@ -212,17 +212,17 @@
       "response": {
         "id": "95aed9a8-e523-4cbc-a52c-bb35da31f591",
         "status": "200 OK",
-        "location": "PractitionerRole/95aed9a8-e523-4cbc-a52c-bb35da31f591/_history/7",
-        "lastModified": "2025-10-13T09:23:35.761-03:00"
+        "location": "PractitionerRole/95aed9a8-e523-4cbc-a52c-bb35da31f591/_history/9",
+        "lastModified": "2025-11-04T07:03:42.616-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Practitioner",
-        "id": "e88c6886-b748-4611-b76c-8cc4d0d50393",
+        "id": "456c0d27-c6ee-4b82-ab05-bd4ef840191d",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T12:23:35.786+00:00",
+          "lastUpdated": "2025-11-04T10:03:42.640+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"
           ]
@@ -321,19 +321,19 @@
         ]
       },
       "response": {
-        "id": "e88c6886-b748-4611-b76c-8cc4d0d50393",
+        "id": "456c0d27-c6ee-4b82-ab05-bd4ef840191d",
         "status": "201 Created",
-        "location": "Practitioner/e88c6886-b748-4611-b76c-8cc4d0d50393/_history/1",
-        "lastModified": "2025-10-13T09:23:35.786-03:00"
+        "location": "Practitioner/456c0d27-c6ee-4b82-ab05-bd4ef840191d/_history/1",
+        "lastModified": "2025-11-04T07:03:42.640-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Practitioner",
-        "id": "8a4e5fa5-e1f5-4955-98ef-5604f06b3b18",
+        "id": "b9f93adb-0f42-4e83-ac7b-4e9356b38cae",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T12:23:35.808+00:00",
+          "lastUpdated": "2025-11-04T10:03:42.658+00:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerAdministrativoLE"
           ]
@@ -378,19 +378,19 @@
         "birthDate": "1975-01-01"
       },
       "response": {
-        "id": "8a4e5fa5-e1f5-4955-98ef-5604f06b3b18",
+        "id": "b9f93adb-0f42-4e83-ac7b-4e9356b38cae",
         "status": "201 Created",
-        "location": "Practitioner/8a4e5fa5-e1f5-4955-98ef-5604f06b3b18/_history/1",
-        "lastModified": "2025-10-13T09:23:35.808-03:00"
+        "location": "Practitioner/b9f93adb-0f42-4e83-ac7b-4e9356b38cae/_history/1",
+        "lastModified": "2025-11-04T07:03:42.658-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Appointment",
-        "id": "8150ff4c-8b40-4758-9758-5c3cfe37206d",
+        "id": "3ba01a14-d616-4509-a9e5-4985328d8ab0",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T09:23:35.686-03:00",
+          "lastUpdated": "2025-11-04T07:03:42.539-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
           ]
@@ -440,7 +440,7 @@
         "created": "2025-10-05T00:49:55+00:00",
         "basedOn": [
           {
-            "reference": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4"
+            "reference": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a"
           }
         ],
         "participant": [
@@ -461,19 +461,19 @@
         ]
       },
       "response": {
-        "id": "8150ff4c-8b40-4758-9758-5c3cfe37206d",
+        "id": "3ba01a14-d616-4509-a9e5-4985328d8ab0",
         "status": "201 Created",
-        "location": "Appointment/8150ff4c-8b40-4758-9758-5c3cfe37206d/_history/1",
-        "lastModified": "2025-10-13T09:23:35.686-03:00"
+        "location": "Appointment/3ba01a14-d616-4509-a9e5-4985328d8ab0/_history/1",
+        "lastModified": "2025-11-04T07:03:42.539-03:00"
       }
     },
     {
       "resource": {
         "resourceType": "Organization",
-        "id": "f401e05f-8e92-444b-ac52-0f8aab78882b",
+        "id": "cf76040c-376f-4752-8e77-f6db53763978",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-10-13T09:23:35.705-03:00",
+          "lastUpdated": "2025-11-04T07:03:42.559-03:00",
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
           ]
@@ -487,10 +487,10 @@
         "name": "Hospital Base San José de Osorno"
       },
       "response": {
-        "id": "f401e05f-8e92-444b-ac52-0f8aab78882b",
+        "id": "cf76040c-376f-4752-8e77-f6db53763978",
         "status": "201 Created",
-        "location": "Organization/f401e05f-8e92-444b-ac52-0f8aab78882b/_history/1",
-        "lastModified": "2025-10-13T09:23:35.705-03:00"
+        "location": "Organization/cf76040c-376f-4752-8e77-f6db53763978/_history/1",
+        "lastModified": "2025-11-04T07:03:42.559-03:00"
       }
     }
   ]

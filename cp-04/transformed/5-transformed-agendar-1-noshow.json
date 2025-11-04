@@ -33,7 +33,7 @@
         },
         "focus": [
           {
-            "reference": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4"
+            "reference": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a"
           },
           {
             "reference": "Appointment/cc1cedf0-63ac-430a-b712-3733357b6c21"
@@ -42,10 +42,10 @@
       }
     },
     {
-      "fullUrl": "http://transformador-cens.cl/ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4",
+      "fullUrl": "http://transformador-cens.cl/ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "4eeef5cb-7e74-4bd4-9f74-4b980886f6b4",
+        "id": "6dc17adb-2e6c-489a-92cc-3b010c4f769a",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
@@ -67,7 +67,7 @@
         ],
         "identifier": [
           {
-            "value": "3d85e2ee-c57c-4c3c-9863-90cdff0c6225"
+            "value": "4f0d0107-be47-4b1f-b2be-cac606348c02"
           }
         ],
         "status": "draft",
@@ -327,7 +327,7 @@
       "fullUrl": "http://transformador-cens.cl/Appointment/cc1cedf0-63ac-430a-b712-3733357b6c21",
       "resource": {
         "resourceType": "Appointment",
-        "id": "cc1cedf0-63ac-430a-b712-3733357b6c21",
+        "id": "1b340e50-875c-42ed-84ac-930008401be0",
         "meta": {
           "profile": [
             "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
@@ -378,7 +378,7 @@
         "created": "2025-10-05T00:49:55+00:00",
         "basedOn": [
           {
-            "reference": "ServiceRequest/4eeef5cb-7e74-4bd4-9f74-4b980886f6b4"
+            "reference": "ServiceRequest/6dc17adb-2e6c-489a-92cc-3b010c4f769a"
           }
         ],
         "participant": [

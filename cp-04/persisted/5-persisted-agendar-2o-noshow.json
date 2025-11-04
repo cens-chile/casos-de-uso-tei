@@ -2,9 +2,9 @@
   "resourceType": "OperationOutcome",
   "issue": [
     {
-      "severity": "error",
+      "severity": "information",
       "code": "processing",
-      "diagnostics": "Appointment Error"
+      "diagnostics": "cita actualizada"
     }
   ]
 }

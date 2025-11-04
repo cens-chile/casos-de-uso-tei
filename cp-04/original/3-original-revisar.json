@@ -5,8 +5,8 @@
   },
   "referenciaPaciente": "Patient/AC1759438544804",
   "solicitudIC": {
-    "idSolicitudServicio": "d6fcdce2-db0e-46f4-9b1c-53e1ec02b4e3",
-    "idInterconsulta": "683b4beb-3553-437f-a09c-e0ef0ababdaa",
+    "idSolicitudServicio": "6dc17adb-2e6c-489a-92cc-3b010c4f769a",
+    "idInterconsulta": "4f0d0107-be47-4b1f-b2be-cac606348c02",
     "modalidadAtencion": "1",
     "destinoAtencion": "2",
     "resolutividadAPS": false,
